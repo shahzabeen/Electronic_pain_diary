@@ -1,0 +1,2567 @@
+		p{
+		    font-size:1.5em;
+		}		
+		div#mySlider1{		
+			height: 100px;
+		}		
+		div#mySlider2{		
+			height: 30px;
+		}		
+		div#mySlider3{		
+			height: 30px;
+		}
+		div#mySlider4{		
+			height: 30px;
+		}
+		div#mySlider5{		
+			height: 30px;
+		}
+		div#mySlider6{		
+			height: 30px;
+		}
+		div#mySlider7{		
+			height: 30px;
+		}
+		div#mySlider8{		
+			height: 30px;
+		}		
+		div#div_p2{
+		position: absolute;
+		background-color:#dea863;
+		font-weight:bold;
+		top: 200px;
+		right:90px;	
+		height: 250px;
+		width: 200px;	
+		}
+		div#div_p3{
+		position: absolute;
+		background-color:#dea863;
+		font-weight:bold;
+		top: 200px;
+		right:90px;	
+		height: 250px;
+		width: 200px;	
+		}
+		div#div_p4{
+		position: absolute;
+		background-color:#dea863;
+		font-weight:bold;
+		top: 200px;
+		right:90px;	
+		height: 250px;
+		width: 200px;	
+		}
+		div#div_p5{
+		position: absolute;
+		background-color:#dea863;
+		font-weight:bold;
+		top: 200px;
+		right:90px;	
+		height: 250px;
+		width: 200px;	
+		}
+		div#div_p6{
+		position: absolute;
+		background-color:#dea863;
+		font-weight:bold;
+		top: 200px;
+		right:90px;	
+		height: 250px;
+		width: 200px;	
+		}
+		div#div_p7{
+		position: absolute;
+		background-color:#dea863;
+		font-weight:bold;
+		top: 200px;
+		right:90px;	
+		height: 250px;
+		width: 200px;	
+		}
+		
+		#radio-1{
+			width:10%;
+			height:300%;
+		}
+		#ball_1{		
+		    position: absolute;
+			top:640px;
+		    left:367px;
+			width: 28px;
+            height: 28px; 
+		}
+		#ball_2{		
+		    position: absolute;
+			top:640px;
+		    left:435px;
+			width: 28px;
+            height: 28px; 
+		}
+		#ball_3{		
+		    position: absolute;
+			top:595px;
+		    left:484px;
+			width: 28px;
+            height: 28px; 
+		}
+		#ball_4{		
+		    position: absolute;
+			top:545px;
+		    left:537px;
+			width: 28px;
+            height: 28px; 
+		}
+		#ball_5{		
+		    position: absolute;
+			top:530px;
+		    left:587px;
+			width: 28px;
+            height: 28px; 
+		}
+		#ball_6{		
+		    position: absolute;
+			top:485px;
+		    left:635px;
+			width: 28px;
+            height: 28px; 
+		}
+		#ball_7{		
+		    position: absolute;
+			top:467px;
+		    left:687px;
+			width: 28px;
+            height: 28px; 
+		}
+		#ball_8{		
+		    position: absolute;
+			top:425px;
+		    left:733px;
+			width: 28px;
+            height: 28px; 
+		}
+		#ball_9{		
+		    position: absolute;
+			top:405px;
+		    left:787px;
+			width: 28px;
+            height: 28px; 
+		}
+		#ball_10{		
+		    position: absolute;
+			top:360px;
+		    left:837px;
+			width: 28px;
+            height: 28px; 
+		}
+		#ball_11{		
+		    position: absolute;
+			top:375px;
+		    left:907px;
+			width: 28px;
+            height: 28px; 
+		}
+		
+		img.smily_star{
+			position: absolute;
+			top:170px;
+		    left:500px;
+			width: 310px;
+            height: 90px; 
+		}
+		img.hp_fav_star{
+			position: absolute;
+			top:330px;
+		    left:500px;
+			width: 310px;
+            height: 90px; 
+		}
+		img.star_half{
+			position: absolute;
+			top:490px;
+		    left:500px;
+		    width: 310px;
+            height: 90px; 
+
+		}
+		a.daily_exercise{
+			position: absolute;
+			top:199px;
+		    left:430px;
+			width: 500px;
+            height: 70px; 
+		}
+		a.before_exercise{
+			position: absolute;
+			top:355px;
+		    left:430px;
+			width: 500px;
+            height: 70px; 
+		}
+		a.after_exercise{
+			position: absolute;
+			top:520px;
+		    left:430px;
+			width: 500px;
+            height: 70px; 
+		}
+		.text_daily{
+			top:70px;		    
+		}
+
+		img.red_box{
+		    cursor: pointer;
+		}		
+		img.blue_box{
+		    cursor: pointer;
+		} 
+		.exercise_list {
+		    position: absolute;
+		    left:300px;
+		    width: 900px;
+            height: 283px;   
+		} 
+/* Daily - Front*/		
+		img.front_1{
+		    position: absolute;
+			top:170px;			
+			left:100px;	                            
+            cursor: pointer;
+		}
+		img.front_2{
+		    position: absolute;
+			top:170px;			
+			left:550px;	                            
+            cursor: pointer;
+		}
+		img.front_3{
+		    position: absolute;
+			top:170px;			
+			left:100px;	                            
+            cursor: pointer;
+		}
+		img.front_4{
+		    position: absolute;
+			top:170px;			
+			left:550px;	                            
+            cursor: pointer;
+		}
+		img.front_5{
+		    position: absolute;
+			top:170px;			
+			left:100px;	                            
+            cursor: pointer;
+		}
+		img.front_6{
+		    position: absolute;
+			top:170px;			
+			left:550px;	                            
+            cursor: pointer;
+		}
+		img.back_1{
+		    position: absolute;
+			top:170px;			
+			left:100px;	                            
+            cursor: pointer;
+		}
+		img.back_2{
+		    position: absolute;
+			top:170px;			
+			left:550px;	                            
+            cursor: pointer;
+		}
+		img.back_3{
+		    position: absolute;
+			top:170px;			
+			left:100px;	                            
+            cursor: pointer;
+		}
+		img.back_4{
+		    position: absolute;
+			top:170px;			
+			left:550px;	                            
+            cursor: pointer;
+		}
+		img.back_5{
+		    position: absolute;
+			top:170px;			
+			left:100px;	                            
+            cursor: pointer;
+		}
+		img.back_6{
+		    position: absolute;
+			top:170px;			
+			left:550px;	                            
+            cursor: pointer;
+		}
+		img.head_d_red{
+		    position: absolute;
+			top:172px;			
+			left:198px;	 			
+            cursor: pointer;
+		}
+		img.head_d_blue{
+		    position: absolute;
+			top:172px;			
+			left:648px;	 			
+            cursor: pointer;
+		}
+		img.rightshoulder_d_red{
+		    position: absolute;
+			top:302px;			
+			left:171px;	 			
+            cursor: pointer;
+		}
+		img.rightshoulder_d_blue{
+		    position: absolute;
+			top:302px;			
+			left:623px;	 			
+            cursor: pointer;
+		}
+		
+		img.leftshoulder_d_red{
+		    position: absolute;
+			top:305px;			
+			left:285px;	 			
+            cursor: pointer;
+		}
+		img.leftshoulder_d_blue{
+		    position: absolute;
+			top:305px;			
+			left:735px;	 			
+            cursor: pointer;
+		}
+		img.chest_d_red{
+		    position: absolute;
+			top:310px;			
+			left:203px;	 			
+            cursor: pointer;
+		}
+		img.chest_d_blue{
+		    position: absolute;
+			top:310px;			
+			left:654px;	 			
+            cursor: pointer;
+		}
+		img.abdomen_d_red{
+		    position: absolute;
+			top:360px;			
+			left:200px;	 			
+            cursor: pointer;
+		}
+		img.abdomen_d_blue{
+		    position: absolute;
+			top:360px;			
+			left:650px;	 			
+            cursor: pointer;
+		}
+		img.lelbow_d_red{
+		    position: absolute;
+			top:353px;			
+			left:306px;	 			
+            cursor: pointer;
+		}
+		img.lelbow_d_blue{
+		    position: absolute;
+			top:353px;			
+			left:757px;	 			
+            cursor: pointer;
+		}
+		img.relbow_d_red{
+		    position: absolute;
+			top:348px;			
+			left:139px;	 			
+            cursor: pointer;
+		}
+		img.relbow_d_blue{
+		    position: absolute;
+			top:348px;			
+			left:590px;	 			
+            cursor: pointer;
+		}
+		img.lhand_d_red{
+		    position: absolute;
+			top:425px;			
+			left:342px;	 			
+            cursor: pointer;
+		}
+		img.lhand_d_blue{
+		    position: absolute;
+			top:425px;			
+			left:792px;	 			
+            cursor: pointer;
+		}
+		img.rhand_d_red{
+		    position: absolute;
+			top:423px;			
+			left:110px;	 			
+            cursor: pointer;
+		}
+		img.rhand_d_blue{
+		    position: absolute;
+			top:423px;			
+			left:559px;	 			
+            cursor: pointer;
+		}
+		img.rhip_d_red{
+		    position: absolute;
+			top:421px;			
+			left:195px;	 			
+            cursor: pointer;
+		}
+		img.rhip_d_blue{
+		    position: absolute;
+			top:420px;			
+			left:643px;	 			
+            cursor: pointer;
+		}
+		img.groin_d_red{
+		    position: absolute;
+			top:423px;			
+			left:236px;	 			
+            cursor: pointer;
+		}
+		img.groin_d_blue{
+		    position: absolute;
+			top:423px;			
+			left:685px;	 			
+            cursor: pointer;
+		}
+		img.lhip_d_red{
+		    position: absolute;
+			top:421px;			
+			left:266px;	 			
+            cursor: pointer;
+		}
+		img.lhip_d_blue{
+		    position: absolute;
+			top:420px;			
+			left:713px;	 			
+            cursor: pointer;
+		}
+		img.rleg_d_red{
+		    position: absolute;
+			top:499px;			
+			left:190px;	 			
+            cursor: pointer;
+		}
+		img.rleg_d_blue{
+		    position: absolute;
+			top:499px;			
+			left:640px;	 			
+            cursor: pointer;
+		}
+		img.lleg_d_red{
+		    position: absolute;
+			top:501px;			
+			left:260px;	 			
+            cursor: pointer;
+		}
+		img.lleg_d_blue{
+		    position: absolute;
+			top:501px;			
+			left:710px;	 			
+            cursor: pointer;
+		}
+		img.lfoot_d_red{
+		    position: absolute;
+			top:573px;			
+			left:259px;	 			
+            cursor: pointer;
+		}
+		img.lfoot_d_blue{
+		    position: absolute;
+			top:573px;			
+			left:709px;	 			
+            cursor: pointer;
+		}
+		img.rfoot_d_red{
+		    position: absolute;
+			top:577px;			
+			left:183px;	 			
+            cursor: pointer;
+		}
+		img.rfoot_d_blue{
+		    position: absolute;
+			top:577px;			
+			left:634px;	 			
+            cursor: pointer;
+		}
+		
+/*Daily Back */	
+
+
+		img.head_d_red_back{
+		    position: absolute;
+			top:174px;			
+			left:211px;	 			
+            cursor: pointer;
+		}
+		img.head_d_blue_back{
+		    position: absolute;
+			top:174px;			
+			left:662px;	 			
+            cursor: pointer;
+		}
+		img.rightshoulder_d_red_back{
+		    position: absolute;
+			top:298px;			
+			left:179px;	 			
+            cursor: pointer;
+		}
+		img.rightshoulder_d_blue_back{
+		    position: absolute;
+			top:298px;			
+			left:628px;	 			
+            cursor: pointer;
+		}
+		
+		img.leftshoulder_d_red_back{
+		    position: absolute;
+			top:298px;			
+			left:284px;	 			
+            cursor: pointer;
+		}
+		img.leftshoulder_d_blue_back{
+		    position: absolute;
+			top:298px;			
+			left:735px;	 			
+            cursor: pointer;
+		}
+		img.chest_d_red_back{
+		    position: absolute;
+			top:302px;			
+			left:209px;	 			 			
+            cursor: pointer;
+		}
+		img.chest_d_blue_back{
+		    position: absolute;
+			top:302px;			
+			left:658px;	 			
+            cursor: pointer;
+		}
+		img.abdomen_d_red_back{
+		    position: absolute;
+			top:351px;			
+			left:205px;	 			
+            cursor: pointer;
+		}
+		img.abdomen_d_blue_back{
+		    position: absolute;
+			top:351px;			
+			left:656px;	 			
+            cursor: pointer;
+		}
+		img.lelbow_d_red_back{
+		    position: absolute;
+			top:344px;			
+			left:310px;	 			
+            cursor: pointer;
+		}
+		img.lelbow_d_blue_back{
+		    position: absolute;
+			top:344px;			
+			left:760px;	 			
+            cursor: pointer;
+		}
+		img.relbow_d_red_back{
+		    position: absolute;
+			top:340px;			
+			left:148px;	 			
+            cursor: pointer;
+		}
+		img.relbow_d_blue_back{
+		    position: absolute;
+			top:340px;			
+			left:598px;	 			
+            cursor: pointer;
+		}
+		img.lhand_d_red_back{
+		    position: absolute;
+			top:410px;			
+			left:343px;	 			
+            cursor: pointer;
+		}
+		img.lhand_d_blue_back{
+		    position: absolute;
+			top:410px;			
+			left:793px;	 			
+            cursor: pointer;
+		}
+		img.rhand_d_red_back{
+		    position: absolute;
+			top:410px;			
+			left:122px;	 			
+            cursor: pointer;
+		}
+		img.rhand_d_blue_back{
+		    position: absolute;
+			top:410px;			
+			left:572px;	 			
+            cursor: pointer;
+		}
+		img.rhip_d_red_back{
+		    position: absolute;
+			top:408px;			
+			left:206px;	 			
+            cursor: pointer;
+		}
+		img.rhip_d_blue_back{
+		    position: absolute;
+			top:408px;			
+			left:657px;	 			
+            cursor: pointer;
+		}
+		img.back_d_red_back{
+		    position: absolute;
+			top:410px;			
+			left:236px;	 			
+            cursor: pointer;
+		}
+		img.back_d_blue_back{
+		    position: absolute;
+			top:410px;			
+			left:687px;	 			
+            cursor: pointer;
+		}
+		img.lhip_d_red_back{
+		    position: absolute;
+			top:410px;			
+			left:260px;	 			
+            cursor: pointer;
+		}
+		img.lhip_d_blue_back{
+		    position: absolute;
+			top:408px;			
+			left:711px;	 			
+            cursor: pointer;
+		}
+		img.rleg_d_red_back{
+		    position: absolute;
+			top:487px;			
+			left:203px;	 			
+            cursor: pointer;
+		}
+		img.rleg_d_blue_back{
+		    position: absolute;
+			top:488px;			
+			left:653px;	 			
+            cursor: pointer;
+		}
+		img.lleg_d_red_back{
+		    position: absolute;
+			top:489px;			
+			left:263px;	 			
+            cursor: pointer;
+		}
+		img.lleg_d_blue_back{
+		    position: absolute;
+			top:488px;			
+			left:711px;	 			
+            cursor: pointer;
+		}
+		img.lfoot_d_red_back{
+		    position: absolute;
+			top:561px;						
+			left:263px;	 			
+            cursor: pointer;
+		}
+		img.lfoot_d_blue_back{
+		    position: absolute;
+			top:561px;			
+			left:716px;	 			
+            cursor: pointer;
+		}
+		img.rfoot_d_red_back{
+		    position: absolute;
+			top:557px;			
+			left:199px;	 			
+            cursor: pointer;
+		}
+		img.rfoot_d_blue_back{
+		    position: absolute;
+			top:557px;			
+			left:647px;	 			
+            cursor: pointer;
+		}
+		
+		
+/*Before Exercise - Front */
+
+		img.head_d_red_b{
+		    position: absolute;
+			top:172px;			
+			left:198px;	 			
+            cursor: pointer;
+		}
+		img.head_d_blue_b{
+		    position: absolute;
+			top:172px;			
+			left:648px;	 			
+            cursor: pointer;
+		}
+		img.rightshoulder_d_red_b{
+		    position: absolute;
+			top:302px;			
+			left:171px;	 			
+            cursor: pointer;
+		}
+		img.rightshoulder_d_blue_b{
+		    position: absolute;
+			top:302px;			
+			left:623px;	 			
+            cursor: pointer;
+		}
+		
+		img.leftshoulder_d_red_b{
+		    position: absolute;
+			top:305px;			
+			left:285px;	 			
+            cursor: pointer;
+		}
+		img.leftshoulder_d_blue_b{
+		    position: absolute;
+			top:305px;			
+			left:735px;	 			
+            cursor: pointer;
+		}
+		img.chest_d_red_b{
+		    position: absolute;
+			top:310px;			
+			left:203px;	 			
+            cursor: pointer;
+		}
+		img.chest_d_blue_b{
+		    position: absolute;
+			top:310px;			
+			left:654px;	 			
+            cursor: pointer;
+		}
+		img.abdomen_d_red_b{
+		    position: absolute;
+			top:360px;			
+			left:200px;	 			
+            cursor: pointer;
+		}
+		img.abdomen_d_blue_b{
+		    position: absolute;
+			top:360px;			
+			left:650px;	 			
+            cursor: pointer;
+		}
+		img.lelbow_d_red_b{
+		    position: absolute;
+			top:353px;			
+			left:306px;	 			
+            cursor: pointer;
+		}
+		img.lelbow_d_blue_b{
+		    position: absolute;
+			top:353px;			
+			left:757px;	 			
+            cursor: pointer;
+		}
+		img.relbow_d_red_b{
+		    position: absolute;
+			top:348px;			
+			left:139px;	 			
+            cursor: pointer;
+		}
+		img.relbow_d_blue_b{
+		    position: absolute;
+			top:348px;			
+			left:590px;	 			
+            cursor: pointer;
+		}
+		img.lhand_d_red_b{
+		    position: absolute;
+			top:425px;			
+			left:342px;	 			
+            cursor: pointer;
+		}
+		img.lhand_d_blue_b{
+		    position: absolute;
+			top:425px;			
+			left:792px;	 			
+            cursor: pointer;
+		}
+		img.rhand_d_red_b{
+		    position: absolute;
+			top:423px;			
+			left:110px;	 			
+            cursor: pointer;
+		}
+		img.rhand_d_blue_b{
+		    position: absolute;
+			top:423px;			
+			left:559px;	 			
+            cursor: pointer;
+		}
+		img.rhip_d_red_b{
+		    position: absolute;
+			top:421px;			
+			left:195px;	 			
+            cursor: pointer;
+		}
+		img.rhip_d_blue_b{
+		    position: absolute;
+			top:420px;			
+			left:643px;	 			
+            cursor: pointer;
+		}
+		img.groin_d_red_b{
+		    position: absolute;
+			top:423px;			
+			left:236px;	 			
+            cursor: pointer;
+		}
+		img.groin_d_blue_b{
+		    position: absolute;
+			top:423px;			
+			left:685px;	 			
+            cursor: pointer;
+		}
+		img.lhip_d_red_b{
+		    position: absolute;
+			top:421px;			
+			left:266px;	 			
+            cursor: pointer;
+		}
+		img.lhip_d_blue_b{
+		    position: absolute;
+			top:420px;			
+			left:713px;	 			
+            cursor: pointer;
+		}
+		img.rleg_d_red_b{
+		    position: absolute;
+			top:499px;			
+			left:190px;	 			
+            cursor: pointer;
+		}
+		img.rleg_d_blue_b{
+		    position: absolute;
+			top:499px;			
+			left:640px;	 			
+            cursor: pointer;
+		}
+		img.lleg_d_red_b{
+		    position: absolute;
+			top:501px;			
+			left:260px;	 			
+            cursor: pointer;
+		}
+		img.lleg_d_blue_b{
+		    position: absolute;
+			top:501px;			
+			left:710px;	 			
+            cursor: pointer;
+		}
+		img.lfoot_d_red_b{
+		    position: absolute;
+			top:573px;			
+			left:259px;	 			
+            cursor: pointer;
+		}
+		img.lfoot_d_blue_b{
+		    position: absolute;
+			top:573px;			
+			left:709px;	 			
+            cursor: pointer;
+		}
+		img.rfoot_d_red_b{
+		    position: absolute;
+			top:577px;			
+			left:183px;	 			
+            cursor: pointer;
+		}
+		img.rfoot_d_blue_b{
+		    position: absolute;
+			top:577px;			
+			left:634px;	 			
+            cursor: pointer;
+		}
+
+/*Before Exercise - Back */	
+
+		img.head_d_red_back_b{
+		    position: absolute;
+			top:174px;			
+			left:211px;	 			
+            cursor: pointer;
+		}
+		img.head_d_blue_back_b{
+		    position: absolute;
+			top:174px;			
+			left:662px;	 			
+            cursor: pointer;
+		}
+		img.rightshoulder_d_red_back_b{
+		    position: absolute;
+			top:298px;			
+			left:179px;	 			
+            cursor: pointer;
+		}
+		img.rightshoulder_d_blue_back_b{
+		    position: absolute;
+			top:298px;			
+			left:628px;	 			
+            cursor: pointer;
+		}
+		
+		img.leftshoulder_d_red_back_b{
+		    position: absolute;
+			top:298px;			
+			left:284px;	 			
+            cursor: pointer;
+		}
+		img.leftshoulder_d_blue_back_b{
+		    position: absolute;
+			top:298px;			
+			left:735px;	 			
+            cursor: pointer;
+		}
+		img.chest_d_red_back_b{
+		    position: absolute;
+			top:302px;			
+			left:209px;	 			 			
+            cursor: pointer;
+		}
+		img.chest_d_blue_back_b{
+		    position: absolute;
+			top:302px;			
+			left:658px;	 			
+            cursor: pointer;
+		}
+		img.abdomen_d_red_back_b{
+		    position: absolute;
+			top:351px;			
+			left:205px;	 			
+            cursor: pointer;
+		}
+		img.abdomen_d_blue_back_b{
+		    position: absolute;
+			top:351px;			
+			left:656px;	 			
+            cursor: pointer;
+		}
+		img.lelbow_d_red_back_b{
+		    position: absolute;
+			top:344px;			
+			left:310px;	 			
+            cursor: pointer;
+		}
+		img.lelbow_d_blue_back_b{
+		    position: absolute;
+			top:344px;			
+			left:760px;	 			
+            cursor: pointer;
+		}
+		img.relbow_d_red_back_b{
+		    position: absolute;
+			top:340px;			
+			left:148px;	 			
+            cursor: pointer;
+		}
+		img.relbow_d_blue_back_b{
+		    position: absolute;
+			top:340px;			
+			left:598px;	 			
+            cursor: pointer;
+		}
+		img.lhand_d_red_back_b{
+		    position: absolute;
+			top:410px;			
+			left:343px;	 			
+            cursor: pointer;
+		}
+		img.lhand_d_blue_back_b{
+		    position: absolute;
+			top:410px;			
+			left:793px;	 			
+            cursor: pointer;
+		}
+		img.rhand_d_red_back_b{
+		    position: absolute;
+			top:410px;			
+			left:122px;	 			
+            cursor: pointer;
+		}
+		img.rhand_d_blue_back_b{
+		    position: absolute;
+			top:410px;			
+			left:572px;	 			
+            cursor: pointer;
+		}
+		img.rhip_d_red_back_b{
+		    position: absolute;
+			top:408px;			
+			left:206px;	 			
+            cursor: pointer;
+		}
+		img.rhip_d_blue_back_b{
+		    position: absolute;
+			top:408px;			
+			left:657px;	 			
+            cursor: pointer;
+		}
+		img.back_d_red_back_b{
+		    position: absolute;
+			top:410px;			
+			left:236px;	 			
+            cursor: pointer;
+		}
+		img.back_d_blue_back_b{
+		    position: absolute;
+			top:410px;			
+			left:687px;	 			
+            cursor: pointer;
+		}
+		img.lhip_d_red_back_b{
+		    position: absolute;
+			top:410px;			
+			left:260px;	 			
+            cursor: pointer;
+		}
+		img.lhip_d_blue_back_b{
+		    position: absolute;
+			top:408px;			
+			left:711px;	 			
+            cursor: pointer;
+		}
+		img.rleg_d_red_back_b{
+		    position: absolute;
+			top:487px;			
+			left:203px;	 			
+            cursor: pointer;
+		}
+		img.rleg_d_blue_back_b{
+		    position: absolute;
+			top:488px;			
+			left:653px;	 			
+            cursor: pointer;
+		}
+		img.lleg_d_red_back_b{
+		    position: absolute;
+			top:489px;			
+			left:263px;	 			
+            cursor: pointer;
+		}
+		img.lleg_d_blue_back_b{
+		    position: absolute;
+			top:488px;			
+			left:711px;	 			
+            cursor: pointer;
+		}
+		img.lfoot_d_red_back_b{
+		    position: absolute;
+			top:561px;						
+			left:263px;	 			
+            cursor: pointer;
+		}
+		img.lfoot_d_blue_back_b{
+		    position: absolute;
+			top:561px;			
+			left:716px;	 			
+            cursor: pointer;
+		}
+		img.rfoot_d_red_back_b{
+		    position: absolute;
+			top:557px;			
+			left:199px;	 			
+            cursor: pointer;
+		}
+		img.rfoot_d_blue_back_b{
+		    position: absolute;
+			top:557px;			
+			left:647px;	 			
+            cursor: pointer;
+		}
+
+		
+/*  After Exercise - Front*/
+
+		img.head_d_red_a{
+		    position: absolute;
+			top:172px;			
+			left:198px;	 			
+            cursor: pointer;
+		}
+		img.head_d_blue_a{
+		    position: absolute;
+			top:172px;			
+			left:648px;	 			
+            cursor: pointer;
+		}
+		img.rightshoulder_d_red_a{
+		    position: absolute;
+			top:302px;			
+			left:171px;	 			
+            cursor: pointer;
+		}
+		img.rightshoulder_d_blue_a{
+		    position: absolute;
+			top:302px;			
+			left:623px;	 			
+            cursor: pointer;
+		}
+		
+		img.leftshoulder_d_red_a{
+		    position: absolute;
+			top:305px;			
+			left:285px;	 			
+            cursor: pointer;
+		}
+		img.leftshoulder_d_blue_a{
+		    position: absolute;
+			top:305px;			
+			left:735px;	 			
+            cursor: pointer;
+		}
+		img.chest_d_red_a{
+		    position: absolute;
+			top:310px;			
+			left:203px;	 			
+            cursor: pointer;
+		}
+		img.chest_d_blue_a{
+		    position: absolute;
+			top:310px;			
+			left:654px;	 			
+            cursor: pointer;
+		}
+		img.abdomen_d_red_a{
+		    position: absolute;
+			top:360px;			
+			left:200px;	 			
+            cursor: pointer;
+		}
+		img.abdomen_d_blue_a{
+		    position: absolute;
+			top:360px;			
+			left:650px;	 			
+            cursor: pointer;
+		}
+		img.lelbow_d_red_a{
+		    position: absolute;
+			top:353px;			
+			left:306px;	 			
+            cursor: pointer;
+		}
+		img.lelbow_d_blue_a{
+		    position: absolute;
+			top:353px;			
+			left:757px;	 			
+            cursor: pointer;
+		}
+		img.relbow_d_red_a{
+		    position: absolute;
+			top:348px;			
+			left:139px;	 			
+            cursor: pointer;
+		}
+		img.relbow_d_blue_a{
+		    position: absolute;
+			top:348px;			
+			left:590px;	 			
+            cursor: pointer;
+		}
+		img.lhand_d_red_a{
+		    position: absolute;
+			top:425px;			
+			left:342px;	 			
+            cursor: pointer;
+		}
+		img.lhand_d_blue_a{
+		    position: absolute;
+			top:425px;			
+			left:792px;	 			
+            cursor: pointer;
+		}
+		img.rhand_d_red_a{
+		    position: absolute;
+			top:423px;			
+			left:110px;	 			
+            cursor: pointer;
+		}
+		img.rhand_d_blue_a{
+		    position: absolute;
+			top:423px;			
+			left:559px;	 			
+            cursor: pointer;
+		}
+		img.rhip_d_red_a{
+		    position: absolute;
+			top:421px;			
+			left:195px;	 			
+            cursor: pointer;
+		}
+		img.rhip_d_blue_a{
+		    position: absolute;
+			top:420px;			
+			left:643px;	 			
+            cursor: pointer;
+		}
+		img.groin_d_red_a{
+		    position: absolute;
+			top:423px;			
+			left:236px;	 			
+            cursor: pointer;
+		}
+		img.groin_d_blue_a{
+		    position: absolute;
+			top:423px;			
+			left:685px;	 			
+            cursor: pointer;
+		}
+		img.lhip_d_red_a{
+		    position: absolute;
+			top:421px;			
+			left:266px;	 			
+            cursor: pointer;
+		}
+		img.lhip_d_blue_a{
+		    position: absolute;
+			top:420px;			
+			left:713px;	 			
+            cursor: pointer;
+		}
+		img.rleg_d_red_a{
+		    position: absolute;
+			top:499px;			
+			left:190px;	 			
+            cursor: pointer;
+		}
+		img.rleg_d_blue_a{
+		    position: absolute;
+			top:499px;			
+			left:640px;	 			
+            cursor: pointer;
+		}
+		img.lleg_d_red_a{
+		    position: absolute;
+			top:501px;			
+			left:260px;	 			
+            cursor: pointer;
+		}
+		img.lleg_d_blue_a{
+		    position: absolute;
+			top:501px;			
+			left:710px;	 			
+            cursor: pointer;
+		}
+		img.lfoot_d_red_a{
+		    position: absolute;
+			top:573px;			
+			left:259px;	 			
+            cursor: pointer;
+		}
+		img.lfoot_d_blue_a{
+		    position: absolute;
+			top:573px;			
+			left:709px;	 			
+            cursor: pointer;
+		}
+		img.rfoot_d_red_a{
+		    position: absolute;
+			top:577px;			
+			left:183px;	 			
+            cursor: pointer;
+		}
+		img.rfoot_d_blue_a{
+		    position: absolute;
+			top:577px;			
+			left:634px;	 			
+            cursor: pointer;
+		}
+
+/* After Exercise - Back  */
+
+		img.head_d_red_back_a{
+		    position: absolute;
+			top:174px;			
+			left:211px;	 			
+            cursor: pointer;
+		}
+		img.head_d_blue_back_a{
+		    position: absolute;
+			top:174px;			
+			left:662px;	 			
+            cursor: pointer;
+		}
+		img.rightshoulder_d_red_back_a{
+		    position: absolute;
+			top:298px;			
+			left:179px;	 			
+            cursor: pointer;
+		}
+		img.rightshoulder_d_blue_back_a{
+		    position: absolute;
+			top:298px;			
+			left:628px;	 			
+            cursor: pointer;
+		}
+		
+		img.leftshoulder_d_red_back_a{
+		    position: absolute;
+			top:298px;			
+			left:284px;	 			
+            cursor: pointer;
+		}
+		img.leftshoulder_d_blue_back_a{
+		    position: absolute;
+			top:298px;			
+			left:735px;	 			
+            cursor: pointer;
+		}
+		img.chest_d_red_back_a{
+		    position: absolute;
+			top:302px;			
+			left:209px;	 			 			
+            cursor: pointer;
+		}
+		img.chest_d_blue_back_a{
+		    position: absolute;
+			top:302px;			
+			left:658px;	 			
+            cursor: pointer;
+		}
+		img.abdomen_d_red_back_a{
+		    position: absolute;
+			top:351px;			
+			left:205px;	 			
+            cursor: pointer;
+		}
+		img.abdomen_d_blue_back_a{
+		    position: absolute;
+			top:351px;			
+			left:656px;	 			
+            cursor: pointer;
+		}
+		img.lelbow_d_red_back_a{
+		    position: absolute;
+			top:344px;			
+			left:310px;	 			
+            cursor: pointer;
+		}
+		img.lelbow_d_blue_back_a{
+		    position: absolute;
+			top:344px;			
+			left:760px;	 			
+            cursor: pointer;
+		}
+		img.relbow_d_red_back_a{
+		    position: absolute;
+			top:340px;			
+			left:148px;	 			
+            cursor: pointer;
+		}
+		img.relbow_d_blue_back_a{
+		    position: absolute;
+			top:340px;			
+			left:598px;	 			
+            cursor: pointer;
+		}
+		img.lhand_d_red_back_a{
+		    position: absolute;
+			top:410px;			
+			left:343px;	 			
+            cursor: pointer;
+		}
+		img.lhand_d_blue_back_a{
+		    position: absolute;
+			top:410px;			
+			left:793px;	 			
+            cursor: pointer;
+		}
+		img.rhand_d_red_back_a{
+		    position: absolute;
+			top:410px;			
+			left:122px;	 			
+            cursor: pointer;
+		}
+		img.rhand_d_blue_back_a{
+		    position: absolute;
+			top:410px;			
+			left:572px;	 			
+            cursor: pointer;
+		}
+		img.rhip_d_red_back_a{
+		    position: absolute;
+			top:408px;			
+			left:206px;	 			
+            cursor: pointer;
+		}
+		img.rhip_d_blue_back_a{
+		    position: absolute;
+			top:408px;			
+			left:657px;	 			
+            cursor: pointer;
+		}
+		img.back_d_red_back_a{
+		    position: absolute;
+			top:410px;			
+			left:236px;	 			
+            cursor: pointer;
+		}
+		img.back_d_blue_back_a{
+		    position: absolute;
+			top:410px;			
+			left:687px;	 			
+            cursor: pointer;
+		}
+		img.lhip_d_red_back_a{
+		    position: absolute;
+			top:410px;			
+			left:260px;	 			
+            cursor: pointer;
+		}
+		img.lhip_d_blue_back_a{
+		    position: absolute;
+			top:408px;			
+			left:711px;	 			
+            cursor: pointer;
+		}
+		img.rleg_d_red_back_a{
+		    position: absolute;
+			top:487px;			
+			left:203px;	 			
+            cursor: pointer;
+		}
+		img.rleg_d_blue_back_a{
+		    position: absolute;
+			top:488px;			
+			left:653px;	 			
+            cursor: pointer;
+		}
+		img.lleg_d_red_back_a{
+		    position: absolute;
+			top:489px;			
+			left:263px;	 			
+            cursor: pointer;
+		}
+		img.lleg_d_blue_back_a{
+		    position: absolute;
+			top:488px;			
+			left:711px;	 			
+            cursor: pointer;
+		}
+		img.lfoot_d_red_back_a{
+		    position: absolute;
+			top:561px;						
+			left:263px;	 			
+            cursor: pointer;
+		}
+		img.lfoot_d_blue_back_a{
+		    position: absolute;
+			top:561px;			
+			left:716px;	 			
+            cursor: pointer;
+		}
+		img.rfoot_d_red_back_a{
+		    position: absolute;
+			top:557px;			
+			left:199px;	 			
+            cursor: pointer;
+		}
+		img.rfoot_d_blue_back_a{
+		    position: absolute;
+			top:557px;			
+			left:647px;	 			
+            cursor: pointer;
+		}		
+
+/////	
+		
+
+		img.j1{
+            position: absolute;
+			top:170px;			
+			left:100px;
+			width: 89px;
+            height: 121px;		                            
+            cursor: pointer;
+        }
+		img.j2{
+			position: absolute;		
+			left:189px;
+			width: 117px;
+            height: 121px;          
+			top:170px;                 
+            cursor: pointer;
+        }
+		img.j3{
+            position: absolute;
+			left:306px;
+			width: 97px;
+            height: 121px;
+			top:170px;                        
+            cursor: pointer;
+        }
+		img.j4{
+            position: absolute;
+			left:100px;			
+			width: 65px;
+            height: 41px;
+			top:291px;                        
+            cursor: pointer;
+        }
+		img.j5{
+            position: absolute;
+			left:165px;			
+			width: 62px;
+            height: 41px;
+			top:291px;                             
+            cursor: pointer;
+        }
+		img.neck1{
+            position: absolute;		
+			left:227px;
+			width: 49px;
+            height: 41px;
+			top:291px;                          
+            cursor: pointer;
+        }
+		img.j7{
+            position: absolute;
+			left:276px;			
+			width: 65px;
+            height: 41px; 
+            top:291px;			
+            cursor: pointer;
+        }
+		img.j8{
+            position: absolute;
+			left:340px;	
+			width: 62px;
+            height: 41px;
+			top:291px;                           
+            cursor: pointer;
+        }
+		img.j9{
+            position: absolute;
+			left:100px;
+			width: 37px;
+            height: 89px;
+			top:330px;                             
+            cursor: pointer;
+        }
+		img.j10{
+            position: absolute;
+			left:137px;
+			width: 64px;
+            height: 89px;
+			top:330px;                             
+            cursor: pointer;
+        }
+		img.j11{
+            position: absolute;
+			left:201px;
+			width: 105px;
+            height: 44px;
+			top:330px;                             
+            cursor: pointer;
+        }
+		img.j12{
+            position: absolute;
+			left:306px;
+			width: 71px;
+            height: 89px;
+			top:330px;                             
+            cursor: pointer;
+        }
+		img.j13{
+            position: absolute;
+			left:377px;
+			width: 26px;
+            height: 89px;
+			top:332px;                             
+            cursor: pointer;
+        }
+		img.j14{
+            position: absolute;
+			left:201px;
+			width: 105px;
+            height: 45px;
+			top:374px;                             
+            cursor: pointer;
+        }
+		img.j15{
+            position: absolute;
+			left:100px;
+			width: 81px;
+            height: 55px;
+			top:419px;                            
+            cursor: pointer;
+        }
+		img.j16{
+            position: absolute;
+			left:181px;
+			width: 20px;
+            height: 55px;
+			top:418px;                             
+            cursor: pointer;
+        }
+		img.j17{
+            position: absolute;
+			left:201px;
+			width: 41px;
+            height: 55px;
+			top:418px;                             
+            cursor: pointer;
+        }
+		img.j18{
+            position: absolute;
+			left:242px;
+			width: 20px;
+            height: 55px;
+			top:418px;                             
+            cursor: pointer;
+        }
+		img.j19{
+            position: absolute;
+			left:262px;
+			width: 38px;
+            height: 55px;
+			top:418px;                             
+            cursor: pointer;
+        }
+		img.j20{
+            position: absolute;
+			left:300px;
+			width: 26px;
+            height: 55px;
+			top:418px;                             
+            cursor: pointer;
+        }
+		img.j21{
+            position: absolute;
+			left:326px;
+			width: 77px;
+            height: 55px;
+			top:418px;                             
+            cursor: pointer;
+        }
+		img.j22{
+            position: absolute;
+			left:100px;
+			width: 81px;
+            height: 138px;
+			top:473px;                             
+            cursor: pointer;
+        }
+		img.j23{
+            position: absolute;
+			left:181px;
+			width: 71px;
+            height: 87px;
+			top:473px;                             
+            cursor: pointer;
+        }
+		img.j24{
+            position: absolute;
+			left:252px;
+			width: 61px;
+            height: 87px;
+			top:473px;                             
+            cursor: pointer;
+        }
+		img.j25{
+            position: absolute;
+			left:313px;
+			width: 13px;
+            height: 87px;
+			top:473px;                             
+            cursor: pointer;
+        }
+		img.j26{
+            position: absolute;
+			left:326px;
+			width: 77px;
+            height: 137px;
+			top:473px;                             
+            cursor: pointer;
+        }
+		img.j27{
+            position: absolute;
+			left:181px;
+			width: 71px;
+            height: 50px;
+			top:560px;                             
+            cursor: pointer;
+        }
+		img.j28{
+            position: absolute;
+			left:252px;
+			width: 74px;
+            height: 50px;
+			top:560px;                             
+            cursor: pointer;
+        }
+		
+		
+		
+		img.j29{
+            position: absolute;
+			top:170px;			
+			left:550px;
+			width: 89px;
+            height: 121px;		                            
+            cursor: pointer;
+        }
+		img.j30{
+            position: absolute;		
+			left:639px;
+			width: 117px;
+            height: 121px;          
+			top:170px;                 
+            cursor: pointer;
+        }
+		img.j31{
+            position: absolute;
+			left:756px;
+			width: 97px;
+            height: 121px;
+			top:170px;                        
+            cursor: pointer;
+        }
+		
+		
+		
+		img.j32{
+            position: absolute;
+			left:550px;			
+			width: 65px;
+            height: 41px;
+			top:291px;                        
+            cursor: pointer;
+        }
+		img.j33{
+            position: absolute;
+			left:615px;			
+			width: 62px;
+            height: 41px;
+			top:291px;                             
+            cursor: pointer;
+        }
+		img.neck2{
+            position: absolute;		
+			left:677px;
+			width: 49px;
+            height: 41px;
+			top:291px;                          
+            cursor: pointer;
+        }
+		img.j35{
+            position: absolute;
+			left:726px;			
+			width: 65px;
+            height: 41px; 
+            top:291px;			
+            cursor: pointer;
+        }
+		img.j36{
+            position: absolute;
+			left:791px;	
+			width: 62px;
+            height: 41px;
+			top:291px;                           
+            cursor: pointer;
+        }
+		
+
+		
+		img.j37{
+            position: absolute;
+			left:550px;
+			width: 37px;
+            height: 89px;
+			top:332px;                             
+            cursor: pointer;
+        }
+		img.j38{
+            position: absolute;
+			left:587px;
+			width: 64px;
+            height: 89px;
+			top:332px;                             
+            cursor: pointer;
+        }
+		img.j39{
+            position: absolute;
+			left:651px;
+			width: 105px;
+            height: 44px;
+			top:332px;                             
+            cursor: pointer;
+        }
+		img.j40{
+            position: absolute;
+			left:756px;
+			width: 71px;
+            height: 89px;
+			top:332px;                             
+            cursor: pointer;
+        }
+		img.j41{
+            position: absolute;
+			left:827px;
+			width: 26px;
+            height: 89px;
+			top:332px;                             
+            cursor: pointer;
+        }
+		img.j42{
+            position: absolute;
+			left:651px;
+			width: 105px;
+            height: 45px;
+			top:376px;                             
+            cursor: pointer;
+        }
+		
+		
+		
+		
+		
+		
+		img.j43{
+            position: absolute;
+			left:550px;
+			width: 81px;
+            height: 55px;
+			top:421px;                             
+            cursor: pointer;
+        }
+		img.j44{
+            position: absolute;
+			left:631px;
+			width: 20px;
+            height: 55px;
+			top:421px;                             
+            cursor: pointer;
+        }
+		img.j45{
+            position: absolute;
+			left:651px;
+			width: 41px;
+            height: 55px;
+			top:421px;                             
+            cursor: pointer;
+        }
+		img.j46{
+            position: absolute;
+			left:692px;
+			width: 20px;
+            height: 55px;
+			top:421px;                             
+            cursor: pointer;
+        }
+		img.j47{
+            position: absolute;
+			left:712px;
+			width: 38px;
+            height: 55px;
+			top:421px;                             
+            cursor: pointer;
+        }
+		img.j48{
+            position: absolute;
+			left:750px;
+			width: 26px;
+            height: 55px;
+			top:421px;                             
+            cursor: pointer;
+        }
+		img.j49{
+            position: absolute;
+			left:776px;
+			width: 77px;
+            height: 55px;
+			top:421px;                             
+            cursor: pointer;
+        }
+		
+		
+		
+		
+		
+		img.j50{
+            position: absolute;
+			left:550px;
+			width: 81px;
+            height: 138px;
+			top:476px;                             
+            cursor: pointer;
+        }
+		img.j51{
+            position: absolute;
+			left:631px;
+			width: 71px;
+            height: 87px;
+			top:476px;                             
+            cursor: pointer;
+        }
+		img.j52{
+            position: absolute;
+			left:702px;
+			width: 61px;
+            height: 87px;
+			top:476px;                             
+            cursor: pointer;
+        }
+		img.j53{
+            position: absolute;
+			left:763px;
+			width: 13px;
+            height: 87px;
+			top:476px;                             
+            cursor: pointer;
+        }
+		img.j54{
+            position: absolute;
+			left:776px;
+			width: 77px;
+            height: 137px;
+			top:476px;                             
+            cursor: pointer;
+        }
+		
+		
+		img.j55{
+            position: absolute;
+			left:631px;
+			width: 71px;
+            height: 50px;
+			top:563px;                             
+            cursor: pointer;
+        }
+		img.j56{
+            position: absolute;
+			left:702px;
+			width: 74px;
+            height: 50px;
+			top:563px;                             
+            cursor: pointer;
+        }
+		
+		/* Daily_Pain Affect */	
+		img.j57{
+			position: absolute;		
+			left:800px;
+			width: 117px;
+            height: 121px;          
+			top:170px;                 
+            cursor: pointer;
+        }		
+		img.j58{
+			position: absolute;		
+			left:650px;
+			width: 117px;
+            height: 121px;          
+			top:170px;                 
+            cursor: pointer;
+        }
+		img.j59{
+			position: absolute;		
+			left:500px;
+			width: 117px;
+            height: 121px;          
+			top:170px;                 
+            cursor: pointer;
+        }
+		img.j60{
+			position: absolute;		
+			left:350px;
+			width: 117px;
+            height: 121px;          
+			top:170px;                 
+            cursor: pointer;
+        }		
+		img.j61{
+			position: absolute;		
+			left:200px;
+			width: 117px;
+            height: 121px;          
+			top:350px;                 
+            cursor: pointer;
+        }
+		img.j62{
+			position: absolute;		
+			left:350px;
+			width: 117px;
+            height: 121px;          
+			top:470px;                 
+            cursor: pointer;
+        }
+		img.j63{
+			position: absolute;		
+			left:500px;
+			width: 117px;
+            height: 121px;          
+			top:470px;                 
+            cursor: pointer;
+        }
+		img.j64{
+			position: absolute;		
+			left:650px;
+			width: 117px;
+            height: 121px;          
+			top:470px;                 
+            cursor: pointer;
+        }
+		img.j65{
+			position: absolute;		
+			left:800px;
+			width: 117px;
+            height: 121px;          
+			top:470px;                 
+            cursor: pointer;
+        }
+		
+		/*Daily_ Body locations - Back */
+		img.j66{
+            position: absolute;
+			top:170px;			
+			left:100px;		                            
+            cursor: pointer;
+        }
+		img.j67{
+			position: absolute;		
+			left:190px;          
+			top:170px;                 
+            cursor: pointer;
+        }
+		img.j68{
+            position: absolute;
+			left:322px;
+			top:170px;                        
+            cursor: pointer;
+        }
+		img.j69{
+            position: absolute;
+			left:100px;			
+			top:288px;                        
+            cursor: pointer;
+        }
+		img.j70{
+            position: absolute;
+			left:239px;			
+			top:288px;                             
+            cursor: pointer;
+        }
+		img.j71{
+            position: absolute;		
+			left:275px;
+			top:288px;                          
+            cursor: pointer;
+        }
+		img.j72{
+            position: absolute;
+			left:100px;			 
+            top:327px;			
+            cursor: pointer;
+        }
+		img.j73{
+            position: absolute;
+			left:207px;	
+			top:327px;                           
+            cursor: pointer;
+        }
+		img.j74{
+            position: absolute;
+			left:306px;
+			top:327px;                             
+            cursor: pointer;
+        }
+		img.j75{
+            position: absolute;
+			left:207px;
+			top:372px;                             
+            cursor: pointer;
+        }
+		img.j76{
+            position: absolute;
+			left:100px;
+			top:408px;                             
+            cursor: pointer;
+        }
+		img.j77{
+            position: absolute;
+			left:190px;
+			top:408px;                             
+            cursor: pointer;
+        }
+		img.j78{
+            position: absolute;
+			left:239px;
+			top:408px;                             
+            cursor: pointer;
+        }
+		img.j79{
+            position: absolute;
+			left:275px;
+			top:408px;                             
+            cursor: pointer;
+        }
+		img.j80{
+            position: absolute;
+			left:332px;
+			top:408px;                             
+            cursor: pointer;
+        }
+		img.j81{
+            position: absolute;
+			left:190px;
+			top:487px;                             
+            cursor: pointer;
+        }
+		img.j82{
+            position: absolute;
+			left:252px;
+			top:487px;                             
+            cursor: pointer;
+        }
+		img.j83{
+            position: absolute;
+			left:190px;
+			top:562px;                             
+            cursor: pointer;
+        }
+		img.j84{
+            position: absolute;
+			left:252px;
+			top:562px;                             
+            cursor: pointer;
+        }
+		
+
+		/* Before_Pain Affect */	
+		img.j85{
+			position: absolute;		
+			left:800px;         
+			top:170px; 
+			width: 117px;
+            height: 121px; 			
+            cursor: pointer;
+        }		
+		img.j86{
+			position: absolute;		
+			left:650px;
+			width: 117px;
+            height: 121px;          
+			top:170px;                 
+            cursor: pointer;
+        }
+		img.j87{
+			position: absolute;		
+			left:500px;
+			width: 117px;
+            height: 121px;          
+			top:170px;                 
+            cursor: pointer;
+        }
+		img.j88{
+			position: absolute;		
+			left:350px;
+			width: 117px;
+            height: 121px;          
+			top:170px;                 
+            cursor: pointer;
+        }		
+		img.j89{
+			position: absolute;		
+			left:200px;
+			width: 117px;
+            height: 121px;          
+			top:350px;                 
+            cursor: pointer;
+        }
+		img.j90{
+			position: absolute;		
+			left:350px;
+			width: 117px;
+            height: 121px;          
+			top:470px;                 
+            cursor: pointer;
+        }
+		img.j91{
+			position: absolute;		
+			left:500px;
+			width: 117px;
+            height: 121px;          
+			top:470px;                 
+            cursor: pointer;
+        }
+		img.j92{
+			position: absolute;		
+			left:650px;
+			width: 117px;
+            height: 121px;          
+			top:470px;                 
+            cursor: pointer;
+        }
+		img.j93{
+			position: absolute;		
+			left:800px;
+			width: 117px;
+            height: 121px;          
+			top:470px;                 
+            cursor: pointer;
+        }
+		
+		/* After_Pain Affect */	
+		img.j94{
+			position: absolute;		
+			left:800px;         
+			top:170px; 
+			width: 117px;
+            height: 121px; 			
+            cursor: pointer;
+        }		
+		img.j95{
+			position: absolute;		
+			left:650px;
+			width: 117px;
+            height: 121px;          
+			top:170px;                 
+            cursor: pointer;
+        }
+		img.j96{
+			position: absolute;		
+			left:500px;
+			width: 117px;
+            height: 121px;          
+			top:170px;                 
+            cursor: pointer;
+        }
+		img.j97{
+			position: absolute;		
+			left:350px;
+			width: 117px;
+            height: 121px;          
+			top:170px;                 
+            cursor: pointer;
+        }		
+		img.j98{
+			position: absolute;		
+			left:200px;
+			width: 117px;
+            height: 121px;          
+			top:350px;                 
+            cursor: pointer;
+        }
+		img.j99{
+			position: absolute;		
+			left:350px;
+			width: 117px;
+            height: 121px;          
+			top:470px;                 
+            cursor: pointer;
+        }
+		img.j100{
+			position: absolute;		
+			left:500px;
+			width: 117px;
+            height: 121px;          
+			top:470px;                 
+            cursor: pointer;
+        }
+		img.j101{
+			position: absolute;		
+			left:650px;
+			width: 117px;
+            height: 121px;          
+			top:470px;                 
+            cursor: pointer;
+        }
+		img.j102{
+			position: absolute;		
+			left:800px;
+			width: 117px;
+            height: 121px;          
+			top:470px;                 
+            cursor: pointer;
+        }
+		
+		
+		
+/*............ */
+
+		.affect1{
+			position:absolute;
+            top:280px;
+            left:800px;
+		}
+		.affect2{
+			position:absolute;
+            top:580px;
+            left:800px;
+		}
+		.left1{
+		    position:absolute;
+            top:0px;
+            left:180px;
+        }
+		.right1{
+		    position:absolute;
+            top:0px;
+            left:880px;
+        }
+		.left2{
+		    position:absolute;
+            top:0px;
+            left:90px;
+        }
+		.right2{
+		    position:absolute;
+            top:0px;
+            left:880px;
+        }
+		.left3{
+		    position:absolute;
+            top:0px;
+            left:130px;
+        }
+		.right3{
+		    position:absolute;
+            top:0px;
+            left:880px;
+        }
+        .left4{
+		    position:absolute;
+            top:0px;
+            left:160px;
+        }
+		.right4{
+		    position:absolute;
+            top:0px;
+            left:880px;
+        }
+        .left5{
+		    position:absolute;
+            top:0px;
+            left:160px;
+        }
+		.right5{
+		    position:absolute;
+            top:0px;
+            left:880px;
+        }
+        .left6{
+		    position:absolute;
+            top:0px;
+            left:130px;
+        }
+		.right6{
+		    position:absolute;
+            top:0px;
+            left:880px;
+        }
+        .left7{
+		    position:absolute;
+            top:0px;
+            left:130px;
+        }
+		.right7{
+		    position:absolute;
+            top:0px;
+            left:880px;
+        }
+        .left8{
+		    position:absolute;
+            top:0px;
+            left:130px;
+        }
+		.right8{
+		    position:absolute;
+            top:0px;
+            left:880px;
+        }
+        .left {
+			position:absolute;
+            top:40px;
+            left:370px;
+        }
+        .right {
+			position:absolute;
+            top:40px;
+            left:800px;
+        }
+		
+		.daily_front_1 {
+		    position:absolute;
+            top:100px;
+            left:90px;
+        }
+
+        .daily_front_2 {
+			position:absolute;
+            top:100px;
+            left:540px;
+        }
+				
+        .daily_back_1 {
+		    position:absolute;
+            top:100px;
+            left:90px;
+        }
+
+        .daily_back_2 {
+			position:absolute;
+            top:100px;
+            left:540px;
+        }
+		.before_front_1 {
+		    position:absolute;
+            top:100px;
+            left:90px;
+        }
+        .before_front_2 {
+			position:absolute;
+            top:100px;
+            left:540px;
+        }
+		.before_back_1 {
+		    position:absolute;
+            top:100px;
+            left:90px;
+        }
+
+        .before_back_2 {
+			position:absolute;
+            top:100px;
+            left:540px;
+        }
+		.after_front_1 {
+		    position:absolute;
+            top:100px;
+            left:90px;
+        }
+        .after_front_2 {
+			position:absolute;
+            top:100px;
+            left:540px;
+        }
+		.after_back_1 {
+		    position:absolute;
+            top:100px;
+            left:90px;
+        }
+
+        .after_back_2 {
+			position:absolute;
+            top:100px;
+            left:540px;
+        }
+		
+		/* 16px 41px */
+		.ui-header {
+		    height: 70px;   
+		}
+		.ui-header .ui-title {
+		    font-size: 2em;   
+		}		     
+		.ui-footer {
+		    height: 70px;   
+		}
+	    .ui-footer .ui-title{
+		   font-size: 2em;   
+		}						
+		.ui-btn-text{
+		   font-size: 1.5em; 
+		}
+		.ui-link{
+		    position:absolute;
+			top:500px;
+		    right:70px;
+		}
+		
+		.start{
+		   position:absolute;
+		   top:250px;
+		   left:0px;
+		   right:600px;
+		   height: 700px;
+		   width: 700px;
+		}
+		.team{
+		   position:absolute;
+		   top:230px;
+		   left:700px;
+		   right:300px;
+		   height: 700px;
+		   width: 700px;
+		}
+		.text_start{
+		   position: absolute;
+		   top:330px;
+		   left:0px;
+		   right:600px;
+		}
+		.text_team{
+		   position: absolute;
+		   top:330px;
+		   left:770px;
+		   right:0px;
+		}
+				
+		.ui-dialog .ui-header .ui-btn-icon-notext { 		
+			display:none;
+	    }
+		
+	/*	.ui-body-a .ui-dialog .ui-overlay-a{
+		
+			background-color: #36352D;
+		}
+    */
+	
+	/*	.ui-page .ui-body-a,.ui-overlay-a{
+			background: gray;
+		}
+	*/	
+		
+		.ui-dialog-contain {
+		    background: #fcf3c4;
+			width: 100.5%;
+			max-width: 600px;
+			margin: 10% auto 15px auto;
+			padding: 0;
+			position: relative;
+			top: -15px;
+		}
+	
+		input.ui-slider-input{
+		   display: none !important;
+		}
+		#grid1{
+		   position: absolute;
+		   top:100px;
+		   left:210px;
+		   right:0px;
+		}		
+		#grid2{
+		   position: absolute;
+		   top:100px;
+		   left:850px;
+		   right:0px;
+		}
+		#grid3{
+		   position: absolute;
+		   top:400px;
+		   left:210px;
+		   right:0px;
+		}
+		#grid4{
+		   position: absolute;
+		   top:400px;
+		   left:850px;
+		   right:0px;
+		}
+		
+		
+		
+		
+		
+		
+		

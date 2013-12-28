@@ -1,0 +1,4144 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="css/my-custom-theme.min.css"/>
+<link rel="stylesheet" href="css/structure.css" />
+
+
+<script type="text/javascript" src="js/jquery.js"></script> 
+<!--<script type="text/javascript" src="js/jquery.mobile.js"></script>-->
+<script type="text/javascript" src="js/jquery.mobile-1.2.0.js"></script>
+<script type="text/javascript" charset="utf-8" src="phonegap-1.4.1.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<script type="text/javascript" charset="utf-8" src="js/myJavascript.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+
+</script>
+</head>
+
+
+<body onload="init()">
+
+<div data-role="page" id="start" data-theme="a">
+    <div data-role="header">
+		<h1>Pain Diary</h1>
+	</div>
+	<div data-role="content">
+	        <br></br>
+			<br></br>
+			<br></br>
+			<br></br>
+			<center>
+			<a href="#page1" class="start" data-transition="slide"><img src="images/start_1.png"></a>
+			<a href="#developers" class="team" data-transition="slide"><img src="images/group.png"></a>
+			<p class="text_start" style="font-size:30pt; color:#856c2e">Start</p>
+			<p class="text_team" style="font-size:30pt; color:#856c2e">Team</p>
+            </center>			
+	
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h1><i>PInGo Pain Diary &copy; 2012</i></h1>
+	</div>
+
+</div>
+
+		 		
+<div data-role="page" id="developers" data-theme="a">
+    <div data-role="header"><h1>Developer's Site</h1>
+		<a href="#start" style="font-size: 50pt"  data-icon="gear"  data-rel="back" >Menu</a>	
+	</div>
+	<div data-role="content">
+			 		 		
+					
+			 		
+			<div class="ui-grid-a">
+					<div class="ui-block-a">
+							<img class="rahnuma" src="images/developers/rahnuma4.png">	
+							<div id="grid1" >
+									<p class="developer1_text" >									
+										<ul><b>Rahnuma Kazi</b><br/><br/>
+									    MSc. Student <br />
+										110 Science Place<br />
+										Department of Computer Science <br>
+										Saskatoon, Saskatchewan S7N 5C9<br />										
+										Email: ksr494@mail.usask.ca<br />
+									</p>
+							</div>
+										
+					</div>
+					
+					<div class="ui-block-b">
+							<img class="susan" src="images/developers/susan1.png">	
+							<div id="grid2" >
+									<p class="developer2_text" >									
+										<ul><b>Susan Tupper, PT, PhD</b><br/><br/>
+									    School of Physical Therapy <br />
+										University of Saskatchewan<br />
+										Photo courtesy of Saskatchewan Health Research Foundation <br>
+									</p>
+							</div>
+					</div>
+			</div> <!--ui-grid-a-->
+			<div class="ui-grid-a">
+					<div class="ui-block-a">
+					
+							<br></br> 
+							<br></br> 
+					
+							<img class="ralph" src="images/developers/team.png">	
+							<div id="grid3">
+
+									<p class="developer3_text" >									
+										<ul><b>Deters, Ralph, Ph.D.</b><br/><br/>
+										Faculty<br/>
+										110 Science Place<br />
+										Department of Computer Science <br>
+										Saskatoon, Saskatchewan S7N 5C9<br />										
+										Email: deters@cs.usask.ca<br />
+									</p>
+							</div>
+					</div>
+					
+					<div class="ui-block-b">
+							 <br></br> 
+							 <br></br> 
+							<img class="van" src="images/developers/van1.png">	
+							<div id="grid4" >
+									<p class="developer4_text" >									
+										<ul><b>Cameron Van Oort</b><br/><br/>
+									   Hello all! I am a master&#39;s student at the University <br/> of Saskatchewan doing 
+
+										research on the effects of exercise in juvenile arthritis patients. I come from 
+
+										Ontario where I did my undergraduate degree in kinesiology at McMaster University. 
+
+										When I am not doing research, I enjoy playing sports, being <br/> outdoors, listening to 
+
+										music, or strumming on the guitar. I hope you enjoy the app! <br />
+
+									</p>
+							</div>
+					</div>
+			</div><!--ui-grid-a-->
+
+
+		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h1><i>PInGo Pain Diary &copy; 2012</i></h1>
+	</div>
+
+</div>
+
+
+
+<div data-role="page" id="page1" data-theme="a">
+
+    <div data-role="header">
+		<h1>Exercises</h1>
+	</div>
+			
+    
+	<div id="content">
+	       <br></br>
+           <br></br>
+           <br></br>
+           <br></br>
+		<img class="smily_star" src="images/Button_Everyday.png"><a href="#page2" onClick="createTableforDaily()" class="daily_exercise" data-inline="true"  data-theme="a" data-transition="slide"></a>
+		<img class="hp_fav_star" src="images/Button_Before_Excercise.png"><a href="#page16" onClick="createTableforBefore()" class="before_exercise" data-inline="true"  data-theme="a" data-transition="slide"></a>
+		<img class="star_half" src="images/Button_After_Excercise.png"><a href="#page26" onClick="createTableforAfter()" class="after_exercise" data-inline="true"  data-theme="a" data-transition="slide"></a>		
+
+	</div> 
+	
+	<div data-role="footer" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>
+	</div>
+
+</div> <!--Page 1-->
+
+
+<div data-role="page" id="message" data-theme="a">
+    <div data-role="header">
+		<h1>Message</h1>
+	</div>
+   
+   <div data-role="content" id="view">     
+   		<p><a href="#page1" data-direction="reverse" data-theme="a" data-role="button" data-icon="back" data-theme="b">Back to previous page</a></p>
+   </div>
+   
+</div> <!--Message-->
+
+
+
+<div data-role="page" id="page2" data-theme="a">
+     <div data-role="header">
+	     <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	
+	     <h1>Body Location: Front</h1> 
+	 </div>
+	 
+	 <div data-role="content" >
+
+	<div class="ui-grid-a">
+			<div class="ui-block-a">
+			
+			   <p class="daily_front_1">Places I have pain RIGHT NOW</p>
+				<div class="front1">		
+					<center><img src="images/Front_1.png" class="front_1" alt="" border="0" usemap="#Map"/>
+					<map name="Map">
+				  
+					<area shape="poly" coords="178,14,188,16,198,21,204,29,204,37,204,44,203,52,200,60,198,67,195,73,202,75,203,83,201,88,196,91,189,90,190,98,185,104,179,109,172,111,160,115,148,113,138,113,131,107,125,100,123,90,117,90,115,84,112,77,118,72,113,63,112,51,113,38,117,26,127,15,144,10,160,4" href="javascript:headFrontDaily_1()" alt="head">
+						   
+	<!-- undone-->	<area shape="poly" coords="138,115,148,115,159,115,172,113,175,112,173,124,138,125,138,115" href="javascript:()" alt="neck">
+				   
+					<area shape="poly" coords="157,123,199,182,231,166,228,154,225,142,210,134,192,128,180,124,157,124" href="javascript:lShdFrontDaily_1()" alt="left shoulder">
+					
+					<area shape="poly" coords="158,126,111,186,78,171,82,163,82,154,85,142,98,136,117,131,134,126,158,125" href="javascript:rShdFrontDaily_1()" alt="right shoulder">
+					
+					<area shape="poly" coords="158,131,195,182,114,188,158,133" href="javascript:chestFrontDaily_1()" alt="chest">
+							
+					<area shape="poly" coords="111,192,201,187,201,201,201,216,201,235,183,236,159,238,136,235,116,236,112,213,110,191" href="javascript:abdomenFrontDaily_1()" alt="abdomen">
+					
+					<area shape="poly" coords="208,184,233,170,237,188,241,210,253,223,262,235,266,241,244,252,234,241,225,228,219,220,214,202,209,184" href="javascript:lElbowFrontDaily_1()" alt="left elbow">
+					
+					<area shape="poly" coords="77,174,102,186,98,210,94,220,87,230,81,241,77,249,70,252,50,238,59,224,69,214,74,194,77,174" href="javascript:rElbowFrontDaily_1()" alt="right elbow">
+
+					<area shape="poly" coords="243,271,267,254,275,256,284,258,289,263,294,270,294,274,291,274,280,272,277,274,282,280,290,286,287,292,285,297,280,300,272,300,264,300,256,296,250,290,246,283,244,271" href="javascript:lHandFrontDaily_1()" alt="left hand">
+					
+					<area shape="poly" coords="34,253,56,271,55,281,50,289,45,296,39,299,26,300,17,299,13,294,12,288,17,281,23,279,22,271,16,272,11,275,8,270,10,264,14,259,26,254,34,253" href="javascript:rHandFrontDaily_1()" alt="right hand">
+
+					<area shape="poly" coords="115,242,127,240,143,241,141,254,139,264,138,277,140,287,145,297,146,312,145,323,108,310,108,293,110,272,114,242" href="javascript:rHipFrontDaily_1()" alt="right hip">
+					
+					<area shape="poly" coords="149,243,170,242,172,253,173,272,170,288,163,302,152,303,145,292,143,278,144,261,149,245" href="javascript:groinFrontDaily_1()" alt="groin">
+									
+					<area shape="poly" coords="164,256,170,269,173,281,173,296,170,307,162,317,162,333,165,347,204,340,201,321,200,304,197,288,194,271,194,254,166,257" href="javascript:lHipFrontDaily_1()" alt="left hip">
+								
+					<area shape="poly" coords="95,330,141,347,141,364,142,381,142,395,141,408,103,408,99,389,94,370,92,357,95,332" href="javascript:rLegFrontDaily_1()" alt="right leg">
+					
+					<area shape="poly" coords="166,351,204,344,208,355,208,366,203,387,199,403,198,411,162,405,164,382,165,362,166,351" href="javascript:lLegFrontDaily_1()" alt="left leg">
+					
+					<area shape="poly" coords="162,407,197,413,195,422,204,426,208,431,209,439,195,440,179,440,166,440,157,437,157,428,160,420,161,408" href="javascript:lFootFrontDaily_1()" alt="left foot">
+					
+					<area shape="poly" coords="104,409,139,411,140,420,141,428,138,434,136,438,119,438,101,438,88,438,84,436,86,430,97,424,107,421,105,410" href="javascript:rFootFrontDaily_1()" alt="right foot">
+
+					</map>
+				</center>
+              </div>
+				<img id="head_d_red" class="head_d_red" src="images/transperant/daily/head_front_red.png" onClick="headFrontDaily_2()"/>
+				<img id="rightshoulder_d_red" class="rightshoulder_d_red" src="images/transperant/daily/right_shoulder_red.png" onClick="rShdFrontDaily_2()"/>
+				<img id="leftshoulder_d_red" class="leftshoulder_d_red" src="images/transperant/daily/left_shoulder_red.png" onClick="lShdFrontDaily_2()"/>
+				<img id="chest_d_red" class="chest_d_red" src="images/transperant/daily/chest_red.png" onClick="chestFrontDaily_2()"/>
+			    <img id="abdomen_d_red" class="abdomen_d_red" src="images/transperant/daily/abdomen_red.png" onClick="abdomenFrontDaily_2()"/>
+		        <img id="lelbow_d_red" class="lelbow_d_red" src="images/transperant/daily/left_elbow_red.png" onClick="lElbowFrontDaily_2()"/>
+				<img id="relbow_d_red" class="relbow_d_red" src="images/transperant/daily/right_elbow_red.png" onClick="rElbowFrontDaily_2()"/>
+				<img id="lhand_d_red" class="lhand_d_red" src="images/transperant/daily/left_hand_red.png" onClick="lHandFrontDaily_2()"/>
+				<img id="rhand_d_red" class="rhand_d_red" src="images/transperant/daily/right_hand_red.png" onClick="rHandFrontDaily_2()"/>
+				<img id="rhip_d_red" class="rhip_d_red" src="images/transperant/daily/right_hip_red.png" onClick="rHipFrontDaily_2()"/>
+				<img id="groin_d_red" class="groin_d_red" src="images/transperant/daily/groin_red.png" onClick="groinFrontDaily_2()"/>
+				<img id="lhip_d_red" class="lhip_d_red" src="images/transperant/daily/left_thigh_red.png" onClick="lHipFrontDaily_2()"/>
+				<img id="rleg_d_red" class="rleg_d_red" src="images/transperant/daily/right_leg_red.png" onClick="rLegFrontDaily_2()"/>
+				<img id="lleg_d_red" class="lleg_d_red" src="images/transperant/daily/left_leg_red.png" onClick="lLegFrontDaily_2()"/>
+				<img id="lfoot_d_red" class="lfoot_d_red" src="images/transperant/daily/left_foot_red.png" onClick="lFootFrontDaily_2()"/>
+				<img id="rfoot_d_red" class="rfoot_d_red" src="images/transperant/daily/right_foot_red.png" onClick="rFootFrontDaily_2()"/>
+			</div>	<!--ui-block-a-->		
+			
+			<div class="ui-block-b">				
+			   <p class="daily_front_2">All places I had pain TODAY</p>
+				
+				 <div class="front2">
+				 
+				   <center><img src="images/Front_1_Copy.png" class="front_2" alt="" border="0" usemap="#Map1"/>
+				   <map name="Map1">
+				  
+					<area shape="poly" coords="178,14,188,16,198,21,204,29,204,37,204,44,203,52,200,60,198,67,195,73,202,75,203,83,201,88,196,91,189,90,190,98,185,104,179,109,172,111,160,115,148,113,138,113,131,107,125,100,123,90,117,90,115,84,112,77,118,72,113,63,112,51,113,38,117,26,127,15,144,10,160,4" href="javascript:headFrontDaily_3()" alt="head">
+						   
+	   <!--undone--><area shape="poly" coords="138,115,148,115,159,115,172,113,175,112,173,124,138,125,138,115" href="javascript:()" alt="neck">
+				   
+					<area shape="poly" coords="157,123,199,182,231,166,228,154,225,142,210,134,192,128,180,124,157,124" href="javascript:lShdFrontDaily_3()" alt="left shoulder">
+					
+					<area shape="poly" coords="158,126,111,186,78,171,82,163,82,154,85,142,98,136,117,131,134,126,158,125" href="javascript:rShdFrontDaily_3()" alt="right shoulder">
+					
+					<area shape="poly" coords="158,131,195,182,114,188,158,133" href="javascript:chestFrontDaily_3()" alt="chest">
+							
+					<area shape="poly" coords="111,192,201,187,201,201,201,216,201,235,183,236,159,238,136,235,116,236,112,213,110,191" href="javascript:abdomenFrontDaily_3()" alt="abdomen">
+					
+					<area shape="poly" coords="208,184,233,170,237,188,241,210,253,223,262,235,266,241,244,252,234,241,225,228,219,220,214,202,209,184" href="javascript:lElbowFrontDaily_3()" alt="left elbow">
+					
+					<area shape="poly" coords="77,174,102,186,98,210,94,220,87,230,81,241,77,249,70,252,50,238,59,224,69,214,74,194,77,174" href="javascript:rElbowFrontDaily_3()" alt="right elbow">
+
+					<area shape="poly" coords="243,271,267,254,275,256,284,258,289,263,294,270,294,274,291,274,280,272,277,274,282,280,290,286,287,292,285,297,280,300,272,300,264,300,256,296,250,290,246,283,244,271" href="javascript:lHandFrontDaily_3()" alt="left hand">
+					
+					<area shape="poly" coords="34,253,56,271,55,281,50,289,45,296,39,299,26,300,17,299,13,294,12,288,17,281,23,279,22,271,16,272,11,275,8,270,10,264,14,259,26,254,34,253" href="javascript:rHandFrontDaily_3()" alt="right hand">
+					
+					<area shape="poly" coords="115,242,127,240,143,241,141,254,139,264,138,277,140,287,145,297,146,312,145,323,108,310,108,293,110,272,114,242" href="javascript:rHipFrontDaily_3()" alt="right hip">
+					
+					<area shape="poly" coords="149,243,170,242,172,253,173,272,170,288,163,302,152,303,145,292,143,278,144,261,149,245" href="javascript:groinFrontDaily_3()" alt="groin">
+									
+					<area shape="poly" coords="164,256,170,269,173,281,173,296,170,307,162,317,162,333,165,347,204,340,201,321,200,304,197,288,194,271,194,254,166,257" href="javascript:lHipFrontDaily_3()" alt="left hip">
+					
+					<area shape="poly" coords="95,330,141,347,141,364,142,381,142,395,141,408,103,408,99,389,94,370,92,357,95,332" href="javascript:rLegFrontDaily_3()" alt="right leg">
+					
+					<area shape="poly" coords="166,351,204,344,208,355,208,366,203,387,199,403,198,411,162,405,164,382,165,362,166,351" href="javascript:lLegFrontDaily_3()" alt="left leg">
+					
+					<area shape="poly" coords="162,407,197,413,195,422,204,426,208,431,209,439,195,440,179,440,166,440,157,437,157,428,160,420,161,408" href="javascript:lFootFrontDaily_3()" alt="left foot">
+					
+					<area shape="poly" coords="104,409,139,411,140,420,141,428,138,434,136,438,119,438,101,438,88,438,84,436,86,430,97,424,107,421,105,410" href="javascript:rFootFrontDaily_3()" alt="right foot">
+			   
+				  </map>
+				</center>
+				
+				</div>
+				
+			   <img id="head_d_blue" class="head_d_blue" src="images/transperant/daily/head_front_blue.png" onClick="headFrontDaily_4()"/>
+			   <img id="rightshoulder_d_blue" class="rightshoulder_d_blue" src="images/transperant/daily/right_shoulder_blue.png" onClick="rShdFrontDaily_4()"/>
+			   <img id="leftshoulder_d_blue" class="leftshoulder_d_blue" src="images/transperant/daily/left_shoulder_blue.png" onClick="lShdFrontDaily_4()"/>
+			   <img id="chest_d_blue" class="chest_d_blue" src="images/transperant/daily/chest_blue.png" onClick="chestFrontDaily_4()"/>
+		       <img id="abdomen_d_blue" class="abdomen_d_blue" src="images/transperant/daily/abdomen_blue.png" onClick="abdomenFrontDaily_4()"/>
+			   <img id="lelbow_d_blue" class="lelbow_d_blue" src="images/transperant/daily/left_elbow_blue.png" onClick="lElbowFrontDaily_4()"/>
+			   <img id="relbow_d_blue" class="relbow_d_blue" src="images/transperant/daily/right_elbow_blue.png" onClick="rElbowFrontDaily_4()"/>
+			   <img id="lhand_d_blue" class="lhand_d_blue" src="images/transperant/daily/left_hand_blue.png" onClick="lHandFrontDaily_4()"/>
+			   <img id="rhand_d_blue" class="rhand_d_blue" src="images/transperant/daily/right_hand_blue.png" onClick="rHandFrontDaily_4()"/>
+			   <img id="rhip_d_blue" class="rhip_d_blue" src="images/transperant/daily/right_hip_blue.png" onClick="rHipFrontDaily_4()"/>
+			   <img id="groin_d_blue" class="groin_d_blue" src="images/transperant/daily/groin_blue.png" onClick="groinFrontDaily_4()"/>
+			   <img id="lhip_d_blue" class="lhip_d_blue" src="images/transperant/daily/left_thigh_blue.png" onClick="lHipFrontDaily_4()"/>
+			   <img id="rleg_d_blue" class="rleg_d_blue" src="images/transperant/daily/right_leg_blue.png" onClick="rLegFrontDaily_4()"/>
+			   <img id="lleg_d_blue" class="lleg_d_blue" src="images/transperant/daily/left_leg_blue.png" onClick="lLegFrontDaily_4()"/>
+			   <img id="lfoot_d_blue" class="lfoot_d_blue" src="images/transperant/daily/left_foot_blue.png" onClick="lFootFrontDaily_4()"/>
+			   <img id="rfoot_d_blue" class="rfoot_d_blue" src="images/transperant/daily/right_foot_blue.png" onClick="rFootFrontDaily_4()"/>
+				
+			</div> <!--ui-block-b-->	
+		</div> <!--ui-grid-a-->
+		
+			<div id="div_p2">
+					<center><p class="no_pain_text_p2">No pain on the front</p></center>
+					<center><a href="#" class="no_pain_p2" data-inline="true" data-role="button" data-theme="a" >No Pain</a></center>
+		    </div>	
+					 <p align="right" id="next_page2">
+						<!--   <a href="#page4" data-role="button" data-icon="forward" data-iconpos="right" data-theme="a" class="ui-btn-right">Next</a> -->
+						   <a href="#page3" data-transition="slide"><img src="images/next.png"></a>
+					 </p>
+			 
+	</div> <!-- content-->
+	       			  
+	<div data-role="footer" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>
+	</div>		
+
+	
+</div>
+
+
+
+<div data-role="page" id="page3" data-theme="a">
+     <div data-role="header">
+	     <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	
+	     <h1>Body Location: Back</h1> 
+	 </div>
+
+
+
+	 <div data-role="content" >		
+		
+		<div class="ui-grid-a">
+			<div class="ui-block-a">				
+			   <p class="daily_back_1">Places I have pain RIGHT NOW</p>
+			  
+			<div class="back1">
+				<center><img src="images/Back_1.png" class="back_1" alt="" border="0" usemap="#Mapback"/>
+				<map name="Mapback">
+				  
+					<area shape="poly" coords="178,14,188,16,198,21,204,29,204,37,204,44,203,52,200,60,198,67,195,73,202,75,203,83,201,88,196,91,189,90,190,98,185,104,179,109,172,111,160,115,148,113,138,113,131,107,125,100,123,90,117,90,115,84,112,77,118,72,113,63,112,51,113,38,117,26,127,15,144,10,160,4" href="javascript:headBackDaily_1()" alt="head">
+						   
+					<area shape="poly" coords="138,115,148,115,159,115,172,113,175,112,173,124,138,125,138,115" href="javascript:()" alt="neck">
+				   
+					<area shape="poly" coords="157,123,199,182,231,166,228,154,225,142,210,134,192,128,180,124,157,124" href="javascript:lShdBackDaily_1()" alt="left shoulder">
+					
+					<area shape="poly" coords="158,126,111,186,78,171,82,163,82,154,85,142,98,136,117,131,134,126,158,125" href="javascript:rShdBackDaily_1()" alt="right shoulder">
+					
+					<area shape="poly" coords="158,131,195,182,114,188,158,133" href="javascript:chestBackDaily_1()" alt="chest">
+							
+					<area shape="poly" coords="111,192,201,187,201,201,201,216,201,235,183,236,159,238,136,235,116,236,112,213,110,191" href="javascript:abdomenBackDaily_1()" alt="abdomen">
+					
+					<area shape="poly" coords="208,184,233,170,237,188,241,210,253,223,262,235,266,241,244,252,234,241,225,228,219,220,214,202,209,184" href="javascript:lElbowBackDaily_1()" alt="left elbow">
+					
+					<area shape="poly" coords="77,174,102,186,98,210,94,220,87,230,81,241,77,249,70,252,50,238,59,224,69,214,74,194,77,174" href="javascript:rElbowBackDaily_1()" alt="right elbow">
+
+					<area shape="poly" coords="245,256,247,269,254,279,264,283,271,282,279,282,285,276,283,267,278,262,278,255,285,258,288,254,282,247,277,242,269,239,246,256" href="javascript:lHandBackDaily_1()" alt="left hand">
+					
+					<area shape="poly" coords="50,242,70,258,65,268,62,278,56,282,49,284,39,284,30,280,29,272,36,260,31,259,24,260,24,254,28,247,40,241,50,242" href="javascript:rHandBackDaily_1()" alt="right hand">
+					
+					<area shape="poly" coords="113,250,126,252,143,301,145,312,142,331,140,339,103,331,112,249" href="javascript:rHipBackDaily_1()" alt="right hip">
+					
+					<area shape="poly" coords="146,302,127,252,177,249,164,302,147,303" href="javascript:backBackDaily_1()" alt="back"> 
+							
+					<area shape="poly" coords="180,253,194,250,196,272,199,292,203,309,205,335,161,341,159,325,180,252" href="javascript:lHipBackDaily_1()" alt="left hip">					 
+					
+					<area shape="poly" coords="107,313,145,324,145,340,145,357,146,378,111,378,106,362,103,349,106,316" href="javascript:rLegBackDaily_1()" alt="right leg">
+					
+					<area shape="poly" coords="164,324,208,313,211,323,212,332,210,342,206,354,204,364,202,374,200,380,166,380,167,360,164,341,165,323" href="javascript:lLegBackDaily_1()" alt="left leg">
+					
+					<area shape="poly" coords="167,384,201,382,198,397,206,399,217,405,219,411,217,415,201,414,186,414,175,412,166,409,167,386" href="javascript:lFootBackDaily_1()" alt="left foot">
+					
+					<area shape="poly" coords="112,382,146,381,146,393,151,402,151,409,148,413,138,413,127,413,118,413,107,414,100,411,107,403,114,400,112,382" href="javascript:rFootBackDaily_1()" alt="right foot">
+
+			   
+				</map>
+				</center>
+            </div>				
+
+			    <img id="head_d_red_back" class="head_d_red_back" src="images/transperant/daily/head_back_red.png" onClick="headBackDaily_2()"/>
+				<img id="rightshoulder_d_red_back" class="rightshoulder_d_red_back" src="images/transperant/daily/right_shoulder_back_red.png" onClick="rShdBackDaily_2()"/>
+				<img id="leftshoulder_d_red_back" class="leftshoulder_d_red_back" src="images/transperant/daily/left_shoulder_back_red.png" onClick="lShdBackDaily_2()"/>
+				<img id="chest_d_red_back" class="chest_d_red_back" src="images/transperant/daily/chest_back_red.png" onClick="chestBackDaily_2()"/>
+			    <img id="abdomen_d_red_back" class="abdomen_d_red_back" src="images/transperant/daily/abdomen_back_red.png" onClick="abdomenBackDaily_2()"/>
+		        <img id="lelbow_d_red_back" class="lelbow_d_red_back" src="images/transperant/daily/left_elbow_back_red.png" onClick="lElbowBackDaily_2()"/>
+				<img id="relbow_d_red_back" class="relbow_d_red_back" src="images/transperant/daily/right_elbow_back_red.png" onClick="rElbowBackDaily_2()"/>
+				<img id="lhand_d_red_back" class="lhand_d_red_back" src="images/transperant/daily/left_hand_back_red.png" onClick="lHandBackDaily_2()"/>
+				<img id="rhand_d_red_back" class="rhand_d_red_back" src="images/transperant/daily/right_hand_back_red.png" onClick="rHandBackDaily_2()"/>				
+				<img id="rhip_d_red_back" class="rhip_d_red_back" src="images/transperant/daily/right_hip_back_red.png" onClick="rHipBackDaily_2()"/>
+				<img id="back_d_red_back" class="back_d_red_back" src="images/transperant/daily/back_back_red.png" onClick="backBackDaily_2()"/>				
+				<img id="lhip_d_red_back" class="lhip_d_red_back" src="images/transperant/daily/left_hip_back_red.png" onClick="lHipBackDaily_2()"/>				
+				<img id="rleg_d_red_back" class="rleg_d_red_back" src="images/transperant/daily/right_leg_back_red.png" onClick="rLegBackDaily_2()"/>
+				<img id="lleg_d_red_back" class="lleg_d_red_back" src="images/transperant/daily/left_leg_back_red.png" onClick="lLegBackDaily_2()"/>
+				<img id="lfoot_d_red_back" class="lfoot_d_red_back" src="images/transperant/daily/left_foot_back_red.png" onClick="lFootBackDaily_2()"/>
+				<img id="rfoot_d_red_back" class="rfoot_d_red_back" src="images/transperant/daily/right_foot_back_red.png" onClick="rFootBackDaily_2()"/>
+			    
+			</div><!--ui-block-a-->		
+			
+			<div class="ui-block-b">			
+			    <p class="daily_back_2">All places I had pain TODAY</p>	
+             
+			  <div class="back2">
+				<center><img src="images/Back_1_Copy.png" class="back_2" alt="" border="0" usemap="#Mapback1"/>
+				<map name="Mapback1">
+				  
+					<area shape="poly" coords="178,14,188,16,198,21,204,29,204,37,204,44,203,52,200,60,198,67,195,73,202,75,203,83,201,88,196,91,189,90,190,98,185,104,179,109,172,111,160,115,148,113,138,113,131,107,125,100,123,90,117,90,115,84,112,77,118,72,113,63,112,51,113,38,117,26,127,15,144,10,160,4" href="javascript:headBackDaily_3()" alt="head">
+						   
+					<area shape="poly" coords="138,115,148,115,159,115,172,113,175,112,173,124,138,125,138,115" href="javascript:()" alt="neck">
+				   
+					<area shape="poly" coords="157,123,199,182,231,166,228,154,225,142,210,134,192,128,180,124,157,124" href="javascript:lShdBackDaily_3()" alt="left shoulder">
+					
+					<area shape="poly" coords="158,126,111,186,78,171,82,163,82,154,85,142,98,136,117,131,134,126,158,125" href="javascript:rShdBackDaily_3()" alt="right shoulder">
+					
+					<area shape="poly" coords="158,131,195,182,114,188,158,133" href="javascript:chestBackDaily_3()" alt="chest">
+							
+					<area shape="poly" coords="111,192,201,187,201,201,201,216,201,235,183,236,159,238,136,235,116,236,112,213,110,191" href="javascript:abdomenBackDaily_3()" alt="abdomen">
+					
+					<area shape="poly" coords="208,184,233,170,237,188,241,210,253,223,262,235,266,241,244,252,234,241,225,228,219,220,214,202,209,184" href="javascript:lElbowBackDaily_3()" alt="left elbow">
+					
+					<area shape="poly" coords="77,174,102,186,98,210,94,220,87,230,81,241,77,249,70,252,50,238,59,224,69,214,74,194,77,174" href="javascript:rElbowBackDaily_3()" alt="right elbow">
+
+					<area shape="poly" coords="245,256,247,269,254,279,264,283,271,282,279,282,285,276,283,267,278,262,278,255,285,258,288,254,282,247,277,242,269,239,246,256" href="javascript:lHandBackDaily_3()" alt="left hand">
+					
+					<area shape="poly" coords="50,242,70,258,65,268,62,278,56,282,49,284,39,284,30,280,29,272,36,260,31,259,24,260,24,254,28,247,40,241,50,242" href="javascript:rHandBackDaily_3()" alt="right hand">
+					
+					<area shape="poly" coords="113,250,126,252,143,301,145,312,142,331,140,339,103,331,112,249" href="javascript:rHipBackDaily_3()" alt="right hip">
+							
+					<area shape="poly" coords="180,253,194,250,196,272,199,292,203,309,205,335,161,341,159,325,180,252" href="javascript:lHipBackDaily_3()" alt="left hip">
+					
+					<area shape="poly" coords="146,302,127,252,177,249,164,302,147,303" href="javascript:backBackDaily_3()" alt="back">  
+					
+					<area shape="poly" coords="107,313,145,324,145,340,145,357,146,378,111,378,106,362,103,349,106,316" href="javascript:rLegBackDaily_3()" alt="right leg">
+					
+					<area shape="poly" coords="164,324,208,313,211,323,212,332,210,342,206,354,204,364,202,374,200,380,166,380,167,360,164,341,165,323" href="javascript:lLegBackDaily_3()" alt="left leg">
+					
+					<area shape="poly" coords="167,384,201,382,198,397,206,399,217,405,219,411,217,415,201,414,186,414,175,412,166,409,167,386" href="javascript:lFootBackDaily_3()" alt="left foot">
+					
+					<area shape="poly" coords="112,382,146,381,146,393,151,402,151,409,148,413,138,413,127,413,118,413,107,414,100,411,107,403,114,400,112,382" href="javascript:rFootBackDaily_3()" alt="right foot">
+
+			   
+				</map>
+				</center>
+			</div>
+			   <img id="head_d_blue_back" class="head_d_blue_back" src="images/transperant/daily/head_back_blue.png" onClick="headBackDaily_4()"/>
+			   <img id="rightshoulder_d_blue_back" class="rightshoulder_d_blue_back" src="images/transperant/daily/right_shoulder_back_blue.png" onClick="rShdBackDaily_4()"/>
+			   <img id="leftshoulder_d_blue_back" class="leftshoulder_d_blue_back" src="images/transperant/daily/left_shoulder_back_blue.png" onClick="lShdBackDaily_4()"/>
+			   <img id="chest_d_blue_back" class="chest_d_blue_back" src="images/transperant/daily/chest_back_blue.png" onClick="chestBackDaily_4()"/>
+		       <img id="abdomen_d_blue_back" class="abdomen_d_blue_back" src="images/transperant/daily/abdomen_back_blue.png" onClick="abdomenBackDaily_4()"/>
+			   <img id="lelbow_d_blue_back" class="lelbow_d_blue_back" src="images/transperant/daily/left_elbow_back_blue.png" onClick="lElbowBackDaily_4()"/>
+			   <img id="relbow_d_blue_back" class="relbow_d_blue_back" src="images/transperant/daily/right_elbow_back_blue.png" onClick="rElbowBackDaily_4()"/>
+			   <img id="lhand_d_blue_back" class="lhand_d_blue_back" src="images/transperant/daily/left_hand_back_blue.png" onClick="lHandBackDaily_4()"/>
+			   <img id="rhand_d_blue_back" class="rhand_d_blue_back" src="images/transperant/daily/right_hand_back_blue.png" onClick="rHandBackDaily_4()"/>
+			   <img id="rhip_d_blue_back" class="rhip_d_blue_back" src="images/transperant/daily/right_hip_back_blue.png" onClick="rHipBackDaily_4()"/>
+			   <img id="back_d_blue_back" class="back_d_blue_back" src="images/transperant/daily/back_back_blue.png" onClick="backBackDaily_4()"/>
+			   <img id="lhip_d_blue_back" class="lhip_d_blue_back" src="images/transperant/daily/left_hip_back_blue.png" onClick="lHipBackDaily_4()"/>
+			   <img id="rleg_d_blue_back" class="rleg_d_blue_back" src="images/transperant/daily/right_leg_back_blue.png" onClick="rLegBackDaily_4()"/>
+			   <img id="lleg_d_blue_back" class="lleg_d_blue_back" src="images/transperant/daily/left_leg_back_blue.png" onClick="lLegBackDaily_4()"/>
+			   <img id="lfoot_d_blue_back" class="lfoot_d_blue_back" src="images/transperant/daily/left_foot_back_blue.png" onClick="lFootBackDaily_4()"/>
+			   <img id="rfoot_d_blue_back" class="rfoot_d_blue_back" src="images/transperant/daily/right_foot_back_blue.png" onClick="rFootBackDaily_4()"/>
+
+				
+		    </div>	<!--ui-block-b-->
+		</div>	<!--ui-grid-a-->
+		
+		
+
+		<div id="div_p3">
+					<center><p class="no_pain_text_p2">No pain at the back</p></center>
+					<center><a href="#" class="no_pain_p3" data-inline="true" data-role="button" data-theme="a" >No Pain</a></center>
+		</div>
+	
+			<p align="right" id="next_page3">
+				<!--   <a href="#page4" data-role="button" data-icon="forward" data-iconpos="right" data-theme="a" class="ui-btn-right">Next</a> -->
+				<a href="#page4" data-transition="slide"><img src="images/next.png"></a>
+			</p>
+			 
+	</div> <!-- content-->
+
+		
+	<div data-role="footer" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1> 
+	</div>
+	
+</div>
+
+
+<div data-role="page" id="page4" data-theme="a">
+		<div data-role="header">	
+	       <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	
+		   <h1>Pain Intensity</h1>	
+	    </div>
+		
+		<div data-role="content">
+				<center><p><font face="Georgia">Drag the mark to show how much PAIN or HURT you have right now.</font></p></center>				
+				<br></br>	
+				<br></br>	
+
+					<div id="mySlider1" data-role="fieldcontain" data-theme="a"> 
+				    		<label for="slider1"><span class="left1"><font size="5">No pain</font></span><span class="right1"><font size="5">Most pain <br/>&nbsp;&nbsp;possible</font></span></label> 					
+							<input type="range" name="slider1" id="slider1" class="painintensity" min="1" max="100" value="50" data-highlight="true" />								
+								
+					</div>
+															
+					<div>
+						 <p align="right" id="next_page4">
+							   <a href="#page5" data-transition="slide"><img src="images/next.png"></a>
+						</p>
+					</div>
+					
+		</div>
+		
+		
+		<div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>  
+                  
+	       <!-- <a href="#page5" data-icon="gear" class="ui-btn-right">Next</a>	-->
+	    </div>
+		
+</div> <!--page 4-->
+
+<div data-role="page" id="page5" data-theme="a">
+       <div data-role="header">	
+	   <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	
+		  <h1>Pain Affect/Unpleasentness</h1>	
+	   </div>	   	        
+        <div data-role="content">
+				<center><p><font face="Georgia">Touch the face that shows how your pain feels right now</font></p></center>		
+					
+				<!--emoticon_1--><div  onClick="changeSrc_35()" ><img id="img57" class="j57" src="images/emoticons/daily/emo1.png" align="middle" alt = "emo1.png" /></div>	
+				<!--emoticon_2--><div  onClick="changeSrc_36()" ><img id="img58" class="j58" src="images/emoticons/daily/emo2.png" align="middle" alt = "emo2.png" /></div>	
+				<!--emoticon_3--><div  onClick="changeSrc_37()" ><img id="img59" class="j59" src="images/emoticons/daily/emo3.png" align="middle" alt = "emo3.png" /></div>
+				<!--emoticon_4--><div  onClick="changeSrc_38()" ><img id="img60" class="j60" src="images/emoticons/daily/emo4.png" align="middle" alt = "emo4.png" /></div>
+				<!--emoticon_5--><div  onClick="changeSrc_39()" ><img id="img61" class="j61" src="images/emoticons/daily/emo5.png" align="middle" alt = "emo5.png" /></div>
+				<!--emoticon_6--><div  onClick="changeSrc_40()" ><img id="img62" class="j62" src="images/emoticons/daily/emo6.png" align="middle" alt = "emo6.png" /></div>
+				<!--emoticon_7--><div  onClick="changeSrc_41()" ><img id="img63" class="j63" src="images/emoticons/daily/emo7.png" align="middle" alt = "emo7.png" /></div>
+				<!--emoticon_8--><div  onClick="changeSrc_42()" ><img id="img64" class="j64" src="images/emoticons/daily/emo8.png" align="middle" alt = "emo8.png" /></div>
+				<!--emoticon_9--><div  onClick="changeSrc_43()" ><img id="img65" class="j65" src="images/emoticons/daily/emo9.png" align="middle" alt = "emo9.png" /></div>		
+				 
+				 
+				<div class="affect1"><p><font size="5">Very Good</font></p></div> 
+				<div class="affect2"><p><font size="5">Very Bad</font></p></div>
+				 
+				 
+				 <p align="right" id="next_page5">
+					   <a href="#page6" data-transition="slide"><img src="images/next.png"></a>
+				 </p>
+		</div>
+ 	       
+	
+  		
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>  	
+	  </div>
+  
+</div>
+
+<div data-role="page" id="page6" data-theme="a">
+       <div data-role="header">	
+	      <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>
+		  <h1>General Interference of pain with Life</h1>	
+	   </div>
+	   
+	  <div data-role="content">
+	
+					<center><p><font face="Georgia">Drag the mark to show how much pain you got in the way of THINGS YOU DID today. </font></p></center>						
+						<br></br>	
+						<br></br>	
+						
+					<div  id="mySlider2" data-role="fieldcontain" data-theme="a"> 
+						<label for="slider2"></label>	
+						<input type="range" name="intensity" id="slider2"	min="0" max="100" value="50" data-highlight="true">	
+						<label for="slider2"><span class="left2"><font size="5">Doesn't get in the<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;way at all </font></span><span class="right2"><font size="5">Totally got in<br/>&nbsp;&nbsp;&nbsp;the way</font></span></label>				
+					</div> 
+					<div>
+							<p align="right" id="next_page6">
+							   <a href="#page8" class="next" data-transition="slide"><img src="images/next.png"></a>
+							</p>
+					</div>
+	   
+	    </div>	
+  		
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>  
+	  </div>
+  
+</div>
+
+<div data-role="page" id="page8" data-theme="a">
+       <div data-role="header">	
+	      <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>
+		  <h1>List of words to describe the pain experience</h1>	
+	   </div>
+	   
+        <div>
+			<center><p><font face="Georgia">Touch the words that best describe how your pain feels right now. </font></p></center>			
+        </div> 	
+                
+        <div data-role="content">
+        
+        	<div class="ui-grid-b" style="width:1100px">
+        	
+					<div class="ui-block-a" data-theme="a" >					
+							  <div data-role="fieldcontain" class="checkbox_p8_daily">
+									<fieldset data-role="controlgroup">
+										<legend></legend>
+										<input type="checkbox" name="checkbox-1" id="checkbox-1" value="Sore, " class="checkbox-1" data-theme="c"/>
+										<label for="checkbox-1">Sore</label>
+										<legend></legend>
+										<input type="checkbox" name="checkbox-2" id="checkbox-2" value="Aching, " class="checkbox-2" data-theme="c"/>
+										<label for="checkbox-2">Aching</label>
+										<legend></legend>
+										<input type="checkbox" name="checkbox-3" id="checkbox-3" value="Pins and needles, " class="checkbox-3" data-theme="c"/>
+										<label for="checkbox-3">Pins and needles</label>
+										<legend></legend>
+										<input type="checkbox" name="checkbox-4" id="checkbox-4" value="Stinging, " class="checkbox-4" data-theme="c"/>
+										<label for="checkbox-4">Stinging</label>
+										<legend></legend>
+										<input type="checkbox" name="checkbox-5" id="checkbox-5" value="Squeezing, " class="checkbox-5" data-theme="c"/>
+										<label for="checkbox-5">Squeezing</label>
+										
+										<legend></legend>
+										<input type="checkbox" name="checkbox-18" id="checkbox-18" value="Pounding, " class="checkbox-18" data-theme="b"/>
+										<label for="checkbox-18">Pounding</label>
+										<legend></legend>
+										<input type="checkbox" name="checkbox-19" id="checkbox-19" value="Pulling, " class="checkbox-19" data-theme="b"/>
+										<label for="checkbox-19">Pulling</label>
+										<legend></legend>
+										<input type="checkbox" name="checkbox-20" id="checkbox-20" value="Itching, " class="checkbox-20" data-theme="b"/>
+										<label for="checkbox-20">Itching</label>
+										<legend></legend>
+										<input type="checkbox" name="checkbox-21" id="checkbox-21" value="Beating, " class="checkbox-21" data-theme="b"/>
+										<label for="checkbox-21">Beating</label>
+										<legend></legend>
+										<input type="checkbox" name="checkbox-22" id="checkbox-22" value="Pricking, " class="checkbox-22" data-theme="b"/>
+										<label for="checkbox-22">Pricking</label>
+										<legend></legend>
+										<input type="checkbox" name="checkbox-23" id="checkbox-23" value="Throbbing , " class="checkbox-23" data-theme="b"/>
+										<label for="checkbox-23">Throbbing </label
+									></fieldset>
+							</div> <!--field-contain--> 					              
+                    </div> <!--ui-block-a-->
+                    
+                    
+                    <div class="ui-block-b" >
+        
+        						<div data-role="fieldcontain" class="checkbox_p9_daily">
+									<fieldset data-role="controlgroup">
+										<legend></legend>
+										<input type="checkbox" name="checkbox-24" id="checkbox-24" value="Pinching , " class="checkbox-24" data-theme="c"/>
+										<label for="checkbox-24">Pinching </label>
+										<legend></legend>
+										<input type="checkbox" name="checkbox-25" id="checkbox-25" value="Tingling , " class="checkbox-25" data-theme="c"/>
+										<label for="checkbox-25">Tingling </label>	
+										<legend></legend>
+										<input type="checkbox" name="checkbox-26" id="checkbox-26" value="Biting , " class="checkbox-26" data-theme="c"/>
+										<label for="checkbox-26">Biting </label>	
+										<legend></legend>
+										<input type="checkbox" name="checkbox-27" id="checkbox-27" value="Burning , " class="checkbox-27" data-theme="c"/>
+										<label for="checkbox-27">Burning </label>	
+										<legend></legend>
+										<input type="checkbox" name="checkbox-28" id="checkbox-28" value="Sharp , " class="checkbox-28" data-theme="c"/>
+										<label for="checkbox-28">Sharp </label>	
+										<legend></legend>
+										<input type="checkbox" name="checkbox-29" id="checkbox-29" value="Cold , " class="checkbox-29" data-theme="c"/>
+										<label for="checkbox-29">Cold </label>
+										
+										<legend></legend>
+										<input type="checkbox" name="checkbox-30" id="checkbox-30" value="Scraping , " class="checkbox-30" data-theme="b"/>
+										<label for="checkbox-30">Scraping </label>	
+										<legend></legend>
+										<input type="checkbox" name="checkbox-31" id="checkbox-31" value="Cutting , " class="checkbox-31" data-theme="b"/>
+										<label for="checkbox-31">Cutting </label>	
+										<legend></legend>
+										<input type="checkbox" name="checkbox-32" id="checkbox-32" value="Jumping , " class="checkbox-32" data-theme="b"/>
+										<label for="checkbox-32">Jumping </label>	
+										<legend></legend>
+										<input type="checkbox" name="checkbox-33" id="checkbox-33" value="Flashing , " class="checkbox-33" data-theme="b"/>
+										<label for="checkbox-33">Flashing </label>	
+									</fieldset>
+							</div> <!--field-contain--> 
+        
+                    </div> <!--ui-block-b-->
+                    
+                    <div class="ui-block-c" >
+        
+        					<div data-role="fieldcontain" class="checkbox_p10_daily">
+									<fieldset data-role="controlgroup">
+									<legend></legend>
+									<input type="checkbox" name="checkbox-34" id="checkbox-34" value="Tiring , " class="checkbox-34" data-theme="c"/>
+									<label for="checkbox-34">Tiring </label>	
+									<legend></legend>
+									<input type="checkbox" name="checkbox-35" id="checkbox-35" value="Scikening , " class="checkbox-35" data-theme="c"/>
+									<label for="checkbox-35">Sickening </label>
+									<legend></legend>
+									<input type="checkbox" name="checkbox-36" id="checkbox-36" value="Sad , " class="checkbox-36" data-theme="c"/>
+									<label for="checkbox-36">Sad </label>	
+									<legend></legend>
+									<input type="checkbox" name="checkbox-37" id="checkbox-37" value="Cruel , " class="checkbox-37" data-theme="c"/>
+									<label for="checkbox-37">Cruel </label>	
+									<legend></legend>
+									<input type="checkbox" name="checkbox-38" id="checkbox-38" value="Punishing , " class="checkbox-38" data-theme="c"/>
+									<label for="checkbox-38">Punishing </label>	
+									<legend></legend>
+									<input type="checkbox" name="checkbox-39" id="checkbox-39" value="Fearful , " class="checkbox-39" data-theme="c"/>
+									<label for="checkbox-39">Fearful </label>							
+									
+									<legend></legend>
+									<input type="checkbox" name="checkbox-40" id="checkbox-40" value="Uncomfortable , " class="checkbox-40" data-theme="b"/>
+									<label for="checkbox-40">Uncomfortable </label>	
+									<legend></legend>
+									<input type="checkbox" name="checkbox-41" id="checkbox-41" value="Miserable , " class="checkbox-41" data-theme="b"/>
+									<label for="checkbox-41">Miserable </label>	
+									<legend></legend>
+									<input type="checkbox" name="checkbox-42" id="checkbox-42" value="Horrible , " class="checkbox-42" data-theme="b"/>
+									<label for="checkbox-42">Horrible </label>	
+									<legend></legend>
+									<input type="checkbox" name="checkbox-43" id="checkbox-43" value="Unbearable , " class="checkbox-43" data-theme="b"/>
+									<label for="checkbox-43">Unbearable </label>
+									<legend></legend>
+									<input type="checkbox" name="checkbox-44" id="checkbox-44" value="None of these word describe my pain , " class="checkbox-44" data-theme="b"/>
+									<label for="checkbox-44">None of these words describe my pain </label>	
+									</fieldset>
+							</div> <!--field-contain--> 
+        
+                    </div> <!--ui-block-c-->                    
+                                        
+            </div><!--ui-grid-b-->
+                           								 
+		</div> <!--content-->
+		
+			    <p align="right" id="next_page8">
+					<a href="#page7" class="next" data-transition="slide"><img src="images/next.png"></a>
+				</p>
+	   
+
+  		
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>  
+	  </div>
+  
+</div>
+
+<div data-role="page" id="page7" data-theme="a">
+       <div data-role="header">
+		  <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	   
+		  <h1>Interference of pain with sleeping</h1>	
+	   </div>
+	   
+	        <br></br>
+			
+		<div data-role="content">
+		
+		 <div>
+			<center><p><font face="Georgia">Touch the button to show how much your pain got in the way of SLEEPING last night. </font></p></center>			
+         </div> 
+			<div data-role="fieldcontain" >        		
+				<fieldset data-role="controlgroup">  
+					<legend></legend>	
+					<br></br>									
+						<input type="radio" name="radio-choice-1" id="radio-choice-1" value="Pain did not get in the way of my sleep last night.  " class="radio_1"/>
+						<label for="radio-choice-1">Pain did not get in the way of my sleep last night</label>
+						
+						<input type="radio" name="radio-choice-1" id="radio-choice-2" value="Pain got in the way of my sleep last night.  " class="radio_2"/>
+						<label for="radio-choice-2">Pain got in the way of my sleep last night</label>						
+				</fieldset>
+			</div>
+			<p align="right" id="next_page7">
+			   <a href="#" class="next_page7" data-transition="slide"><img src="images/next.png"></a>
+		    </p>
+			
+			<br></br>
+            <br></br>		
+	    </div>  
+		
+		<div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>  
+		</div>
+  
+</div>
+
+<div data-role="page" id="page7_1" data-theme="a">
+       <div data-role="header">
+		  <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	   
+		  <h1>Interference of pain with sleeping</h1>	
+	   </div>	   
+	        <br></br>
+		
+	<div data-role="content">				
+        <div>
+			<center><p><font face="Georgia">Touch the button to show how much your pain got in the way of SLEEPING last night. </font></p></center>			
+        </div> 
+			<div data-role="fieldcontain">        		
+				<fieldset data-role="controlgroup">  
+					<legend></legend>	
+					<br></br>									
+						<input type="checkbox" name="checkbox-16" id="checkbox-16" value="I had a hard time falling asleep last night because of pain.  " class="checkbox_16"/>
+						<label for="checkbox-16">I had a hard time falling asleep last night because of pain</label>
+						<input type="checkbox" name="checkbox-17" id="checkbox-17" value="My pain woke me up last night.  " class="checkbox_17"/>
+						<label for="checkbox-17">My pain woke me up last night</label>						
+				</fieldset>				
+			</div>     
+		    <p align="right" id="next_page7_1">
+			   <a href="#" class="next_page7_1" data-transition="slide"><img src="images/next.png"></a>
+		    </p>	
+	    </div>
+		
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>  
+	  </div>
+  
+</div>
+
+<div data-role="page" id="page7_2" data-theme="a">
+       <div data-role="header">
+		  <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	   
+		  <h1>Interference of pain with sleeping</h1>	
+	   </div>
+	   
+	        <br></br>
+			
+        <div>
+			<center><p><font face="Georgia">Touch the button to show how much your pain got in the way of SLEEPING last night. </font></p></center>			
+        </div> 
+		
+		<div data-role="content">
+			<div data-role="fieldcontain">        		
+				<fieldset data-role="controlgroup">  
+					<legend></legend>	
+					<br></br>								
+						<input type="radio" name="radio-choice-2" id="radio-choice-5" value="My pain woke me up once last night.  " class="radio_5"/>
+						<label for="radio-choice-5">My pain woke me up once last night</label>    
+
+						<input type="radio" name="radio-choice-2" id="radio-choice-6" value="My pain woke me up more than once last night.  " class="radio_6"/>
+						<label for="radio-choice-6">My pain woke me up more than once last night</label>                  
+				</fieldset>
+			</div>      
+		    <p align="right" id="next_page7_2">
+			   <a href="#page9" class="next" data-transition="slide"><img src="images/next.png"></a>
+		    </p>	
+	    </div>
+  		
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>  
+	  </div>
+  
+</div>
+
+
+
+<div data-role="page" id="page9" data-theme="a">
+       <div data-role="header">	
+	       <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>
+		  <h1>Stiffness Question</h1>	
+	   </div>
+	   
+	    <br></br>
+		<div data-role="content">	
+			<div>
+				<center><p><font face="Georgia">Drag the mark to show how STIFF you are right now. </font></p></center>			
+			</div> 	
+			
+				<br></br>	
+				<br></br>	
+				
+			<div  id="mySlider3" data-role="fieldcontain" data-theme="a"> 
+				<label for="slider3"></label>	
+				<input type="range" name="intensity" id="slider3"	min="0" max="100" value="50" data-highlight="true">	
+				<label for="slider3"><span class="left3"><font size="5">Not at all stiff</font></span><span class="right3"><font size="5">Most stiffness<br/>&nbsp;&nbsp; possible</font></span></label>				
+			</div> 
+
+				<p align="right" id="next_page9">
+				   <a href="#page10" class="next" data-transition="slide"><img src="images/next.png"></a>
+				</p>			
+  		</div>
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>  
+	  </div>
+  
+</div>
+
+<div data-role="page" id="page10" data-theme="a">
+       <div data-role="header">	
+	        <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>
+		  <h1>Fatigue Question</h1>	
+	   </div>
+	   
+	        <br></br>
+			
+		<div data-role="content">	
+				<div>
+					<center><p><font face="Georgia">Drag the mark to show how FATIGUED or TIRED you are right now. </font></p></center>			
+				</div>
+					<br></br>	
+					<br></br>	
+					
+				<div id="mySlider4" data-role="fieldcontain" data-theme="a"> 
+					<label for="slider4"></label>	
+					<input type="range" name="intensity" id="slider4"	min="0" max="100" value="50" data-highlight="true">
+					<label for="slider4"><span class="left4"> <font size="5">Not at all <br/>&nbsp;&nbsp; tired </font></span><span class="right4"><font size="5">Most tired<br/>&nbsp;&nbsp;  possible</font></span></label>						
+				</div> 
+			
+				<p align="right" id="next_page10">
+				  <a href="#page11" class="next" data-transition="slide"><img src="images/next.png"></a>
+				</p>				
+  		</div>
+	    <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>  
+	    </div>
+  
+</div>
+
+<div data-role="page" id="page11" data-theme="a">
+       <div data-role="header">	
+	       <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>
+		  <h1>Emotional Valence</h1>	
+	   </div>
+	   
+	        <br></br>
+			
+		<div data-role="content">	
+				<div>
+					<center><p><font face="Georgia">Drag the mark to show how GOOD or BAD your mood is right now. </font></p></center>			
+				</div>
+					
+					<br></br>	
+					<br></br>	
+					
+				<div id="mySlider5" data-role="fieldcontain"> 
+					<label for="slider5"></label>	
+					<input type="range" name="intensity" id="slider5"	min="0" max="100" value="50" data-highlight="true">	 
+					<label for="slider5"><span class="left5"><font size="5">Very Bad </font> </span><span class="right5"><font size="5">Very Good</font></span></label>	
+				</div> 
+
+				<p align="right" id="next_page11">
+				   <a href="#page12" class="next" data-transition="slide"><img src="images/next.png"></a>
+				</p>			
+  		</div>
+		
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>  	
+	  </div>
+  
+</div>
+
+<div data-role="page" id="page12" data-theme="a">
+       <div data-role="header">	
+	       <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>
+		  <h1>Emotional Activation</h1>	
+	   </div>
+	   
+	        <br></br>
+			
+		 <div data-role="content">
+			<div>
+				<center><p><font face="Georgia">Drag the mark to show how AWAKE or SLEEPY you feel right now. </font></p></center>			
+			</div>
+				
+				<br></br>	
+				<br></br>	
+				
+			<div id="mySlider6" data-role="fieldcontain"> 
+				<label for="slider6"></label>	
+				<input type="range" name="intensity" id="slider6"	min="0" max="100" value="50" data-highlight="true">	
+				<label for="slider6"><span class="left6"><font size="5"> Very Sleepy </font></span><span class="right6"> <font size="5">Very Awake</font></span></label>				
+			</div> 
+				
+				<p align="right" id="next_page12">
+				   <a href="#page13" class="next" data-transition="slide"><img src="images/next.png"></a>
+				</p> 
+
+         </div>				
+			
+		  <div data-role="footer" data-theme="a" data-position="fixed">        
+				<h1><i>PInGo Pain Diary &copy; 2012</i></h1>  	
+		  </div>
+	 
+  
+</div>
+
+<div data-role="page" id="page13" data-theme="a">
+       <div data-role="header">	
+	       <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>
+		  <h1>Pharmacologic treatments for pain since the preceding diary entry</h1>	
+	   </div>
+	   
+	  <br></br>
+        <div data-role="content"> 
+				<div>
+					<center><p><font face="Georgia">Did you use any medicine for your pain today? </font></p></center>			
+				</div>
+					
+					<div data-role="fieldcontain" data-inset="true">
+						
+						<fieldset data-role="controlgroup">
+						<legend></legend>	           
+						   <br></br>                                 
+								<input type="radio" name="radio-choice-3" id="radio-choice-12" value="Yes. " class="radio_12"/>
+								<label for="radio-choice-12">Yes</label>
+					
+								<input type="radio" name="radio-choice-3" id="radio-choice-13" value="No. " class="radio_13"/>
+								<label for="radio-choice-13">No</label>                   
+						</fieldset>							
+					
+					</div>			
+                <div>				
+                <p align="right" id="next_page13">
+				   <a href="#" class="next_page13" data-transition="slide"><img src="images/next.png"></a>
+				</p>
+                </div>				
+  		</div>
+	    <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>  
+	    </div>
+  
+</div>
+
+<div data-role="page" id="page13_1" data-theme="a">
+       <div data-role="header">	
+	       <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>
+		  <h1>Effectiveness of the treatment in relieving pain symptoms</h1>	
+	   </div>
+	   
+	  <br></br>
+        <div data-role="content"> 
+				<div>
+					<center><p><font face="Georgia">Drag the mark and move it to show how much the treatments helped you relief from your pain. Please record the name on the Treatment Log.  </font></p></center>			
+				</div>
+				
+			<br></br> 
+			<br></br> 			
+								
+			<div  id="mySlider7" data-role="fieldcontain" data-theme="a"> 
+				<label for="slider7"></label>	
+				<input type="range" name="slider7" id="slider7"	min="1" max="100" value="50" data-highlight="true">	
+				<label for="slider7"><span class="left7"><font size="5"> No relief at all</font></span><span class="right7"><font size="5"> Complete relief</font></span></label>				
+			</div> 
+			
+            <br></br>	
+			<br></br><br></br>	
+			
+			<p align="right" id="next_page13_1">
+				   <a href="#page14" class="next" data-transition="slide"><img src="images/next.png"></a>
+			</p>
+				               			
+  		</div>
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>  
+	  </div>
+  
+</div>
+
+<div data-role="page" id="page14" data-theme="a">
+       <div data-role="header">
+            <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	   
+		  <h1>Non-pharmacologic treatments for pain since the preceding diary entry</h1>	
+	   </div>
+	   
+	   <div data-role="content">
+         
+				<div>
+					<center><p><font face="Georgia">Did you use any other type of treatment to ease your pain today? </font></p></center>			
+				</div>
+
+				<div data-role="fieldcontain" data-inset="true">
+					
+					<fieldset data-role="controlgroup">
+					<legend></legend>	           
+					   <br></br>                                 
+							<input type="radio" name="radio-choice-4" id="radio-choice-22" value="Yes. " class="radio_22"/>
+							<label for="radio-choice-22">Yes</label>
+				
+							<input type="radio" name="radio-choice-4" id="radio-choice-23" value="No. " class="radio_23"/>
+							<label for="radio-choice-23">No</label>                   
+					</fieldset>
+				
+				</div>	
+                <div>				
+		        <p align="right" id="next_page14">
+				   <a href="#" class="next_page14" data-transition="slide"><img src="images/next.png"></a>
+				</p>
+                </div>				
+  		</div>
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>          
+	  </div>
+  
+</div>
+
+<div data-role="page" id="page14_1" data-theme="a">
+        <div data-role="header">	
+	       <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>
+		  <h1>Effectiveness of the treatment in relieving pain symptoms</h1>	
+	    </div>
+       
+	    <div data-role="content"> 
+				
+				<div>
+					<center><p><font face="Georgia">Drag the mark and move it to show how much the treatments helped you relief from your pain. Please record the name on the Treatment Log. </font></p></center>			
+				</div>		
+				
+			<br></br> 
+			<br></br> 			
+								
+			<div  id="mySlider8" data-role="fieldcontain" data-theme="a"> 
+				<label for="slider8"></label>	
+				<input type="range" name="slider8" id="slider8"	min="1" max="100" value="50" data-highlight="true">	
+				<label for="slider8"><span class="left8"><font size="5">No relief at all</font></span><span class="right8"><font size="5">Complete relief</font></span></label>				
+			</div> 
+			
+            <br></br>	
+			<br></br><br></br>	
+			
+			<p align="right" id="next_page14_1">
+				   <a href="#page15" class="next" data-transition="slide"><img src="images/next.png"></a>
+			</p>
+						
+     	</div>
+	    <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>  
+	    </div>
+  
+</div>
+
+
+
+<div data-role="page" id="page15" data-theme="a">
+       <div data-role="header">	
+	        <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>
+		  <h1>Comments</h1>	
+	   </div>
+	   
+	        <br></br>
+			
+		<div data-role="content">	
+				<div>
+					<center><p><font face="Georgia">Please enter any notes for this survey entry. </font></p></center>			
+				</div>
+					<br></br>	
+					<br></br>
+					
+				<div data-role="fieldcontain">
+					<label for="textarea-a"></label>
+					<center><textarea cols="40" rows="15" name="textarea-a" id="textarea-a"></textarea><center>
+				</div>
+					<br></br>
+					<br></br>	
+					<br></br>
+				
+				<center><a href="#Daily_endpage"  data-transition="slide" data-inline="true" data-role="button" data-theme="a" >I have no extra comments</a></center>	
+
+				<p align="right" id="next_page15">
+						   <a href="#Daily_endpage" class="next" data-transition="slide"><img src="images/next.png"></a>
+				</p>				
+
+        </div>					
+  		
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>          
+	  </div>
+  
+</div>
+<div data-role="page" id="Daily_endpage" data-theme="a">
+       <div data-role="header">	
+		  <h1>End</h1>	
+	   </div>
+	   
+	        <br></br>
+			 <br></br>
+			  <br></br>
+			   <br></br>
+			
+		<div data-role="content">
+         				
+				<center><a href="#Daily_Congrats" data-role="button" data-inline="true" data-theme="a" data-rel="dialog" data-transition="pop" style="height: 100px; width: 350px; color:#603813" onClick="addDatatoDaily()"><font size="9">Submit</font></a></center>
+			
+			<br></br>	
+			<!-- <a href="#"  data-inline="true" data-role="button" data-theme="a" onClick="readDatafromDaily()">Read DB</a>	-->		
+		
+        </div>					
+  		
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>          
+	  </div>
+  
+</div>
+
+<div data-role="dialog" id="Daily_Congrats" >
+		<div data-role="header">		    
+				<h3>Congratulations!</h3>	
+	    </div>			
+		<div data-role="content" data-theme="a">
+			   <br></br>		
+				<center><a href="#page1" data-role="button" data-transition="slide" style="height: 100px; width: 350px; color:#603813"><font size="7">Menu</font></a></center>
+				<br></br>
+        </div>				
+  
+</div>
+
+
+<div data-role="page" id="page16" data-theme="a">
+     <div data-role="header">
+	      <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>
+	     <h1>Body Location: Front</h1>
+	 </div>
+	 <div data-role="content">
+	
+		
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			
+			   <p class="before_front_1">Places I have pain RIGHT NOW</p>
+			    <div class="front3">  
+					<center><img src="images/Front_2.png" class="front_3" alt="" border="0" usemap="#MapBefore"/>
+					<map name="MapBefore">
+				  
+					<area shape="poly" coords="178,14,188,16,198,21,204,29,204,37,204,44,203,52,200,60,198,67,195,73,202,75,203,83,201,88,196,91,189,90,190,98,185,104,179,109,172,111,160,115,148,113,138,113,131,107,125,100,123,90,117,90,115,84,112,77,118,72,113,63,112,51,113,38,117,26,127,15,144,10,160,4" href="javascript:headFrontDaily_1_b()" alt="head">
+						   
+					<area shape="poly" coords="138,115,148,115,159,115,172,113,175,112,173,124,138,125,138,115" href="javascript:()" alt="neck">
+				   
+					<area shape="poly" coords="157,123,199,182,231,166,228,154,225,142,210,134,192,128,180,124,157,124" href="javascript:lShdFrontDaily_1_b()" alt="left shoulder">
+					
+					<area shape="poly" coords="158,126,111,186,78,171,82,163,82,154,85,142,98,136,117,131,134,126,158,125" href="javascript:rShdFrontDaily_1_b()" alt="right shoulder">
+					
+					<area shape="poly" coords="158,131,195,182,114,188,158,133" href="javascript:chestFrontDaily_1_b()" alt="chest">
+							
+					<area shape="poly" coords="111,192,201,187,201,201,201,216,201,235,183,236,159,238,136,235,116,236,112,213,110,191" href="javascript:abdomenFrontDaily_1_b()" alt="abdomen">
+					
+					<area shape="poly" coords="208,184,233,170,237,188,241,210,253,223,262,235,266,241,244,252,234,241,225,228,219,220,214,202,209,184" href="javascript:lElbowFrontDaily_1_b()" alt="left elbow">
+					
+					<area shape="poly" coords="77,174,102,186,98,210,94,220,87,230,81,241,77,249,70,252,50,238,59,224,69,214,74,194,77,174" href="javascript:rElbowFrontDaily_1_b()" alt="right elbow">
+
+					<area shape="poly" coords="243,271,267,254,275,256,284,258,289,263,294,270,294,274,291,274,280,272,277,274,282,280,290,286,287,292,285,297,280,300,272,300,264,300,256,296,250,290,246,283,244,271" href="javascript:lHandFrontDaily_1_b()" alt="left hand">
+					
+					<area shape="poly" coords="34,253,56,271,55,281,50,289,45,296,39,299,26,300,17,299,13,294,12,288,17,281,23,279,22,271,16,272,11,275,8,270,10,264,14,259,26,254,34,253" href="javascript:rHandFrontDaily_1_b()" alt="right hand">
+
+					<area shape="poly" coords="115,242,127,240,143,241,141,254,139,264,138,277,140,287,145,297,146,312,145,323,108,310,108,293,110,272,114,242" href="javascript:rHipFrontDaily_1_b()" alt="right hip">
+					
+					<area shape="poly" coords="149,243,170,242,172,253,173,272,170,288,163,302,152,303,145,292,143,278,144,261,149,245" href="javascript:groinFrontDaily_1_b()" alt="groin">
+									
+					<area shape="poly" coords="164,256,170,269,173,281,173,296,170,307,162,317,162,333,165,347,204,340,201,321,200,304,197,288,194,271,194,254,166,257" href="javascript:lHipFrontDaily_1_b()" alt="left hip">
+								
+					<area shape="poly" coords="95,330,141,347,141,364,142,381,142,395,141,408,103,408,99,389,94,370,92,357,95,332" href="javascript:rLegFrontDaily_1_b()" alt="right leg">
+					
+					<area shape="poly" coords="166,351,204,344,208,355,208,366,203,387,199,403,198,411,162,405,164,382,165,362,166,351" href="javascript:lLegFrontDaily_1_b()" alt="left leg">
+					
+					<area shape="poly" coords="162,407,197,413,195,422,204,426,208,431,209,439,195,440,179,440,166,440,157,437,157,428,160,420,161,408" href="javascript:lFootFrontDaily_1_b()" alt="left foot">
+					
+					<area shape="poly" coords="104,409,139,411,140,420,141,428,138,434,136,438,119,438,101,438,88,438,84,436,86,430,97,424,107,421,105,410" href="javascript:rFootFrontDaily_1_b()" alt="right foot">
+
+
+					</map>
+				</center>
+			    </div>
+				<img id="head_d_red_b" class="head_d_red_b" src="images/transperant/before/head_front_red.png" onClick="headFrontDaily_2_b()"/>
+				<img id="rightshoulder_d_red_b" class="rightshoulder_d_red_b" src="images/transperant/before/right_shoulder_red.png" onClick="rShdFrontDaily_2_b()"/>
+				<img id="leftshoulder_d_red_b" class="leftshoulder_d_red_b" src="images/transperant/before/left_shoulder_red.png" onClick="lShdFrontDaily_2_b()"/>
+				<img id="chest_d_red_b" class="chest_d_red_b" src="images/transperant/before/chest_red.png" onClick="chestFrontDaily_2_b()"/>
+			    <img id="abdomen_d_red_b" class="abdomen_d_red_b" src="images/transperant/before/abdomen_red.png" onClick="abdomenFrontDaily_2_b()"/>
+		        <img id="lelbow_d_red_b" class="lelbow_d_red_b" src="images/transperant/before/left_elbow_red.png" onClick="lElbowFrontDaily_2_b()"/>
+				<img id="relbow_d_red_b" class="relbow_d_red_b" src="images/transperant/before/right_elbow_red.png" onClick="rElbowFrontDaily_2_b()"/>
+				<img id="lhand_d_red_b" class="lhand_d_red_b" src="images/transperant/before/left_hand_red.png" onClick="lHandFrontDaily_2_b()"/>
+				<img id="rhand_d_red_b" class="rhand_d_red_b" src="images/transperant/before/right_hand_red.png" onClick="rHandFrontDaily_2_b()"/>
+				<img id="rhip_d_red_b" class="rhip_d_red_b" src="images/transperant/before/right_hip_red.png" onClick="rHipFrontDaily_2_b()"/>
+				<img id="groin_d_red_b" class="groin_d_red_b" src="images/transperant/before/groin_red.png" onClick="groinFrontDaily_2_b()"/>
+				<img id="lhip_d_red_b" class="lhip_d_red_b" src="images/transperant/before/left_thigh_red.png" onClick="lHipFrontDaily_2_b()"/>
+				<img id="rleg_d_red_b" class="rleg_d_red_b" src="images/transperant/before/right_leg_red.png" onClick="rLegFrontDaily_2_b()"/>
+				<img id="lleg_d_red_b" class="lleg_d_red_b" src="images/transperant/before/left_leg_red.png" onClick="lLegFrontDaily_2_b()"/>
+				<img id="lfoot_d_red_b" class="lfoot_d_red_b" src="images/transperant/before/left_foot_red.png" onClick="lFootFrontDaily_2_b()"/>
+				<img id="rfoot_d_red_b" class="rfoot_d_red_b" src="images/transperant/before/right_foot_red.png" onClick="rFootFrontDaily_2_b()"/>
+			</div>	<!--ui-block-a-->		
+			
+			<div class="ui-block-b">
+			
+						<div id="div_p4">
+								<center><p class="no_pain_text_p16">No pain on the front</p></center>
+								<center><a href="#" class="no_pain_p16" data-inline="true" data-role="button" data-theme="a" >No Pain</a></center>
+						</div>
+			
+			</div>  <!--ui-block-b-->	
+		</div>	<!--ui-grid-a-->	
+	
+					 <p align="right" id="next_page16">
+						<!--   <a href="#page4" data-role="button" data-icon="forward" data-iconpos="right" data-theme="a" class="ui-btn-right">Next</a> -->
+						   <a href="#page17" data-transition="slide"><img src="images/next.png"></a>
+					 </p>
+		
+	
+	</div> <!-- content-->	
+	<div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1> 	
+	</div>
+	
+</div>
+
+<div data-role="page" id="page17" data-theme="a">
+     <div data-role="header">
+	      <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>
+	     <h1>Body Location: Back</h1>
+	 </div>
+	 <div data-role="content">
+
+	
+		
+		<div class="ui-grid-a">
+			<div class="ui-block-a">				
+			   <p class="before_back_1">Places I have pain RIGHT NOW</p>
+		 
+			    <div class="back3">
+				<center><img src="images/Back_2.png" class="back_3" alt="" border="0" usemap="#MapbackBefore"/>
+				<map name="MapbackBefore">
+				  
+					<area shape="poly" coords="178,14,188,16,198,21,204,29,204,37,204,44,203,52,200,60,198,67,195,73,202,75,203,83,201,88,196,91,189,90,190,98,185,104,179,109,172,111,160,115,148,113,138,113,131,107,125,100,123,90,117,90,115,84,112,77,118,72,113,63,112,51,113,38,117,26,127,15,144,10,160,4" href="javascript:headBackDaily_1_b()" alt="head">
+						   
+					<area shape="poly" coords="138,115,148,115,159,115,172,113,175,112,173,124,138,125,138,115" href="javascript:()" alt="neck">
+				   
+					<area shape="poly" coords="157,123,199,182,231,166,228,154,225,142,210,134,192,128,180,124,157,124" href="javascript:lShdBackDaily_1_b()" alt="left shoulder">
+					
+					<area shape="poly" coords="158,126,111,186,78,171,82,163,82,154,85,142,98,136,117,131,134,126,158,125" href="javascript:rShdBackDaily_1_b()" alt="right shoulder">
+					
+					<area shape="poly" coords="158,131,195,182,114,188,158,133" href="javascript:chestBackDaily_1_b()" alt="chest">
+							
+					<area shape="poly" coords="111,192,201,187,201,201,201,216,201,235,183,236,159,238,136,235,116,236,112,213,110,191" href="javascript:abdomenBackDaily_1_b()" alt="abdomen">
+					
+					<area shape="poly" coords="208,184,233,170,237,188,241,210,253,223,262,235,266,241,244,252,234,241,225,228,219,220,214,202,209,184" href="javascript:lElbowBackDaily_1_b()" alt="left elbow">
+					
+					<area shape="poly" coords="77,174,102,186,98,210,94,220,87,230,81,241,77,249,70,252,50,238,59,224,69,214,74,194,77,174" href="javascript:rElbowBackDaily_1_b()" alt="right elbow">
+
+					<area shape="poly" coords="245,256,247,269,254,279,264,283,271,282,279,282,285,276,283,267,278,262,278,255,285,258,288,254,282,247,277,242,269,239,246,256" href="javascript:lHandBackDaily_1_b()" alt="left hand">
+					
+					<area shape="poly" coords="50,242,70,258,65,268,62,278,56,282,49,284,39,284,30,280,29,272,36,260,31,259,24,260,24,254,28,247,40,241,50,242" href="javascript:rHandBackDaily_1_b()" alt="right hand">
+					
+					<area shape="poly" coords="113,250,126,252,143,301,145,312,142,331,140,339,103,331,112,249" href="javascript:rHipBackDaily_1_b()" alt="right hip">
+					
+					<area shape="poly" coords="146,302,127,252,177,249,164,302,147,303" href="javascript:backBackDaily_1_b()" alt="back"> 
+							
+					<area shape="poly" coords="180,253,194,250,196,272,199,292,203,309,205,335,161,341,159,325,180,252" href="javascript:lHipBackDaily_1_b()" alt="left hip">					 
+					
+					<area shape="poly" coords="107,313,145,324,145,340,145,357,146,378,111,378,106,362,103,349,106,316" href="javascript:rLegBackDaily_1_b()" alt="right leg">
+					
+					<area shape="poly" coords="164,324,208,313,211,323,212,332,210,342,206,354,204,364,202,374,200,380,166,380,167,360,164,341,165,323" href="javascript:lLegBackDaily_1_b()" alt="left leg">
+					
+					<area shape="poly" coords="167,384,201,382,198,397,206,399,217,405,219,411,217,415,201,414,186,414,175,412,166,409,167,386" href="javascript:lFootBackDaily_1_b()" alt="left foot">
+					
+					<area shape="poly" coords="112,382,146,381,146,393,151,402,151,409,148,413,138,413,127,413,118,413,107,414,100,411,107,403,114,400,112,382" href="javascript:rFootBackDaily_1_b()" alt="right foot">
+
+			   
+				</map>
+				</center>
+               </div>				
+
+			    <img id="head_d_red_back_b" class="head_d_red_back_b" src="images/transperant/daily/head_back_red.png" onClick="headBackDaily_2_b()"/>
+				<img id="rightshoulder_d_red_back_b" class="rightshoulder_d_red_back_b" src="images/transperant/daily/right_shoulder_back_red.png" onClick="rShdBackDaily_2_b()"/>
+				<img id="leftshoulder_d_red_back_b" class="leftshoulder_d_red_back_b" src="images/transperant/daily/left_shoulder_back_red.png" onClick="lShdBackDaily_2_b()"/>
+				<img id="chest_d_red_back_b" class="chest_d_red_back_b" src="images/transperant/daily/chest_back_red.png" onClick="chestBackDaily_2_b()"/>
+			    <img id="abdomen_d_red_back_b" class="abdomen_d_red_back_b" src="images/transperant/daily/abdomen_back_red.png" onClick="abdomenBackDaily_2_b()"/>
+		        <img id="lelbow_d_red_back_b" class="lelbow_d_red_back_b" src="images/transperant/daily/left_elbow_back_red.png" onClick="lElbowBackDaily_2_b()"/>
+				<img id="relbow_d_red_back_b" class="relbow_d_red_back_b" src="images/transperant/daily/right_elbow_back_red.png" onClick="rElbowBackDaily_2_b()"/>
+				<img id="lhand_d_red_back_b" class="lhand_d_red_back_b" src="images/transperant/daily/left_hand_back_red.png" onClick="lHandBackDaily_2_b()"/>
+				<img id="rhand_d_red_back_b" class="rhand_d_red_back_b" src="images/transperant/daily/right_hand_back_red.png" onClick="rHandBackDaily_2_b()"/>				
+				<img id="rhip_d_red_back_b" class="rhip_d_red_back_b" src="images/transperant/daily/right_hip_back_red.png" onClick="rHipBackDaily_2_b()"/>
+				<img id="back_d_red_back_b" class="back_d_red_back_b" src="images/transperant/daily/back_back_red.png" onClick="backBackDaily_2_b()"/>				
+				<img id="lhip_d_red_back_b" class="lhip_d_red_back_b" src="images/transperant/daily/left_hip_back_red.png" onClick="lHipBackDaily_2_b()"/>				
+				<img id="rleg_d_red_back_b" class="rleg_d_red_back_b" src="images/transperant/daily/right_leg_back_red.png" onClick="rLegBackDaily_2_b()"/>
+				<img id="lleg_d_red_back_b" class="lleg_d_red_back_b" src="images/transperant/daily/left_leg_back_red.png" onClick="lLegBackDaily_2_b()"/>
+				<img id="lfoot_d_red_back_b" class="lfoot_d_red_back_b" src="images/transperant/daily/left_foot_back_red.png" onClick="lFootBackDaily_2_b()"/>
+				<img id="rfoot_d_red_back_b" class="rfoot_d_red_back_b" src="images/transperant/daily/right_foot_back_red.png" onClick="rFootBackDaily_2_b()"/>
+			    
+			</div><!--ui-block-a-->		
+			
+			<div class="ui-block-b">						   
+						<div id="div_p5">
+								<center><p class="no_pain_text_p17">No pain at the Back</p></center>
+								<center><a href="#" class="no_pain_p17" data-inline="true" data-role="button" data-theme="a" >No Pain</a></center>
+						</div>				
+		    </div>	<!--ui-block-b-->
+		 </div>	<!--ui-grid-a-->
+		
+					 <p align="right" id="next_page17">
+						<!--   <a href="#page4" data-role="button" data-icon="forward" data-iconpos="right" data-theme="a" class="ui-btn-right">Next</a> -->
+						   <a href="#page18" data-transition="slide"><img src="images/next.png"></a>
+					 </p>
+		
+	</div> <!-- content-->			
+	<div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1> 
+	</div>
+	
+</div>
+
+<div data-role="page" id="page18" data-theme="a">
+       <div data-role="header">	
+	       <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>
+		  <h1>Pain Intensity</h1>	
+	   </div>
+	   
+	  <div data-role="content">
+	        <br></br>
+			<div>
+				<center><p><font face="Georgia">Drag the mark to show how much PAIN or HURT you have right now.</font></p></center>			
+			</div>
+				<br></br>	
+				<br></br>	
+				
+			<div  id="mySlider9" data-role="fieldcontain" data-theme="a"> 
+				<label for="slider9"></label>	
+				<input type="range" name="slider9" id="slider9"	min="0" max="100" value="50" data-highlight="true">	
+				<label for="slider9"><span class="left1"><font size="5">No pain</font></span><span class="right1"><font size="5">Most pain <br/>&nbsp;&nbsp;possible</font></span></label>				
+			</div> 
+			
+            <br></br>	
+			<br></br><br></br>	
+			
+			<p align="right" id="next_page18">
+				   <a href="#page19" class="next" data-transition="slide"><img src="images/next.png"></a>
+			</p>	
+
+        </div>			
+  		
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>  
+	  </div>
+  
+</div>
+
+<div data-role="page" id="page19" data-theme="a">
+       <div data-role="header">	
+	       <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>
+		  <h1>Pain Affect/Unpleasentness</h1>	
+	   </div>
+	   <div data-role="content">
+	   
+	   <center><p><font face="Georgia">Touch the face that shows how your pain feels right now</font></p></center>	
+	   
+			<!--emoticon_1--><div  onClick="pain_affect_85()" ><img id="img85" class="j85" src="images/emoticons/before/emo1.png" align="middle" alt = "emo1.png" /></div>	
+			<!--emoticon_2--><div  onClick="pain_affect_86()" ><img id="img86" class="j86" src="images/emoticons/before/emo2.png" align="middle" alt = "emo2.png" /></div>	
+			<!--emoticon_3--><div  onClick="pain_affect_87()" ><img id="img87" class="j87" src="images/emoticons/before/emo3.png" align="middle" alt = "emo3.png" /></div>
+			<!--emoticon_4--><div  onClick="pain_affect_88()" ><img id="img88" class="j88" src="images/emoticons/before/emo4.png" align="middle" alt = "emo4.png" /></div>
+			<!--emoticon_5--><div  onClick="pain_affect_89()" ><img id="img89" class="j89" src="images/emoticons/before/emo5.png" align="middle" alt = "emo5.png" /></div>
+			<!--emoticon_6--><div  onClick="pain_affect_90()" ><img id="img90" class="j90" src="images/emoticons/before/emo6.png" align="middle" alt = "emo6.png" /></div>
+			<!--emoticon_7--><div  onClick="pain_affect_91()" ><img id="img91" class="j91" src="images/emoticons/before/emo7.png" align="middle" alt = "emo7.png" /></div>
+			<!--emoticon_8--><div  onClick="pain_affect_92()" ><img id="img92" class="j92" src="images/emoticons/before/emo8.png" align="middle" alt = "emo8.png" /></div>
+			<!--emoticon_9--><div  onClick="pain_affect_93()" ><img id="img93" class="j93" src="images/emoticons/before/emo9.png" align="middle" alt = "emo9.png" /></div>		
+		 			
+				<div class="affect1"><p><font size="5">Very Good</font></p></div> 
+				<div class="affect2"><p><font size="5">Very Bad</font></p></div>
+			
+			
+			<p align="right" id="next_page19">
+				   <a href="#page20" class="next" data-transition="slide"><img src="images/next.png"></a>
+			</p>
+	    </div>
+  		
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>  	
+	  </div>
+  
+</div>
+
+<div data-role="page" id="page20" data-theme="a">
+
+		<div data-role="header">	
+	      <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>
+		  <h1>List of words to describe the pain experience</h1>	
+	    </div>
+	   
+        <div>
+			<center><p><font face="Georgia">Touch the words that best describe how your pain feels right now. </font></p></center>			
+        </div> 	
+                
+        <div data-role="content">
+        
+        	<div class="ui-grid-b" style="width:1100px">
+        	
+					<div class="ui-block-a" data-theme="a" >					
+							  <div data-role="fieldcontain" >
+									<fieldset data-role="controlgroup">
+										<legend></legend>
+										<input type="checkbox" name="checkbox-45" id="checkbox-45" value="Sore, " class="checkbox-45" data-theme="c"/>
+										<label for="checkbox-45">Sore</label>
+										<legend></legend>
+										<input type="checkbox" name="checkbox-46" id="checkbox-46" value="Aching, " class="checkbox-46" data-theme="c"/>
+										<label for="checkbox-46">Aching</label>
+										<legend></legend>
+										<input type="checkbox" name="checkbox-47" id="checkbox-47" value="Pins and needles, " class="checkbox-47" data-theme="c"/>
+										<label for="checkbox-47">Pins and needles</label>
+										<legend></legend>
+										<input type="checkbox" name="checkbox-48" id="checkbox-48" value="Stinging, " class="checkbox-48" data-theme="c"/>
+										<label for="checkbox-48">Stinging</label>
+										<legend></legend>
+										<input type="checkbox" name="checkbox-49" id="checkbox-49" value="Squeezing, " class="checkbox-49" data-theme="c"/>
+										<label for="checkbox-49">Squeezing</label>
+										
+										<legend></legend>
+										<input type="checkbox" name="checkbox-50" id="checkbox-50" value="Pounding, " class="checkbox-50" data-theme="b"/>
+										<label for="checkbox-50">Pounding</label>
+										<legend></legend>
+										<input type="checkbox" name="checkbox-51" id="checkbox-51" value="Pulling, " class="checkbox-51" data-theme="b"/>
+										<label for="checkbox-51">Pulling</label>
+										<legend></legend>
+										<input type="checkbox" name="checkbox-52" id="checkbox-52" value="Itching, " class="checkbox-52" data-theme="b"/>
+										<label for="checkbox-52">Itching</label>
+										<legend></legend>
+										<input type="checkbox" name="checkbox-53" id="checkbox-53" value="Beating, " class="checkbox-53" data-theme="b"/>
+										<label for="checkbox-53">Beating</label>
+										<legend></legend>
+										<input type="checkbox" name="checkbox-54" id="checkbox-54" value="Pricking, " class="checkbox-54" data-theme="b"/>
+										<label for="checkbox-54">Pricking</label>
+										<legend></legend>
+										<input type="checkbox" name="checkbox-55" id="checkbox-55" value="Throbbing , " class="checkbox-55" data-theme="b"/>
+										<label for="checkbox-55">Throbbing </label
+									></fieldset>
+							</div> <!--field-contain--> 					              
+                    </div> <!--ui-block-a-->
+                    
+                    
+                    <div class="ui-block-b" >
+        
+        						<div data-role="fieldcontain" >
+									<fieldset data-role="controlgroup">
+										<legend></legend>
+										<input type="checkbox" name="checkbox-56" id="checkbox-56" value="Pinching , " class="checkbox-56" data-theme="c"/>
+										<label for="checkbox-56">Pinching </label>
+										<legend></legend>
+										<input type="checkbox" name="checkbox-57" id="checkbox-57" value="Tingling , " class="checkbox-57" data-theme="c"/>
+										<label for="checkbox-57">Tingling </label>	
+										<legend></legend>
+										<input type="checkbox" name="checkbox-58" id="checkbox-58" value="Biting , " class="checkbox-58" data-theme="c"/>
+										<label for="checkbox-58">Biting </label>	
+										<legend></legend>
+										<input type="checkbox" name="checkbox-59" id="checkbox-59" value="Burning , " class="checkbox-59" data-theme="c"/>
+										<label for="checkbox-59">Burning </label>	
+										<legend></legend>
+										<input type="checkbox" name="checkbox-60" id="checkbox-60" value="Sharp , " class="checkbox-60" data-theme="c"/>
+										<label for="checkbox-60">Sharp </label>	
+										<legend></legend>
+										<input type="checkbox" name="checkbox-61" id="checkbox-61" value="Cold , " class="checkbox-61" data-theme="c"/>
+										<label for="checkbox-61">Cold </label>
+										
+										<legend></legend>
+										<input type="checkbox" name="checkbox-62" id="checkbox-62" value="Scraping , " class="checkbox-62" data-theme="b"/>
+										<label for="checkbox-62">Scraping </label>	
+										<legend></legend>
+										<input type="checkbox" name="checkbox-63" id="checkbox-63" value="Cutting , " class="checkbox-63" data-theme="b"/>
+										<label for="checkbox-63">Cutting </label>	
+										<legend></legend>
+										<input type="checkbox" name="checkbox-64" id="checkbox-64" value="Jumping , " class="checkbox-64" data-theme="b"/>
+										<label for="checkbox-64">Jumping </label>	
+										<legend></legend>
+										<input type="checkbox" name="checkbox-65" id="checkbox-65" value="Flashing , " class="checkbox-65" data-theme="b"/>
+										<label for="checkbox-65">Flashing </label>	
+									</fieldset>
+							</div> <!--field-contain--> 
+        
+                    </div> <!--ui-block-b-->
+                    
+                    <div class="ui-block-c" >
+        
+        					<div data-role="fieldcontain" >
+									<fieldset data-role="controlgroup">
+									<legend></legend>
+									<input type="checkbox" name="checkbox-66" id="checkbox-66" value="Tiring , " class="checkbox-66" data-theme="c"/>
+									<label for="checkbox-66">Tiring </label>	
+									<legend></legend>
+									<input type="checkbox" name="checkbox-67" id="checkbox-67" value="Scikening , " class="checkbox-67" data-theme="c"/>
+									<label for="checkbox-67">Sickening </label>
+									<legend></legend>
+									<input type="checkbox" name="checkbox-68" id="checkbox-68" value="Sad , " class="checkbox-68" data-theme="c"/>
+									<label for="checkbox-68">Sad </label>	
+									<legend></legend>
+									<input type="checkbox" name="checkbox-69" id="checkbox-69" value="Cruel , " class="checkbox-69" data-theme="c"/>
+									<label for="checkbox-69">Cruel </label>	
+									<legend></legend>
+									<input type="checkbox" name="checkbox-70" id="checkbox-70" value="Punishing , " class="checkbox-70" data-theme="c"/>
+									<label for="checkbox-70">Punishing </label>	
+									<legend></legend>
+									<input type="checkbox" name="checkbox-71" id="checkbox-71" value="Fearful , " class="checkbox-71" data-theme="c"/>
+									<label for="checkbox-71">Fearful </label>							
+									
+									<legend></legend>
+									<input type="checkbox" name="checkbox-72" id="checkbox-72" value="Uncomfortable , " class="checkbox-72" data-theme="b"/>
+									<label for="checkbox-72">Uncomfortable </label>	
+									<legend></legend>
+									<input type="checkbox" name="checkbox-73" id="checkbox-73" value="Miserable , " class="checkbox-73" data-theme="b"/>
+									<label for="checkbox-73">Miserable </label>	
+									<legend></legend>
+									<input type="checkbox" name="checkbox-74" id="checkbox-74" value="Horrible , " class="checkbox-74" data-theme="b"/>
+									<label for="checkbox-74">Horrible </label>	
+									<legend></legend>
+									<input type="checkbox" name="checkbox-75" id="checkbox-75" value="Unbearable , " class="checkbox-75" data-theme="b"/>
+									<label for="checkbox-75">Unbearable </label>
+									<legend></legend>
+									<input type="checkbox" name="checkbox-76" id="checkbox-76" value="None of these word describe my pain , " class="checkbox-76" data-theme="b"/>
+									<label for="checkbox-76">None of these words describe my pain </label>	
+									</fieldset>
+							</div> <!--field-contain--> 
+        
+                    </div> <!--ui-block-c-->                    
+                                        
+            </div><!--ui-grid-b-->
+                           								 
+		</div> <!--content-->
+	
+			<p align="right" id="next_page20">
+				   <a href="#page21" class="next" data-transition="slide"><img src="images/next.png"></a>
+			</p>
+	
+		
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>  	
+	  </div>
+  
+</div>
+
+<div data-role="page" id="page21" data-theme="a">
+       <div data-role="header">	
+	       <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>
+		  <h1>Stiffness question</h1>	
+	   </div>
+	   
+	 <div data-role="content">
+			<div>
+				<center><p><font face="Georgia">Drag the mark to show how STIFF you are right now. </font></p></center>			
+			</div> 
+				<br></br>	
+				<br></br>	
+					
+			<div  id="mySlider10" data-role="fieldcontain" data-theme="a"> 
+				<label for="slider10"></label>	
+				<input type="range" name="slider10" id="slider10"	min="1" max="100" value="50" data-highlight="true">	
+				<label for="slider10"><span class="left3"><font size="5">Not at all stiff</font></span><span class="right3"><font size="5">Most stiffness<br/>&nbsp;&nbsp; possible</font></span></label>				
+			</div> 
+			
+            <br></br>	
+			<br></br><br></br>	
+			
+			<p align="right" id="next_page21">
+				   <a href="#page22" class="next" data-transition="slide"><img src="images/next.png"></a>
+			</p>	
+				
+			</div>		
+			
+		  <div data-role="footer" data-theme="a" data-position="fixed">        
+				<h1><i>PInGo Pain Diary &copy; 2012</i></h1>  	
+		  </div>	  
+	 
+  
+</div>
+
+<div data-role="page" id="page22" data-theme="a">
+       <div data-role="header">	
+	       <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>
+		  <h1>Fatigue question</h1>	
+	   </div>
+	   
+	   <div data-role="content">
+			<div>
+				<center><p><font face="Georgia">Drag the mark to show how FATIGUED or TIRED you are right now. </font></p></center>			
+			</div> 
+				<br></br>	
+				<br></br>
+
+			<div  id="mySlider11" data-role="fieldcontain" data-theme="a"> 
+				<label for="slider11"></label>	
+				<input type="range" name="slider11" id="slider11"	min="1" max="100" value="50" data-highlight="true">	
+				<label for="slider11"><span class="left3"><font size="5">Not at all tired</font></span><span class="right3"><font size="5">The most tired<br/>&nbsp;&nbsp;  possible</font></span></label>				
+			</div> 
+			
+            <br></br>	
+			<br></br><br></br>	
+			
+			<p align="right" id="next_page22">
+				   <a href="#page23" class="next" data-transition="slide"><img src="images/next.png"></a>
+			</p>
+
+        </div>			
+  		
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>  
+	  </div>
+  
+</div>
+
+<div data-role="page" id="page23" data-theme="a">
+       <div data-role="header">	
+	       <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>
+		  <h1>Emotional valence</h1>	
+	   </div>
+	   
+	    <div data-role="content">
+			<div>
+				<center><p><font face="Georgia">Drag the mark to show how GOOD or BAD your mood is right now. </font></p></center>			
+			</div> 
+				<br></br>	
+				<br></br>	
+							
+			<div  id="mySlider12" data-role="fieldcontain" data-theme="a"> 
+				<label for="slider12"></label>	
+				<input type="range" name="slider12" id="slider12"	min="1" max="100" value="50" data-highlight="true">	
+				<label for="slider12"><span class="left1"><font size="5">Very bad</font></span><span class="right1"><font size="5">Very good</font></span></label>				
+			</div> 
+			
+            <br></br>	
+			<br></br><br></br>	
+			
+			<p align="right" id="next_page23">
+				   <a href="#page24" class="next" data-transition="slide"><img src="images/next.png"></a>
+			</p>
+					
+        </div>				
+  		
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>  	
+	  </div>
+  
+</div>
+
+<div data-role="page" id="page24" data-theme="a">
+       <div data-role="header">	
+	       <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>
+		  <h1>Emotional Activation</h1>	
+	   </div>
+	   
+
+	<div data-role="content">
+			<div>
+				<center><p><font face="Georgia">Drag the mark to show how AWAKE or SLEEPY you feel right now. </font></p></center>			
+			</div> 
+				<br></br>	
+				<br></br>			
+			
+			<div  id="mySlider13" data-role="fieldcontain" data-theme="a"> 
+				<label for="slider13"></label>	
+				<input type="range" name="slider13" id="slider13"	min="1" max="100" value="50" data-highlight="true">	
+				<label for="slider13"><span class="left6"><font size="5">Very sleepy</font></span><span class="right6"><font size="5">Very awake</font></span></label>				
+			</div> 
+			
+            <br></br>	
+			<br></br><br></br>	
+			
+			<p align="right" id="next_page24">
+				   <a href="#page25" class="next" data-transition="slide"><img src="images/next.png"></a>
+			</p>
+			
+     	</div>		
+  		
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>  	
+	  </div>
+  
+</div>
+
+<div data-role="page" id="page25" data-theme="a">
+       <div data-role="header">	
+	       <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>
+		  <h1>Comments</h1>	
+	   </div>
+	   
+	<div data-role="content">
+			<div>
+				<center><p><font face="Georgia">Please enter any notes for this survey entry. </font></p></center>			
+			</div> 
+				<br></br>	
+				<br></br>
+				
+			<div data-role="fieldcontain">
+				<label for="textarea-b"></label>
+				<center><textarea cols="40" rows="15" name="textarea-b" id="textarea-b"></textarea><center>
+			</div>
+			
+			<br></br>	
+			<br></br> 
+			<br></br>			
+			<center><a href="#Before_endpage" data-transition="slide" data-inline="true" data-role="button" data-theme="a" >I have no extra comments</a></center>
+			
+			<p align="right" id="next_page25">
+				   <a href="#Before_endpage" class="next" data-transition="slide"><img src="images/next.png"></a>
+			</p>
+    </div>	
+		
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>          
+	  </div>
+  
+</div>
+
+
+<div data-role="page" id="Before_endpage" data-theme="a">
+          <div data-role="header">	
+		  <h1>End</h1>	
+	   </div>
+	   
+	        <br></br>
+			 <br></br>
+			  <br></br>
+			   <br></br>
+			
+		<div data-role="content">
+         				
+				<center><a href="#Before_Congrats" data-role="button" data-inline="true" data-theme="a" data-rel="dialog" data-transition="pop" style="height: 100px; width: 350px; color:#603813" onClick="addDatatoBefore()"><font size="9">Submit</font></a></center>
+			
+			<br></br>	
+			<!-- <a href="#"  data-inline="true" data-role="button" data-theme="a" onClick="readDatafromBefore()">Read DB</a>	-->		
+		
+        </div>	
+
+		
+  		
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>          
+	  </div>
+  
+</div>
+
+<div data-role="dialog" id="Before_Congrats" >
+		<div data-role="header">		    
+				<h3>Congratulations!</h3>	
+	    </div>			
+		<div data-role="content" data-theme="a">
+			   <br></br>		
+				<center><a href="#page1" data-role="button" data-transition="slide" style="height: 100px; width: 350px; color:#603813"><font size="7">Menu</font></a></center>
+				<br></br>
+        </div>				
+  
+</div>
+
+
+
+
+<div data-role="page" id="page26" data-theme="a">
+     <div data-role="header">
+	      <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>
+	     <h1>Body Location: Front</h1>
+	 </div>
+	 <div data-role="content">
+
+	
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			
+			   <p class="after_front_1">Places I have pain RIGHT NOW</p>
+			 
+			    <div class="front5">
+				   
+					<center><img src="images/Front_3.png" class="front_5" alt="" border="0" usemap="#MapAfter"/>
+					<map name="MapAfter">
+				  
+					<area shape="poly" coords="178,14,188,16,198,21,204,29,204,37,204,44,203,52,200,60,198,67,195,73,202,75,203,83,201,88,196,91,189,90,190,98,185,104,179,109,172,111,160,115,148,113,138,113,131,107,125,100,123,90,117,90,115,84,112,77,118,72,113,63,112,51,113,38,117,26,127,15,144,10,160,4" href="javascript:headFrontDaily_1_a()" alt="head">
+						   
+	<!-- undone-->	<area shape="poly" coords="138,115,148,115,159,115,172,113,175,112,173,124,138,125,138,115" href="javascript:()" alt="neck">
+				   
+					<area shape="poly" coords="157,123,199,182,231,166,228,154,225,142,210,134,192,128,180,124,157,124" href="javascript:lShdFrontDaily_1_a()" alt="left shoulder">
+					
+					<area shape="poly" coords="158,126,111,186,78,171,82,163,82,154,85,142,98,136,117,131,134,126,158,125" href="javascript:rShdFrontDaily_1_a()" alt="right shoulder">
+					
+					<area shape="poly" coords="158,131,195,182,114,188,158,133" href="javascript:chestFrontDaily_1_a()" alt="chest">
+							
+					<area shape="poly" coords="111,192,201,187,201,201,201,216,201,235,183,236,159,238,136,235,116,236,112,213,110,191" href="javascript:abdomenFrontDaily_1_a()" alt="abdomen">
+					
+					<area shape="poly" coords="208,184,233,170,237,188,241,210,253,223,262,235,266,241,244,252,234,241,225,228,219,220,214,202,209,184" href="javascript:lElbowFrontDaily_1_a()" alt="left elbow">
+					
+					<area shape="poly" coords="77,174,102,186,98,210,94,220,87,230,81,241,77,249,70,252,50,238,59,224,69,214,74,194,77,174" href="javascript:rElbowFrontDaily_1_a()" alt="right elbow">
+
+					<area shape="poly" coords="243,271,267,254,275,256,284,258,289,263,294,270,294,274,291,274,280,272,277,274,282,280,290,286,287,292,285,297,280,300,272,300,264,300,256,296,250,290,246,283,244,271" href="javascript:lHandFrontDaily_1_a()" alt="left hand">
+					
+					<area shape="poly" coords="34,253,56,271,55,281,50,289,45,296,39,299,26,300,17,299,13,294,12,288,17,281,23,279,22,271,16,272,11,275,8,270,10,264,14,259,26,254,34,253" href="javascript:rHandFrontDaily_1_a()" alt="right hand">
+
+					<area shape="poly" coords="115,242,127,240,143,241,141,254,139,264,138,277,140,287,145,297,146,312,145,323,108,310,108,293,110,272,114,242" href="javascript:rHipFrontDaily_1_a()" alt="right hip">
+					
+					<area shape="poly" coords="149,243,170,242,172,253,173,272,170,288,163,302,152,303,145,292,143,278,144,261,149,245" href="javascript:groinFrontDaily_1_a()" alt="groin">
+									
+					<area shape="poly" coords="164,256,170,269,173,281,173,296,170,307,162,317,162,333,165,347,204,340,201,321,200,304,197,288,194,271,194,254,166,257" href="javascript:lHipFrontDaily_1_a()" alt="left hip">
+								
+					<area shape="poly" coords="95,330,141,347,141,364,142,381,142,395,141,408,103,408,99,389,94,370,92,357,95,332" href="javascript:rLegFrontDaily_1_a()" alt="right leg">
+					
+					<area shape="poly" coords="166,351,204,344,208,355,208,366,203,387,199,403,198,411,162,405,164,382,165,362,166,351" href="javascript:lLegFrontDaily_1_a()" alt="left leg">
+					
+					<area shape="poly" coords="162,407,197,413,195,422,204,426,208,431,209,439,195,440,179,440,166,440,157,437,157,428,160,420,161,408" href="javascript:lFootFrontDaily_1_a()" alt="left foot">
+					
+					<area shape="poly" coords="104,409,139,411,140,420,141,428,138,434,136,438,119,438,101,438,88,438,84,436,86,430,97,424,107,421,105,410" href="javascript:rFootFrontDaily_1_a()" alt="right foot">
+
+
+					</map>
+				</center>
+			</div>
+
+				<img id="head_d_red_a" class="head_d_red_a" src="images/transperant/after/head_front_red.png" onClick="headFrontDaily_2_a()"/>
+				<img id="rightshoulder_d_red_a" class="rightshoulder_d_red_a" src="images/transperant/after/right_shoulder_red.png" onClick="rShdFrontDaily_2_a()"/>
+				<img id="leftshoulder_d_red_a" class="leftshoulder_d_red_a" src="images/transperant/after/left_shoulder_red.png" onClick="lShdFrontDaily_2_a()"/>
+				<img id="chest_d_red_a" class="chest_d_red_a" src="images/transperant/after/chest_red.png" onClick="chestFrontDaily_2_a()"/>
+			    <img id="abdomen_d_red_a" class="abdomen_d_red_a" src="images/transperant/after/abdomen_red.png" onClick="abdomenFrontDaily_2_a()"/>
+		        <img id="lelbow_d_red_a" class="lelbow_d_red_a" src="images/transperant/after/left_elbow_red.png" onClick="lElbowFrontDaily_2_a()"/>
+				<img id="relbow_d_red_a" class="relbow_d_red_a" src="images/transperant/after/right_elbow_red.png" onClick="rElbowFrontDaily_2_a()"/>
+				<img id="lhand_d_red_a" class="lhand_d_red_a" src="images/transperant/after/left_hand_red.png" onClick="lHandFrontDaily_2_a()"/>
+				<img id="rhand_d_red_a" class="rhand_d_red_a" src="images/transperant/after/right_hand_red.png" onClick="rHandFrontDaily_2_a()"/>
+				<img id="rhip_d_red_a" class="rhip_d_red_a" src="images/transperant/after/right_hip_red.png" onClick="rHipFrontDaily_2_a()"/>
+				<img id="groin_d_red_a" class="groin_d_red_a" src="images/transperant/after/groin_red.png" onClick="groinFrontDaily_2_a()"/>
+				<img id="lhip_d_red_a" class="lhip_d_red_a" src="images/transperant/after/left_thigh_red.png" onClick="lHipFrontDaily_2_a()"/>
+				<img id="rleg_d_red_a" class="rleg_d_red_a" src="images/transperant/after/right_leg_red.png" onClick="rLegFrontDaily_2_a()"/>
+				<img id="lleg_d_red_a" class="lleg_d_red_a" src="images/transperant/after/left_leg_red.png" onClick="lLegFrontDaily_2_a()"/>
+				<img id="lfoot_d_red_a" class="lfoot_d_red_a" src="images/transperant/after/left_foot_red.png" onClick="lFootFrontDaily_2_a()"/>
+				<img id="rfoot_d_red_a" class="rfoot_d_red_a" src="images/transperant/after/right_foot_red.png" onClick="rFootFrontDaily_2_a()"/>
+			</div>	<!--ui-block-a-->		
+			
+			<div class="ui-block-b">
+
+					<div id="div_p6">
+							<center><p class="no_pain_text_p26">No pain on the front</p></center>
+							<center><a href="#" class="no_pain_p26" data-inline="true" data-role="button" data-theme="a" >No Pain</a></center>
+					</div>	
+
+			</div> <!--ui-block-b-->	
+		</div><!--ui-grid-a-->
+	 
+
+					 <p align="right" id="next_page26">
+						<!--   <a href="#page4" data-role="button" data-icon="forward" data-iconpos="right" data-theme="a" class="ui-btn-right">Next</a> -->
+						   <a href="#page27" data-transition="slide"><img src="images/next.png"></a>
+					 </p>
+				
+	</div> <!-- content-->
+		
+	<div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>Pain Diary &copy; 2012</i></h1> 
+
+	</div>
+	
+</div>
+
+<div data-role="page" id="page27" data-theme="a">
+     <div data-role="header">
+	      <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>
+	     <h1>Body Location: Back</h1>
+	 </div>
+	 <div data-role="content">
+			
+		<div class="ui-grid-a">
+			<div class="ui-block-a">				
+			   <p class="after_back_1">Places I have pain RIGHT NOW</p>
+			<div class="back5">   
+				<center><img src="images/Back_3.png" class="back_5" alt="" border="0" usemap="#MapbackAfter"/>
+				<map name="MapbackAfter">
+				  
+					<area shape="poly" coords="178,14,188,16,198,21,204,29,204,37,204,44,203,52,200,60,198,67,195,73,202,75,203,83,201,88,196,91,189,90,190,98,185,104,179,109,172,111,160,115,148,113,138,113,131,107,125,100,123,90,117,90,115,84,112,77,118,72,113,63,112,51,113,38,117,26,127,15,144,10,160,4" href="javascript:headBackDaily_1_a()" alt="head">
+						   
+					<area shape="poly" coords="138,115,148,115,159,115,172,113,175,112,173,124,138,125,138,115" href="javascript:()" alt="neck">
+				   
+					<area shape="poly" coords="157,123,199,182,231,166,228,154,225,142,210,134,192,128,180,124,157,124" href="javascript:lShdBackDaily_1_a()" alt="left shoulder">
+					
+					<area shape="poly" coords="158,126,111,186,78,171,82,163,82,154,85,142,98,136,117,131,134,126,158,125" href="javascript:rShdBackDaily_1_a()" alt="right shoulder">
+					
+					<area shape="poly" coords="158,131,195,182,114,188,158,133" href="javascript:chestBackDaily_1_a()" alt="chest">
+							
+					<area shape="poly" coords="111,192,201,187,201,201,201,216,201,235,183,236,159,238,136,235,116,236,112,213,110,191" href="javascript:abdomenBackDaily_1_a()" alt="abdomen">
+					
+					<area shape="poly" coords="208,184,233,170,237,188,241,210,253,223,262,235,266,241,244,252,234,241,225,228,219,220,214,202,209,184" href="javascript:lElbowBackDaily_1_a()" alt="left elbow">
+					
+					<area shape="poly" coords="77,174,102,186,98,210,94,220,87,230,81,241,77,249,70,252,50,238,59,224,69,214,74,194,77,174" href="javascript:rElbowBackDaily_1_a()" alt="right elbow">
+
+					<area shape="poly" coords="245,256,247,269,254,279,264,283,271,282,279,282,285,276,283,267,278,262,278,255,285,258,288,254,282,247,277,242,269,239,246,256" href="javascript:lHandBackDaily_1_a()" alt="left hand">
+					
+					<area shape="poly" coords="50,242,70,258,65,268,62,278,56,282,49,284,39,284,30,280,29,272,36,260,31,259,24,260,24,254,28,247,40,241,50,242" href="javascript:rHandBackDaily_1_a()" alt="right hand">
+					
+					<area shape="poly" coords="113,250,126,252,143,301,145,312,142,331,140,339,103,331,112,249" href="javascript:rHipBackDaily_1_a()" alt="right hip">
+					
+					<area shape="poly" coords="146,302,127,252,177,249,164,302,147,303" href="javascript:backBackDaily_1_a()" alt="back"> 
+							
+					<area shape="poly" coords="180,253,194,250,196,272,199,292,203,309,205,335,161,341,159,325,180,252" href="javascript:lHipBackDaily_1_a()" alt="left hip">					 
+					
+					<area shape="poly" coords="107,313,145,324,145,340,145,357,146,378,111,378,106,362,103,349,106,316" href="javascript:rLegBackDaily_1_a()" alt="right leg">
+					
+					<area shape="poly" coords="164,324,208,313,211,323,212,332,210,342,206,354,204,364,202,374,200,380,166,380,167,360,164,341,165,323" href="javascript:lLegBackDaily_1_a()" alt="left leg">
+					
+					<area shape="poly" coords="167,384,201,382,198,397,206,399,217,405,219,411,217,415,201,414,186,414,175,412,166,409,167,386" href="javascript:lFootBackDaily_1_a()" alt="left foot">
+					
+					<area shape="poly" coords="112,382,146,381,146,393,151,402,151,409,148,413,138,413,127,413,118,413,107,414,100,411,107,403,114,400,112,382" href="javascript:rFootBackDaily_1_a()" alt="right foot">
+
+			   
+				</map>
+				</center>		
+            </div>
+			    <img id="head_d_red_back_a" class="head_d_red_back_a" src="images/transperant/after/head_back_red.png" onClick="headBackDaily_2_a()"/>
+				<img id="rightshoulder_d_red_back_a" class="rightshoulder_d_red_back_a" src="images/transperant/after/right_shoulder_back_red.png" onClick="rShdBackDaily_2_a()"/>
+				<img id="leftshoulder_d_red_back_a" class="leftshoulder_d_red_back_a" src="images/transperant/after/left_shoulder_back_red.png" onClick="lShdBackDaily_2_a()"/>
+				<img id="chest_d_red_back_a" class="chest_d_red_back_a" src="images/transperant/after/chest_back_red.png" onClick="chestBackDaily_2_a()"/>
+			    <img id="abdomen_d_red_back_a" class="abdomen_d_red_back_a" src="images/transperant/after/abdomen_back_red.png" onClick="abdomenBackDaily_2_a()"/>
+		        <img id="lelbow_d_red_back_a" class="lelbow_d_red_back_a" src="images/transperant/after/left_elbow_back_red.png" onClick="lElbowBackDaily_2_a()"/>
+				<img id="relbow_d_red_back_a" class="relbow_d_red_back_a" src="images/transperant/after/right_elbow_back_red.png" onClick="rElbowBackDaily_2_a()"/>
+				<img id="lhand_d_red_back_a" class="lhand_d_red_back_a" src="images/transperant/after/left_hand_back_red.png" onClick="lHandBackDaily_2_a()"/>
+				<img id="rhand_d_red_back_a" class="rhand_d_red_back_a" src="images/transperant/after/right_hand_back_red.png" onClick="rHandBackDaily_2_a()"/>				
+				<img id="rhip_d_red_back_a" class="rhip_d_red_back_a" src="images/transperant/after/right_hip_back_red.png" onClick="rHipBackDaily_2_a()"/>
+				<img id="back_d_red_back_a" class="back_d_red_back_a" src="images/transperant/after/back_back_red.png" onClick="backBackDaily_2_a()"/>				
+				<img id="lhip_d_red_back_a" class="lhip_d_red_back_a" src="images/transperant/after/left_hip_back_red.png" onClick="lHipBackDaily_2_a()"/>				
+				<img id="rleg_d_red_back_a" class="rleg_d_red_back_a" src="images/transperant/after/right_leg_back_red.png" onClick="rLegBackDaily_2_a()"/>
+				<img id="lleg_d_red_back_a" class="lleg_d_red_back_a" src="images/transperant/after/left_leg_back_red.png" onClick="lLegBackDaily_2_a()"/>
+				<img id="lfoot_d_red_back_a" class="lfoot_d_red_back_a" src="images/transperant/after/left_foot_back_red.png" onClick="lFootBackDaily_2_a()"/>
+				<img id="rfoot_d_red_back_a" class="rfoot_d_red_back_a" src="images/transperant/after/right_foot_back_red.png" onClick="rFootBackDaily_2_a()"/>
+			    
+			</div><!--ui-block-a-->		
+			
+			<div class="ui-block-b">
+			
+					<div id="div_p7">
+							<center><p class="no_pain_text_p27">No pain at the back</p></center>
+							<center><a href="#" class="no_pain_p27" data-inline="true" data-role="button" data-theme="a" >No Pain</a></center>
+					</div>	 
+			
+		    </div>	<!--ui-block-b-->
+		</div>	<!--ui-grid-a-->
+			
+		
+
+					 <p align="right" id="next_page27">
+						<!--   <a href="#page4" data-role="button" data-icon="forward" data-iconpos="right" data-theme="a" class="ui-btn-right">Next</a> -->
+						   <a href="#page28" data-transition="slide"><img src="images/next.png"></a>
+					 </p>
+		
+		
+	
+	</div> <!-- content-->
+		
+	<div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1> 	
+	</div>
+	
+</div>
+
+<div data-role="page" id="page28" data-theme="a">
+       <div data-role="header">	
+	        <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>
+		  <h1>Pain Intensity</h1>	
+	   </div>
+	   
+	<div data-role="content">
+			<div>
+				<center><p><font face="Georgia">Drag the mark to show how much PAIN or HURT you have right now. </font></p></center>			
+			</div> 
+		
+         		<br></br>	
+				<br></br>
+	            
+      	    <div  id="mySlider14" data-role="fieldcontain" data-theme="a"> 
+				<label for="slider14"></label>	
+				<input type="range" name="slider14" id="slider14"	min="0" max="100" value="50" data-highlight="true">	
+				<label for="slider14"><span class="left1"><font size="5">Not pain</font></span><span class="right1"><font size="5">Most pain<br/>&nbsp;&nbsp; possible</font></span></label>				
+			</div> 
+            <br></br>	
+			<br></br><br></br>		
+			<p align="right" id="next_page28">
+				   <a href="#page29" class="next" data-transition="slide"><img src="images/next.png"></a>
+			</p>			
+  	</div>			
+  		
+	 <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>  	
+	 </div>
+  
+</div>
+
+
+<div data-role="page" id="page29" data-theme="a">
+       <div data-role="header">	
+	       <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>
+		  <h1>Pain Affect/Unpleasentness</h1>	
+	   </div>
+		<div data-role="content">
+			   <center><p><font face="Georgia">Touch the face that shows how your pain feels right now</font></p></center>	
+			<!--emoticon_1--><div  onClick="pain_affect_94()" ><img id="img94" class="j94" src="images/emoticons/after/emo1.png" align="middle" alt = "emo1.png" /></div>	
+			<!--emoticon_2--><div  onClick="pain_affect_95()" ><img id="img95" class="j95" src="images/emoticons/after/emo2.png" align="middle" alt = "emo2.png" /></div>	
+			<!--emoticon_3--><div  onClick="pain_affect_96()" ><img id="img96" class="j96" src="images/emoticons/after/emo3.png" align="middle" alt = "emo3.png" /></div>
+			<!--emoticon_4--><div  onClick="pain_affect_97()" ><img id="img97" class="j97" src="images/emoticons/after/emo4.png" align="middle" alt = "emo4.png" /></div>
+			<!--emoticon_5--><div  onClick="pain_affect_98()" ><img id="img98" class="j98" src="images/emoticons/after/emo5.png" align="middle" alt = "emo5.png" /></div>
+			<!--emoticon_6--><div  onClick="pain_affect_99()" ><img id="img99" class="j99" src="images/emoticons/after/emo6.png" align="middle" alt = "emo6.png" /></div>
+			<!--emoticon_7--><div  onClick="pain_affect_100()" ><img id="img100" class="j100" src="images/emoticons/after/emo7.png" align="middle" alt = "emo7.png" /></div>
+			<!--emoticon_8--><div  onClick="pain_affect_101()" ><img id="img101" class="j101" src="images/emoticons/after/emo8.png" align="middle" alt = "emo8.png" /></div>
+			<!--emoticon_9--><div  onClick="pain_affect_102()" ><img id="img102" class="j102" src="images/emoticons/after/emo9.png" align="middle" alt = "emo9.png" /></div>		
+		 	
+				<div class="affect1"><p><font size="5">Very Good</font></p></div> 
+				<div class="affect2"><p><font size="5">Very Bad</font></p></div>
+
+			
+			<p align="right" id="next_page29">
+				   <a href="#page30" class="next" data-transition="slide"><img src="images/next.png"></a>
+			</p>
+	    </div>
+  		
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>  
+	  </div>
+  
+</div>
+
+<div data-role="page" id="page30" data-theme="a">
+       <div data-role="header">	
+	       <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>
+		  <h1>General interference of pain with exercise</h1>	
+	   </div>
+	   
+	 <div data-role="content">
+		<div>
+			<center><p><font face="Georgia">Drag the mark to show how much pain you got in the way of YOUR EXERCISES today. </font></p></center>			
+        </div> 
+            <br></br>	
+            <br></br>
+
+		    <div  id="mySlider15" data-role="fieldcontain" data-theme="a"> 
+				<label for="slider15"></label>	
+				<input type="range" name="slider15" id="slider15"	min="1" max="100" value="50" data-highlight="true">	
+				<label for="slider15"><span class="left2"><font size="5">Doesn't get in the<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;way at all </font></span><span class="right2"><font size="5">Totally got in<br/>&nbsp;&nbsp;&nbsp;the way</font></span></label>	
+		
+			</div> 
+			
+            <br></br>	
+			<br></br><br></br>	
+			
+			<p align="right" id="next_page30">
+				   <a href="#page31" class="next" data-transition="slide"><img src="images/next.png"></a>
+			</p>			
+       
+        </div>			
+  		
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>  
+	  </div>
+  
+</div>
+
+<div data-role="page" id="page31" data-theme="a">
+
+		<div data-role="header">	
+	      <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>
+		  <h1>List of words to describe the pain experience</h1>	
+	    </div>
+	   
+        <div>
+			<center><p><font face="Georgia">Touch the words that best describe how your pain feels right now. </font></p></center>			
+        </div> 	
+                
+        <div data-role="content">
+        
+        	<div class="ui-grid-b" style="width:1100px">
+        	
+					<div class="ui-block-a" data-theme="a" >					
+							  <div data-role="fieldcontain" >
+									<fieldset data-role="controlgroup">
+										<legend></legend>
+										<input type="checkbox" name="checkbox-77" id="checkbox-77" value="Sore, " class="checkbox-77" data-theme="c"/>
+										<label for="checkbox-77">Sore</label>
+										<legend></legend>
+										<input type="checkbox" name="checkbox-78" id="checkbox-78" value="Aching, " class="checkbox-78" data-theme="c"/>
+										<label for="checkbox-78">Aching</label>
+										<legend></legend>
+										<input type="checkbox" name="checkbox-79" id="checkbox-79" value="Pins and needles, " class="checkbox-79" data-theme="c"/>
+										<label for="checkbox-79">Pins and needles</label>
+										<legend></legend>
+										<input type="checkbox" name="checkbox-80" id="checkbox-80" value="Stinging, " class="checkbox-80" data-theme="c"/>
+										<label for="checkbox-80">Stinging</label>
+										<legend></legend>
+										<input type="checkbox" name="checkbox-81" id="checkbox-81" value="Squeezing, " class="checkbox-81" data-theme="c"/>
+										<label for="checkbox-81">Squeezing</label>
+										
+										<legend></legend>
+										<input type="checkbox" name="checkbox-82" id="checkbox-82" value="Pounding, " class="checkbox-82" data-theme="b"/>
+										<label for="checkbox-82">Pounding</label>
+										<legend></legend>
+										<input type="checkbox" name="checkbox-83" id="checkbox-83" value="Pulling, " class="checkbox-83" data-theme="b"/>
+										<label for="checkbox-83">Pulling</label>
+										<legend></legend>
+										<input type="checkbox" name="checkbox-84" id="checkbox-84" value="Itching, " class="checkbox-84" data-theme="b"/>
+										<label for="checkbox-84">Itching</label>
+										<legend></legend>
+										<input type="checkbox" name="checkbox-85" id="checkbox-85" value="Beating, " class="checkbox-85" data-theme="b"/>
+										<label for="checkbox-85">Beating</label>
+										<legend></legend>
+										<input type="checkbox" name="checkbox-86" id="checkbox-86" value="Pricking, " class="checkbox-86" data-theme="b"/>
+										<label for="checkbox-86">Pricking</label>
+										<legend></legend>
+										<input type="checkbox" name="checkbox-87" id="checkbox-87" value="Throbbing , " class="checkbox-87" data-theme="b"/>
+										<label for="checkbox-87">Throbbing </label
+									></fieldset>
+							</div> <!--field-contain--> 					              
+                    </div> <!--ui-block-a-->
+                    
+                    
+                    <div class="ui-block-b" >
+        
+        						<div data-role="fieldcontain" >
+									<fieldset data-role="controlgroup">
+										<legend></legend>
+										<input type="checkbox" name="checkbox-88" id="checkbox-88" value="Pinching , " class="checkbox-88" data-theme="c"/>
+										<label for="checkbox-88">Pinching </label>
+										<legend></legend>
+										<input type="checkbox" name="checkbox-89" id="checkbox-89" value="Tingling , " class="checkbox-89" data-theme="c"/>
+										<label for="checkbox-89">Tingling </label>	
+										<legend></legend>
+										<input type="checkbox" name="checkbox-90" id="checkbox-90" value="Biting , " class="checkbox-90" data-theme="c"/>
+										<label for="checkbox-90">Biting </label>	
+										<legend></legend>
+										<input type="checkbox" name="checkbox-91" id="checkbox-91" value="Burning , " class="checkbox-91" data-theme="c"/>
+										<label for="checkbox-91">Burning </label>	
+										<legend></legend>
+										<input type="checkbox" name="checkbox-92" id="checkbox-92" value="Sharp , " class="checkbox-92" data-theme="c"/>
+										<label for="checkbox-92">Sharp </label>	
+										<legend></legend>
+										<input type="checkbox" name="checkbox-93" id="checkbox-93" value="Cold , " class="checkbox-93" data-theme="c"/>
+										<label for="checkbox-93">Cold </label>
+										
+										<legend></legend>
+										<input type="checkbox" name="checkbox-94" id="checkbox-94" value="Scraping , " class="checkbox-94" data-theme="b"/>
+										<label for="checkbox-94">Scraping </label>	
+										<legend></legend>
+										<input type="checkbox" name="checkbox-95" id="checkbox-95" value="Cutting , " class="checkbox-95" data-theme="b"/>
+										<label for="checkbox-95">Cutting </label>	
+										<legend></legend>
+										<input type="checkbox" name="checkbox-96" id="checkbox-96" value="Jumping , " class="checkbox-96" data-theme="b"/>
+										<label for="checkbox-96">Jumping </label>	
+										<legend></legend>
+										<input type="checkbox" name="checkbox-97" id="checkbox-97" value="Flashing , " class="checkbox-97" data-theme="b"/>
+										<label for="checkbox-97">Flashing </label>	
+									</fieldset>
+							</div> <!--field-contain--> 
+        
+                    </div> <!--ui-block-b-->
+                    
+                    <div class="ui-block-c" >
+        
+        					<div data-role="fieldcontain" >
+									<fieldset data-role="controlgroup">
+									<legend></legend>
+									<input type="checkbox" name="checkbox-98" id="checkbox-98" value="Tiring , " class="checkbox-98" data-theme="c"/>
+									<label for="checkbox-98">Tiring </label>	
+									<legend></legend>
+									<input type="checkbox" name="checkbox-99" id="checkbox-99" value="Scikening , " class="checkbox-99" data-theme="c"/>
+									<label for="checkbox-99">Sickening </label>
+									<legend></legend>
+									<input type="checkbox" name="checkbox-100" id="checkbox-100" value="Sad , " class="checkbox-100" data-theme="c"/>
+									<label for="checkbox-100">Sad </label>	
+									<legend></legend>
+									<input type="checkbox" name="checkbox-101" id="checkbox-101" value="Cruel , " class="checkbox-101" data-theme="c"/>
+									<label for="checkbox-101">Cruel </label>	
+									<legend></legend>
+									<input type="checkbox" name="checkbox-102" id="checkbox-102" value="Punishing , " class="checkbox-102" data-theme="c"/>
+									<label for="checkbox-102">Punishing </label>	
+									<legend></legend>
+									<input type="checkbox" name="checkbox-103" id="checkbox-103" value="Fearful , " class="checkbox-103" data-theme="c"/>
+									<label for="checkbox-103">Fearful </label>							
+									
+									<legend></legend>
+									<input type="checkbox" name="checkbox-104" id="checkbox-104" value="Uncomfortable , " class="checkbox-104" data-theme="b"/>
+									<label for="checkbox-104">Uncomfortable </label>	
+									<legend></legend>
+									<input type="checkbox" name="checkbox-105" id="checkbox-105" value="Miserable , " class="checkbox-105" data-theme="b"/>
+									<label for="checkbox-105">Miserable </label>	
+									<legend></legend>
+									<input type="checkbox" name="checkbox-106" id="checkbox-106" value="Horrible , " class="checkbox-106" data-theme="b"/>
+									<label for="checkbox-106">Horrible </label>	
+									<legend></legend>
+									<input type="checkbox" name="checkbox-107" id="checkbox-107" value="Unbearable , " class="checkbox-107" data-theme="b"/>
+									<label for="checkbox-107">Unbearable </label>
+									<legend></legend>
+									<input type="checkbox" name="checkbox-108" id="checkbox-108" value="None of these word describe my pain , " class="checkbox-108" data-theme="b"/>
+									<label for="checkbox-108">None of these words describe my pain </label>	
+									</fieldset>
+							</div> <!--field-contain--> 
+        
+                    </div> <!--ui-block-c-->                    
+                                        
+            </div><!--ui-grid-b-->
+                           								 
+		</div> <!--content-->
+            
+			<p align="right" id="next_page31">
+					<a href="#page32" class="next" data-transition="slide"><img src="images/next.png"></a>
+			</p>
+		
+  		
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>  	
+	  </div>
+  
+</div>
+
+<div data-role="page" id="page32" data-theme="a">
+       <div data-role="header">	
+	      <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>
+		  <h1>Stiffness question</h1>	
+	   </div>
+	   
+	<div data-role="content">
+		<div>
+			<center><p><font face="Georgia">Drag the mark to show how STIFF you are right now. </font></p></center>			
+        </div> 
+            <br></br>	
+            <br></br>	
+			
+			
+			<div  id="mySlider16" data-role="fieldcontain" data-theme="a"> 
+				<label for="slider16"></label>	
+				<input type="range" name="slider16" id="slider16"	min="1" max="100" value="50" data-highlight="true">	
+				<label for="slider16"><span class="left3"><font size="5">Not at all stiff</font></span><span class="right3"><font size="5">Most stiffness<br/>&nbsp;&nbsp; possible</font></span></label>				
+			</div> 
+			
+            <br></br>	
+			<br></br><br></br>	
+			
+			<p align="right" id="next_page32">
+				   <a href="#page33" class="next" data-transition="slide"><img src="images/next.png"></a>
+			</p>			
+			
+     </div>			
+  		
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>  	
+	  </div>
+  
+</div>
+
+<div data-role="page" id="page33" data-theme="a">
+       <div data-role="header">
+          <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	   
+		  <h1>Fatigue question</h1>	
+	   </div>
+	   
+	<div data-role="content">
+		<div>
+			<center><p><font face="Georgia">Drag the mark to show how FATIGUED or TIRED you are right now. </font></p></center>			
+        </div> 
+            <br></br>	
+            <br></br>
+
+
+			<div  id="mySlider17" data-role="fieldcontain" data-theme="a"> 
+				<label for="slider17"></label>	
+				<input type="range" name="slider17" id="slider17"	min="1" max="100" value="50" data-highlight="true">	
+				<label for="slider17"><span class="left3"><font size="5">Not at all tired</font></span><span class="right3"><font size="5">The most tired<br/>&nbsp;&nbsp;  possible</font></span></label>				
+			</div> 
+			
+            <br></br>	
+			<br></br><br></br>	
+			
+			<p align="right" id="next_page33">
+				   <a href="#page34" class="next" data-transition="slide"><img src="images/next.png"></a>
+			</p>	
+      			
+    </div>
+  		
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>  	
+	  </div>
+  
+</div>
+
+<div data-role="page" id="page34" data-theme="a">
+       <div data-role="header">	
+	       <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>
+		  <h1>Emotional valence</h1>	
+	   </div>
+	   
+	  <div data-role="content">
+		<div>
+			<center><p><font face="Georgia">Drag the mark to show how GOOD or BAD your mood is right now. </font></p></center>			
+        </div>
+            <br></br>	
+            <br></br>
+
+			<div  id="mySlider18" data-role="fieldcontain" data-theme="a"> 
+				<label for="slider18"></label>	
+				<input type="range" name="slider18" id="slider18"	min="1" max="100" value="50" data-highlight="true">	
+				<label for="slider18"><span class="left1"><font size="5">Very bad</font></span><span class="right1"><font size="5">Very good</font></span></label>				
+			</div> 
+			
+            <br></br>	
+			<br></br><br></br>	
+			
+			<p align="right" id="next_page34">
+				   <a href="#page35" class="next" data-transition="slide"><img src="images/next.png"></a>
+			</p>	      			
+	  </div>
+  		
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>  	
+	  </div>
+  
+</div>
+
+<div data-role="page" id="page35" data-theme="a">
+       <div data-role="header">	
+	       <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>
+		  <h1>Emotional Activation</h1>	
+	   </div>
+	   
+	<div data-role="content">
+	    <div>
+			<center><p><font face="Georgia">Drag the mark to show how AWAKE or SLEEPY your mood is right now. </font></p></center>			
+        </div>
+            <br></br>	
+            <br></br>
+
+			<div  id="mySlider19" data-role="fieldcontain" data-theme="a"> 
+				<label for="slider19"></label>	
+				<input type="range" name="slider19" id="slider19"	min="1" max="100" value="50" data-highlight="true">	
+				<label for="slider19"><span class="left1"><font size="5">Very Awake</font></span><span class="right1"><font size="5">Very Sleepy</font></span></label>				
+			</div> 
+			
+            <br></br>	
+			<br></br><br></br>	
+			
+			<p align="right" id="next_page35">
+				   <a href="#page36" class="next" data-transition="slide"><img src="images/next.png"></a>
+			</p>
+	</div>
+  		
+  		
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>  
+	  </div>
+  
+</div>
+
+
+<div data-role="page" id="page36" data-theme="a">
+       <div data-role="header">	
+	       <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>
+		  <h1>Rate of perceived exertion</h1>	
+	   </div>
+       
+    <div data-role="content"> 
+		
+        <div>
+			<center><p><font face="Georgia">How tired does your body feel during exercise?</font></p></center>			
+        </div> 
+		
+		<div><center><img src="images/prescale.png"></center></div>	
+
+		<br></br>  
+		 		 
+		 
+<!--103-->		<img src="images/ball1.png" id="ball_1" value="0" onClick="prescale_1()">
+<!--104-->		<img src="images/ball2.png" id="ball_2" value="1" onClick="prescale_2()"> 
+<!--105-->		<img src="images/ball3.png" id="ball_3" value="2" onClick="prescale_3()"> 
+<!--106-->		<img src="images/ball4.png" id="ball_4" value="3" onClick="prescale_4()"> 
+<!--107-->		<img src="images/ball5.png" id="ball_5" value="4" onClick="prescale_5()">
+<!--108-->		<img src="images/ball6.png" id="ball_6" value="5" onClick="prescale_6()"> 
+<!--109-->		<img src="images/ball7.png" id="ball_7" value="6" onClick="prescale_7()"> 
+<!--110-->		<img src="images/ball8.png" id="ball_8" value="7" onClick="prescale_8()"> 
+<!--111-->		<img src="images/ball9.png" id="ball_9" value="8" onClick="prescale_9()">
+<!--112-->		<img src="images/ball10.png" id="ball_10" value="9" onClick="prescale_10()"> 
+<!--113-->		<img src="images/ball11.png" id="ball_11" value="10" onClick="prescale_11()">
+
+		
+		
+			<p align="right" id="next_page36">
+				   <a href="#page37" class="next" data-transition="slide"><img src="images/next.png"></a>
+			</p>
+			
+	</div>
+  		
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>  	
+	  </div>
+	  
+	</div>
+  
+</div>
+
+
+<!-- Exercise 1 -->
+
+<div data-role="page" id="page37" data-theme="a">
+       <div data-role="header">	
+	       <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>
+		  <h1>Exercise 1 - Squat</h1>	
+	   </div>
+	   
+	  <br></br>
+	  <div data-role="content">
+			<div>
+			    <!--Q1-->
+				<center><p><font face="Georgia">Were you able to complete this exercise as described on the video?</font></p></center>			
+			</div>  
+				  
+			<div data-role="fieldcontain" data-inset="true">			
+				<fieldset data-role="controlgroup">
+				<legend></legend>
+				<br></br>                  					
+						<input type="radio" name="radio-choice-6" id="radio-choice-42" value="Yes" class="radio-choice-42"/>
+						<label for="radio-choice-42">Yes</label>
+			
+						<input type="radio" name="radio-choice-6" id="radio-choice-43" value="No" class="radio-choice-43"/>
+						<label for="radio-choice-43">No</label> 
+					  
+				</fieldset>    	
+			</div>
+			<p align="right" id="next_page37">
+					<a href="#" class="next_page37" data-transition="slide"><img src="images/next.png"></a>
+			</p>			
+  	</div>
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>  
+	  </div>
+  
+</div>
+
+<div data-role="page" id="page37_1" data-theme="a">
+		<div data-role="header">
+			<a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	   
+			<h1>Exercise 1 - Squat</h1>	
+		</div>	   
+		<div data-role="content">
+		
+				<div>
+				    <!--Q2-->
+					<center><p><font face="Georgia">How many repititions were you able to finish?</font></p></center>			
+				</div>  
+				
+				
+		 <center><table border="3" bordercolor="#8c6239" style="width:500px; height:450px;">
+					<tr>
+					    <th></th>
+					    <th><font size="5">Circuit 1</font></th>
+						<th><font size="5">Circuit 2</font></th>
+						<th><font size="5">Circuit 3</font></th>
+					</tr>
+					
+					<tr>
+						<td><font size="5">&nbsp;&nbsp;&nbsp;None</font></td>
+		<!--114-->		<td><center><img src="images/repitition/rpe1.png" id="rpe1" value="none_c1" onClick="repition_1()" style="width:35px; height=35px"></center></td>
+		<!--115-->		<td><center><img src="images/repitition/rpe2.png" id="rpe2" value="none_c2" onClick="repition_4()" style="width:35px; height=35px"></center></td>
+		<!--116-->		<td><center><img src="images/repitition/rpe3.png" id="rpe3" value="none_c3" onClick="repition_7()" style="width:35px; height=35px"></center></td>
+					</tr>
+					
+					<tr>
+						<td><font size="5">&nbsp;&nbsp;&nbsp;1-5</font></td>
+		<!--117-->		<td><center><img src="images/repitition/rpe4.png" id="rpe4" value="1-5_c1" onClick="repition_2()" style="width:35px; height=35px"></center></td>
+		<!--118-->		<td><center><img src="images/repitition/rpe5.png" id="rpe5" value="1-5_c2" onClick="repition_5()" style="width:35px; height=35px"></center></td>
+		<!--119-->		<td><center><img src="images/repitition/rpe6.png" id="rpe6" value="1-5_c3" onClick="repition_8()" style="width:35px; height=35px"></center></td>
+					</tr>
+					
+					<tr>
+						<td><font size="5">&nbsp;&nbsp;&nbsp;More than 6</font></td>
+		<!--120-->		<td><center><img src="images/repitition/rpe7.png" id="rpe7" value="more than 6_c1" onClick="repition_3()" style="width:35px; height=35px"></center></td>
+		<!--121-->		<td><center><img src="images/repitition/rpe8.png" id="rpe8" value="more than 6_c2" onClick="repition_6()" style="width:35px; height=35px"></center></td>
+		<!--122-->		<td><center><img src="images/repitition/rpe9.png" id="rpe9" value="more than 6_c3" onClick="repition_9()" style="width:35px; height=35px"></center></td>
+					</tr>
+					
+				</table></center>
+	
+					
+				<p align="right" id="next_page37_1">
+						<a href="#page37_2" class="next" data-transition="slide"><img src="images/next.png"></a>
+				</p>
+								
+		</div> <!--content-->
+						
+		
+		<div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>         
+		</div>
+  
+</div>
+
+
+<div data-role="page" id="page37_2" data-theme="a">
+		<div data-role="header">
+			<a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	   
+			<h1>Exercise 1 - Squat</h1>	
+		</div>	   
+		<div data-role="content">			    
+			<div>
+			    <!--Q3-->
+				<center><p><font face="Georgia">Did you change the exercise from how it was described on the video?</font></p></center>			
+			</div> 
+					 
+			<div data-role="fieldcontain" data-inset="true">			
+				<fieldset data-role="controlgroup">
+				<legend></legend>
+				<br></br>                 
+					
+						<input type="radio" name="radio-choice-8" id="radio-choice-62" value="Yes" class="radio-choice-62"/>
+						<label for="radio-choice-62">Yes</label>
+			
+						<input type="radio" name="radio-choice-8" id="radio-choice-63" value="No" class="radio-choice-63"/>
+						<label for="radio-choice-63">No</label> 
+					  
+				</fieldset>    	
+			</div>
+				<p align="right" id="next_page37_2">
+						<a href="#" class="next_page37_2" data-transition="slide"><img src="images/next.png"></a>
+				</p>			
+		</div>
+		<div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>         
+		</div>
+  
+</div>
+
+<div data-role="page" id="page37_3" data-theme="a">
+		<div data-role="header">
+			<a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	   
+			<h1>Exercise 1 - Squat</h1>	
+		</div>	   
+		<div data-role="content">		
+				<div>
+				    <!--Q4-->
+					<center><p><font face="Georgia">Did you have increased pain while doing this exercise?</font></p></center>			
+				</div> 		
+				
+				<div data-role="fieldcontain" data-inset="true">			
+					<fieldset data-role="controlgroup">
+					<legend></legend>
+					   <br></br>                  
+						
+							<input type="radio" name="radio-choice-9" id="radio-choice-72" value="Yes" class="radio-choice-72"/>
+							<label for="radio-choice-72">Yes</label>
+				
+							<input type="radio" name="radio-choice-9" id="radio-choice-73" value="No" class="radio-choice-73"/>
+							<label for="radio-choice-73">No</label> 
+						  
+					</fieldset>     	
+				</div>
+				<p align="right" id="next_page37_3">
+						<a href="#" class="next_page37_3" data-transition="slide"><img src="images/next.png"></a>
+				</p>
+		</div>
+		<div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>         
+		</div>
+  
+</div>
+
+
+<div data-role="page" id="page37_4" data-theme="a">
+		<div data-role="header">
+			<a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	   
+			<h1>Exercise 1 - Squat</h1>	
+		</div>	   
+		<div data-role="content">		
+				<div>
+				    <!--Q5-->
+					<center><p><font face="Georgia">Drag the mark to show how much PAIN or HURT you had during the exercise?</font></p></center>			
+				</div> 	
+				<br></br>
+				<br></br>
+
+
+			<div  id="mySlider20" data-role="fieldcontain" data-theme="a"> 
+				<label for="slider20"></label>	
+				<input type="range" name="slider20" id="slider20"	min="1" max="100" value="50" data-highlight="true">	
+				<label for="slider20"><span class="left1"><font size="5">Not pain</font></span><span class="right1"><font size="5">Most pain<br/>&nbsp;&nbsp; possible</font></span></label>				
+			</div> 
+			
+            <br></br>	
+			<br></br><br></br>	
+			
+			<p align="right" id="next_page37_4">
+				   <a href="#page38" class="next" data-transition="slide"><img src="images/next.png"></a>
+			</p>				
+		</div>
+		<div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>         
+		</div>
+  
+</div>
+
+<div data-role="page" id="page37_5" data-theme="a">
+       <div data-role="header">
+          <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	   
+		  <h1>Exercise 1 - Squat</h1>	
+	   </div>
+	   
+	  <div data-role="content">
+			<div>
+			<center><p><font face="Georgia">Please tell us how you changed the exercise </font></p></center>			
+			</div>
+            <br></br>	     
+            
+			<div data-role="fieldcontain">
+				<label for="textarea-c"></label>
+				<center><textarea cols="40" rows="8" name="textarea-c" id="textarea-c"></textarea><center>
+	        </div>
+			
+			<p align="right" id="next_page37_5">
+						<a href="#page37_3" class="next" data-transition="slide"><img src="images/next.png"></a>
+			</p>
+	
+  	</div>
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>         
+	  </div>
+  
+</div>
+
+
+<!-- Exercise 2 -->
+
+
+<div data-role="page" id="page38" data-theme="a">
+       <div data-role="header">	
+	       <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>
+		  <h1>Exercise 2 - Lunge</h1>	
+	   </div>
+	   
+	  <br></br>
+	  <div data-role="content">
+			<div>
+			    <!--Q1-->
+				<center><p><font face="Georgia">Were you able to complete this exercise as described on the video?</font></p></center>			
+			</div>  
+				  
+			<div data-role="fieldcontain" data-inset="true">			
+				<fieldset data-role="controlgroup" >
+				<legend></legend>
+				<br></br>                  					
+						<input type="radio" name="radio-choice-10" id="radio-choice-74" value="Yes" class="radio-choice-74"/>
+						<label for="radio-choice-74">Yes</label>
+			
+						<input type="radio" name="radio-choice-10" id="radio-choice-75" value="No" class="radio-choice-75"/>
+						<label for="radio-choice-75">No</label>  
+					  
+				</fieldset>    	
+			</div>
+			<p align="right" id="next_page38">
+					<a href="#" class="next_page38" data-transition="slide"><img src="images/next.png"></a>
+			</p>			
+  	</div>
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>  
+	  </div>
+  
+</div>
+
+<div data-role="page" id="page38_1" data-theme="a">
+		<div data-role="header">
+			<a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	   
+			<h1>Exercise 2 - Lunge</h1>	
+		</div>	   
+		<div data-role="content">
+		
+				<div>
+				    <!--Q2-->
+					<center><p><font face="Georgia">How many repititions were you able to finish?</font></p></center>			
+				</div>  
+
+
+				<center><table border="3" bordercolor="#8c6239" style="width:500px; height:450px;">
+					<tr>
+					    <th></th>
+					    <th><font size="5">Circuit 1</font></th>
+						<th><font size="5">Circuit 2</font></th>
+						<th><font size="5">Circuit 3</font></th>
+					</tr>
+					
+					<tr>
+						<td><font size="5">&nbsp;&nbsp;&nbsp;None</font></td>
+		<!--123-->		<td><center><img src="images/repitition/rpe10.png" id="rpe10" value="none_c1" onClick="repition_10()" style="width:35px; height=35px"></center></td>
+		<!--124-->		<td><center><img src="images/repitition/rpe11.png" id="rpe11" value="none_c2" onClick="repition_13()" style="width:35px; height=35px"></center></td>
+		<!--125-->		<td><center><img src="images/repitition/rpe12.png" id="rpe12" value="none_c3" onClick="repition_16()" style="width:35px; height=35px"></center></td>
+					</tr>
+					
+					<tr>
+						<td><font size="5">&nbsp;&nbsp;&nbsp;1-5</font></td>
+		<!--126-->		<td><center><img src="images/repitition/rpe13.png" id="rpe13" value="1-5_c1" onClick="repition_11()" style="width:35px; height=35px"></center></td>
+		<!--127-->		<td><center><img src="images/repitition/rpe14.png" id="rpe14" value="1-5_c2" onClick="repition_14()" style="width:35px; height=35px"></center></td>
+		<!--128-->		<td><center><img src="images/repitition/rpe15.png" id="rpe15" value="1-5_c3" onClick="repition_17()" style="width:35px; height=35px"></center></td>
+					</tr>
+					
+					<tr>
+						<td><font size="5">&nbsp;&nbsp;&nbsp;More than 6</font></td>
+		<!--129-->		<td><center><img src="images/repitition/rpe16.png" id="rpe16" value="more than 6_c1" onClick="repition_12()" style="width:35px; height=35px"></center></td>
+		<!--130-->		<td><center><img src="images/repitition/rpe17.png" id="rpe17" value="more than 6_c2" onClick="repition_15()" style="width:35px; height=35px"></center></td>
+		<!--131-->		<td><center><img src="images/repitition/rpe18.png" id="rpe18" value="more than 6_c3" onClick="repition_18()" style="width:35px; height=35px"></center></td>
+					</tr>
+					
+				</table></center>
+
+				
+				<p align="right" id="next_page38_1">
+						<a href="#page38_2" class="next" data-transition="slide"><img src="images/next.png"></a>
+				</p>				
+		</div>
+		
+		
+
+		<div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>         
+		</div>
+  
+</div>
+
+
+<div data-role="page" id="page38_2" data-theme="a">
+		<div data-role="header">
+			<a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	   
+			<h1>Exercise 2 - Lunge</h1>	
+		</div>	   
+		<div data-role="content">			    
+			<div>
+			    <!--Q3-->
+				<center><p><font face="Georgia">Did you change the exercise from how it was described on the video?</font></p></center>			
+			</div> 
+					 
+			<div data-role="fieldcontain" data-inset="true">			
+				<fieldset data-role="controlgroup">
+				<legend></legend>
+				<br></br>                 
+					
+						<input type="radio" name="radio-choice-12" id="radio-choice-79" value="Yes" class="radio-choice-79"/>
+						<label for="radio-choice-79">Yes</label>
+			
+						<input type="radio" name="radio-choice-12" id="radio-choice-80" value="No" class="radio-choice-80"/>
+						<label for="radio-choice-80">No</label> 
+					  
+				</fieldset>    	
+			</div>
+				<p align="right" id="next_page38_2">
+						<a href="#" class="next_page38_2" data-transition="slide"><img src="images/next.png"></a>
+				</p>			
+		</div>
+		<div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>         
+		</div>
+  
+</div>
+
+<div data-role="page" id="page38_3" data-theme="a">
+		<div data-role="header">
+			<a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	   
+			<h1>Exercise 2 - Lunge</h1>	
+		</div>	   
+		<div data-role="content">		
+				<div>
+				    <!--Q4-->
+					<center><p><font face="Georgia">Did you have increased pain while doing this exercise?</font></p></center>			
+				</div> 		
+				
+				<div data-role="fieldcontain" data-inset="true" >			
+					<fieldset data-role="controlgroup">
+					<legend></legend>
+					   <br></br>                  
+						
+							<input type="radio" name="radio-choice-13" id="radio-choice-81" value="Yes" class="radio-choice-81"/>
+							<label for="radio-choice-81">Yes</label>
+				
+							<input type="radio" name="radio-choice-13" id="radio-choice-82" value="No" class="radio-choice-82"/>
+							<label for="radio-choice-82">No</label> 
+						  
+					</fieldset>     	
+				</div>
+				<p align="right" id="next_page38_3">
+						<a href="#" class="next_page38_3" data-transition="slide"><img src="images/next.png"></a>
+				</p>
+		</div>
+		<div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>         
+		</div>
+  
+</div>
+
+
+<div data-role="page" id="page38_4" data-theme="a">
+		<div data-role="header">
+			<a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	   
+			<h1>Exercise 2 - Lunge</h1>	
+		</div>	   
+		<div data-role="content">		
+				<div>
+				    <!--Q5-->
+					<center><p><font face="Georgia">Drag the mark to show how much PAIN or HURT you had during the exercise?</font></p></center>			
+				</div> 
+				<br></br>
+				<br></br>
+
+
+			<div  id="mySlider21" data-role="fieldcontain" data-theme="a"> 
+				<label for="slider21"></label>	
+				<input type="range" name="slider21" id="slider21"	min="1" max="100" value="50" data-highlight="true">	
+				<label for="slider21"><span class="left1"><font size="5">Not pain</font></span><span class="right1"><font size="5">Most pain<br/>&nbsp;&nbsp; possible</font></span></label>				
+			</div> 
+			
+            <br></br>	
+			<br></br><br></br>	
+			
+			<p align="right" id="next_page38_4">
+				   <a href="#page39" class="next" data-transition="slide"><img src="images/next.png"></a>
+			</p>					
+		</div>
+		<div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>         
+		</div>
+  
+</div>
+
+<div data-role="page" id="page38_5" data-theme="a">
+       <div data-role="header">
+          <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	   
+		  <h1>Exercise 2 - Lunge</h1>	
+	   </div>
+	   
+	  <div data-role="content">
+			<div>
+			<center><p><font face="Georgia">Please tell us how you changed the exercise </font></p></center>			
+			</div>
+            <br></br>	     
+            
+			<div data-role="fieldcontain">
+				<label for="textarea-d"></label>
+				<center><textarea cols="40" rows="8" name="textarea" id="textarea-d"></textarea><center>
+	        </div>
+			
+			<p align="right" id="next_page38_5">
+						<a href="#page38_3" class="next" data-transition="slide"><img src="images/next.png"></a>
+			</p>
+	
+  	</div>
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>         
+	  </div>
+  
+</div>
+
+<!-- Exercise 3 -->
+
+<div data-role="page" id="page39" data-theme="a">
+       <div data-role="header">	
+	       <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>
+		  <h1>Exercise 3 - Step up</h1>	
+	   </div>
+	   
+	  <br></br>
+	  <div data-role="content">
+			<div>
+			    <!--Q1-->
+				<center><p><font face="Georgia">Were you able to complete this exercise as described on the video?</font></p></center>			
+			</div>  
+				  
+			<div data-role="fieldcontain" data-inset="true" >			
+				<fieldset data-role="controlgroup">
+				<legend></legend>
+				<br></br>                  					
+						<input type="radio" name="radio-choice-14" id="radio-choice-83" value="Yes" class="radio-choice-83"/>
+						<label for="radio-choice-83">Yes</label>
+			
+						<input type="radio" name="radio-choice-14" id="radio-choice-84" value="No" class="radio-choice-84"/>
+						<label for="radio-choice-84">No</label>  
+					  
+				</fieldset>    	
+			</div>
+			<p align="right" id="next_page39">
+					<a href="#" class="next_page39" data-transition="slide"><img src="images/next.png"></a>
+			</p>			
+  	</div>
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>  
+	  </div>
+  
+</div>
+
+<div data-role="page" id="page39_1" data-theme="a">
+		<div data-role="header">
+			<a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	   
+			<h1>Exercise 3 - Step up</h1>	
+		</div>	   
+		<div data-role="content">
+		
+				<div>
+				    <!--Q2-->
+					<center><p><font face="Georgia">How many repititions were you able to finish?</font></p></center>			
+				</div> 
+
+
+				<center><table border="3" bordercolor="#8c6239" style="width:500px; height:450px;">
+					<tr>
+					    <th></th>
+					    <th><font size="5">Circuit 1</font></th>
+						<th><font size="5">Circuit 2</font></th>
+						<th><font size="5">Circuit 3</font></th>
+					</tr>
+					
+					<tr>
+						<td><font size="5">&nbsp;&nbsp;&nbsp;None</font></td>
+		<!--132-->		<td><center><img src="images/repitition/rpe19.png" id="rpe19" value="none_c1" onClick="repition_19()" style="width:35px; height=35px"></center></td>
+		<!--133-->		<td><center><img src="images/repitition/rpe20.png" id="rpe20" value="none_c2" onClick="repition_22()" style="width:35px; height=35px"></center></td>
+		<!--134-->		<td><center><img src="images/repitition/rpe21.png" id="rpe21" value="none_c3" onClick="repition_25()" style="width:35px; height=35px"></center></td>
+					</tr>
+					
+					<tr>
+						<td><font size="5">&nbsp;&nbsp;&nbsp;1-5</font></td>
+		<!--135-->		<td><center><img src="images/repitition/rpe22.png" id="rpe22" value="1-5_c1" onClick="repition_20()" style="width:35px; height=35px"></center></td>
+		<!--136-->		<td><center><img src="images/repitition/rpe23.png" id="rpe23" value="1-5_c2" onClick="repition_23()" style="width:35px; height=35px"></center></td>
+		<!--137-->		<td><center><img src="images/repitition/rpe24.png" id="rpe24" value="1-5_c3" onClick="repition_26()" style="width:35px; height=35px"></center></td>
+					</tr>
+					
+					<tr>
+						<td><font size="5">&nbsp;&nbsp;&nbsp;More than 6</font></td>
+		<!--138-->		<td><center><img src="images/repitition/rpe25.png" id="rpe25" value="more than 6_c1" onClick="repition_21()" style="width:35px; height=35px"></center></td>
+		<!--139-->		<td><center><img src="images/repitition/rpe26.png" id="rpe26" value="more than 6_c2" onClick="repition_24()" style="width:35px; height=35px"></center></td>
+		<!--140-->		<td><center><img src="images/repitition/rpe27.png" id="rpe27" value="more than 6_c3" onClick="repition_27()" style="width:35px; height=35px"></center></td>
+					</tr>
+					
+				</table></center>
+
+				<p align="right" id="next_page39_1">
+						<a href="#page39_2" class="next" data-transition="slide"><img src="images/next.png"></a>
+				</p>				
+		</div>
+		<div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>         
+		</div>
+  
+</div>
+
+
+<div data-role="page" id="page39_2" data-theme="a">
+		<div data-role="header">
+			<a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	   
+			<h1>Exercise 3 - Step up</h1>	
+		</div>	   
+		<div data-role="content">			    
+			<div>
+			    <!--Q3-->
+				<center><p><font face="Georgia">Did you change the exercise from how it was described on the video?</font></p></center>			
+			</div> 
+					 
+			<div data-role="fieldcontain" data-inset="true">			
+				<fieldset data-role="controlgroup">
+				<legend></legend>
+				<br></br>                 
+					
+						<input type="radio" name="radio-choice-16" id="radio-choice-88" value="Yes" class="radio-choice-88"/>
+						<label for="radio-choice-88">Yes</label>
+			
+						<input type="radio" name="radio-choice-16" id="radio-choice-89" value="No" class="radio-choice-89" />
+						<label for="radio-choice-89">No</label> 
+					  
+				</fieldset>    	
+			</div>
+				<p align="right" id="next_page39_2">
+						<a href="#" class="next_page39_2" data-transition="slide"><img src="images/next.png"></a>
+				</p>			
+		</div>
+		<div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>         
+		</div>
+  
+</div>
+
+<div data-role="page" id="page39_3" data-theme="a">
+		<div data-role="header">
+			<a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	   
+			<h1>Exercise 3 - Step up</h1>	
+		</div>	   
+		<div data-role="content">		
+				<div>
+				     <!--Q4-->
+					<center><p><font face="Georgia">Did you have increased pain while doing this exercise?</font></p></center>			
+				</div> 		
+				
+				<div data-role="fieldcontain" data-inset="true">			
+					<fieldset data-role="controlgroup">
+					<legend></legend>
+					   <br></br>                  
+						
+							<input type="radio" name="radio-choice-17" id="radio-choice-90" value="Yes" class="radio-choice-90"/>
+							<label for="radio-choice-90">Yes</label>
+				
+							<input type="radio" name="radio-choice-17" id="radio-choice-91" value="No" class="radio-choice-91"/>
+							<label for="radio-choice-91">No</label> 
+						  
+					</fieldset>     	
+				</div>
+				<p align="right" id="next_page39_3">
+						<a href="#" class="next_page39_3" data-transition="slide"><img src="images/next.png"></a>
+				</p>
+		</div>
+		<div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>         
+		</div>
+  
+</div>
+
+
+<div data-role="page" id="page39_4" data-theme="a">
+		<div data-role="header">
+			<a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	   
+			<h1>Exercise 3 - Step up</h1>	
+		</div>	   
+		<div data-role="content">		
+				<div>
+				    <!--Q5-->
+					<center><p><font face="Georgia">Drag the mark to show how much PAIN or HURT you had during the exercise?</font></p></center>			
+				</div> 
+				<br></br>
+				<br></br>
+
+
+			<div  id="mySlider22" data-role="fieldcontain" data-theme="a"> 
+				<label for="slider22"></label>	
+				<input type="range" name="slider22" id="slider22"	min="1" max="100" value="50" data-highlight="true">	
+				<label for="slider22"><span class="left1"><font size="5">Not pain</font></span><span class="right1"><font size="5">Most pain<br/>&nbsp;&nbsp; possible</font></span></label>				
+			</div> 
+			
+            <br></br>	
+			<br></br><br></br>	
+			
+			<p align="right" id="next_page39_4">
+				   <a href="#page40" class="next" data-transition="slide"><img src="images/next.png"></a>
+			</p>
+				
+		</div>
+		<div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>         
+		</div>
+  
+</div>
+
+<div data-role="page" id="page39_5" data-theme="a">
+       <div data-role="header">
+          <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	   
+		  <h1>Exercise 3 - Step up</h1>	
+	   </div>
+	   
+	  <div data-role="content">
+			<div>
+			<center><p><font face="Georgia">Please tell us how you changed the exercise </font></p></center>			
+			</div>
+            <br></br>	     
+            
+			<div data-role="fieldcontain">
+				<label for="textarea-e"></label>
+				<center><textarea cols="40" rows="8" name="textarea" id="textarea-e"></textarea><center>
+	        </div>
+			
+			<p align="right" id="next_page39_5">
+						<a href="#page39_3" class="next" data-transition="slide"><img src="images/next.png"></a>
+			</p>
+	
+  	</div>
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>         
+	  </div>
+  
+</div>
+
+<!-- Exercise 4 -->
+
+<div data-role="page" id="page40" data-theme="a">
+       <div data-role="header">	
+	       <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>
+		  <h1>Exercise 4 - Plank</h1>	
+	   </div>
+	   
+	  <br></br>
+	  <div data-role="content">
+			<div>
+			     <!--Q1-->
+				<center><p><font face="Georgia">Were you able to complete this exercise as described on the video?</font></p></center>			
+			</div>  
+				  
+			<div data-role="fieldcontain" data-inset="true">			
+				<fieldset data-role="controlgroup">
+				<legend></legend>
+				<br></br>                  					
+						<input type="radio" name="radio-choice-18" id="radio-choice-92" value="Yes" class="radio-choice-92"/>
+						<label for="radio-choice-92">Yes</label>
+			
+						<input type="radio" name="radio-choice-18" id="radio-choice-93" value="No" class="radio-choice-93"/>
+						<label for="radio-choice-93">No</label>  
+					  
+				</fieldset>    	
+			</div>
+			<p align="right" id="next_page40">
+					<a href="#" class="next_page40" data-transition="slide"><img src="images/next.png"></a>
+			</p>			
+  	</div>
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>  
+	  </div>
+  
+</div>
+
+<div data-role="page" id="page40_1" data-theme="a">
+		<div data-role="header">
+			<a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	   
+			<h1>Exercise 4 - Plank</h1>	
+		</div>	   
+		<div data-role="content">
+		
+				<div>
+				    <!--Q2-->
+					<center><p><font face="Georgia">How many repititions were you able to finish?</font></p></center>			
+				</div> 
+
+
+			<center><table border="3" bordercolor="#8c6239" style="width:500px; height:450px;">
+					<tr>
+					    <th></th>
+					    <th><font size="5">Circuit 1</font></th>
+						<th><font size="5">Circuit 2</font></th>
+						<th><font size="5">Circuit 3</font></th>
+					</tr>
+					
+					<tr>
+						<td><font size="5">&nbsp;&nbsp;&nbsp;None</font></td>
+		<!--141-->		<td><center><img src="images/repitition/rpe28.png" id="rpe28" value="none_c1" onClick="repition_28()" style="width:35px; height=35px"></center></td>
+		<!--142-->		<td><center><img src="images/repitition/rpe29.png" id="rpe29" value="none_c2" onClick="repition_31()" style="width:35px; height=35px"></center></td>
+		<!--143-->		<td><center><img src="images/repitition/rpe30.png" id="rpe30" value="none_c3" onClick="repition_34()" style="width:35px; height=35px"></center></td>
+					</tr>
+					
+					<tr>
+						<td><font size="5">&nbsp;&nbsp;&nbsp;1-5</font></td>
+		<!--144-->		<td><center><img src="images/repitition/rpe31.png" id="rpe31" value="1-5_c1" onClick="repition_29()" style="width:35px; height=35px"></center></td>
+		<!--145-->		<td><center><img src="images/repitition/rpe32.png" id="rpe32" value="1-5_c2" onClick="repition_32()" style="width:35px; height=35px"></center></td>
+		<!--146-->		<td><center><img src="images/repitition/rpe33.png" id="rpe33" value="1-5_c3" onClick="repition_35()" style="width:35px; height=35px"></center></td>
+					</tr>
+					
+					<tr>
+						<td><font size="5">&nbsp;&nbsp;&nbsp;More than 6</font></td>
+		<!--147-->		<td><center><img src="images/repitition/rpe34.png" id="rpe34" value="more than 6_c1" onClick="repition_30()" style="width:35px; height=35px"></center></td>
+		<!--148-->		<td><center><img src="images/repitition/rpe35.png" id="rpe35" value="more than 6_c2" onClick="repition_33()" style="width:35px; height=35px"></center></td>
+		<!--149-->		<td><center><img src="images/repitition/rpe36.png" id="rpe36" value="more than 6_c3" onClick="repition_36()" style="width:35px; height=35px"></center></td>
+					</tr>
+					
+			</table></center>				
+				
+				<p align="right" id="next_page40_1">
+						<a href="#page40_2" class="next" data-transition="slide"><img src="images/next.png"></a>
+				</p>				
+		</div>
+		<div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>         
+		</div>
+  
+</div>
+
+
+<div data-role="page" id="page40_2" data-theme="a">
+		<div data-role="header">
+			<a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	   
+			<h1>Exercise 4 - Plank</h1>	
+		</div>	   
+		<div data-role="content">			    
+			<div>
+			    <!--Q3-->
+				<center><p><font face="Georgia">Did you change the exercise from how it was described on the video?</font></p></center>			
+			</div> 
+					 
+			<div data-role="fieldcontain" data-inset="true">			
+				<fieldset data-role="controlgroup">
+				<legend></legend>
+				<br></br>                 
+					
+						<input type="radio" name="radio-choice-20" id="radio-choice-97" value="Yes" class="radio-choice-97"/>
+						<label for="radio-choice-97">Yes</label>
+			
+						<input type="radio" name="radio-choice-20" id="radio-choice-98" value="No" class="radio-choice-98"/>
+						<label for="radio-choice-98">No</label> 
+					  
+				</fieldset>    	
+			</div>
+				<p align="right" id="next_page40_2">
+						<a href="#" class="next_page40_2" data-transition="slide"><img src="images/next.png"></a>
+				</p>			
+		</div>
+		<div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>         
+		</div>
+  
+</div>
+
+<div data-role="page" id="page40_3" data-theme="a">
+		<div data-role="header">
+			<a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	   
+			<h1>Exercise 4 - Plank</h1>	
+		</div>	   
+		<div data-role="content">		
+				<div>
+				    <!--Q4-->
+					<center><p><font face="Georgia">Did you have increased pain while doing this exercise?</font></p></center>			
+				</div> 		
+				
+				<div data-role="fieldcontain" data-inset="true" >			
+					<fieldset data-role="controlgroup">
+					<legend></legend>
+					   <br></br>                  
+						
+							<input type="radio" name="radio-choice-21" id="radio-choice-99" value="Yes" class="radio-choice-99"/>
+							<label for="radio-choice-99">Yes</label>
+				
+							<input type="radio" name="radio-choice-21" id="radio-choice-100" value="No" class="radio-choice-100"/>
+							<label for="radio-choice-100">No</label> 
+						  
+					</fieldset>     	
+				</div>
+				<p align="right" id="next_page40_3">
+						<a href="#" class="next_page40_3" data-transition="slide"><img src="images/next.png"></a>
+				</p>
+		</div>
+		<div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>         
+		</div>
+  
+</div>
+
+
+<div data-role="page" id="page40_4" data-theme="a">
+		<div data-role="header">
+			<a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	   
+			<h1>Exercise 4 - Plank</h1>	
+		</div>	   
+		<div data-role="content">		
+				<div>
+				    <!--Q5-->
+					<center><p><font face="Georgia">Drag the mark to show how much PAIN or HURT you had during the exercise?</font></p></center>			
+				</div> 
+				<br></br>
+				<br></br>
+
+
+			<div  id="mySlider23" data-role="fieldcontain" data-theme="a"> 
+				<label for="slider23"></label>	
+				<input type="range" name="slider23" id="slider23"	min="0" max="100" value="50" data-highlight="true">	
+				<label for="slider23"><span class="left1"><font size="5">Not pain</font></span><span class="right1"><font size="5">Most pain<br/>&nbsp;&nbsp; possible</font></span></label>				
+			</div> 
+			
+            <br></br>	
+			<br></br><br></br>	
+			
+			<p align="right" id="next_page40_4">
+				   <a href="#page41" class="next" data-transition="slide"><img src="images/next.png"></a>
+			</p>								
+		</div>
+		<div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>         
+		</div>
+  
+</div>
+
+<div data-role="page" id="page40_5" data-theme="a">
+       <div data-role="header">
+          <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	   
+		  <h1>Exercise 4 - Plank</h1>	
+	   </div>
+	   
+	  <div data-role="content">
+			<div>
+			<center><p><font face="Georgia">Please tell us how you changed the exercise </font></p></center>			
+			</div>
+            <br></br>	     
+            
+			<div data-role="fieldcontain">
+				<label for="textarea-f"></label>
+				<center><textarea cols="40" rows="8" name="textarea" id="textarea-f"></textarea><center>
+	        </div>
+			
+			<p align="right" id="next_page40_5">
+						<a href="#page40_3" class="next" data-transition="slide"><img src="images/next.png"></a>
+			</p>
+	
+  	</div>
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>         
+	  </div>
+  
+</div>
+
+<!-- Exercise 5 -->
+
+<div data-role="page" id="page41" data-theme="a">
+       <div data-role="header">	
+	       <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>
+		  <h1>Exercise 5 - Seated Row</h1>	
+	   </div>
+	   
+	  <br></br>
+	  <div data-role="content">
+			<div>
+			    <!--Q1-->
+				<center><p><font face="Georgia">Were you able to complete this exercise as described on the video?</font></p></center>			
+			</div>  
+				  
+			<div data-role="fieldcontain" data-inset="true">			
+				<fieldset data-role="controlgroup">
+				<legend></legend>
+				<br></br>                  					
+						<input type="radio" name="radio-choice-22" id="radio-choice-101" value="Yes" class="radio-choice-101"/>
+						<label for="radio-choice-101">Yes</label>
+			
+						<input type="radio" name="radio-choice-22" id="radio-choice-102" value="No" class="radio-choice-102"/>
+						<label for="radio-choice-102">No</label>  
+					  
+				</fieldset>    	
+			</div>
+			<p align="right" id="next_page41">
+					<a href="#" class="next_page41" data-transition="slide"><img src="images/next.png"></a>
+			</p>			
+  	</div>
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>  
+	  </div>
+  
+</div>
+
+<div data-role="page" id="page41_1" data-theme="a">
+		<div data-role="header">
+			<a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	   
+			<h1>Exercise 5 - Seated Row</h1>	
+		</div>	   
+		<div data-role="content">
+		
+				<div>
+				    <!--Q2-->
+					<center><p><font face="Georgia">How many repititions were you able to finish?</font></p></center>			
+				</div>   
+
+			<center><table border="3" bordercolor="#8c6239" style="width:500px; height:450px;">
+					<tr>
+					    <th></th>
+					    <th><font size="5">Circuit 1</font></th>
+						<th><font size="5">Circuit 2</font></th>
+						<th><font size="5">Circuit 3</font></th>
+					</tr>
+					
+					<tr>
+						<td><font size="5">&nbsp;&nbsp;&nbsp;None</font></td>
+		<!--150-->		<td><center><img src="images/repitition/rpe37.png" id="rpe37" value="none_c1" onClick="repition_37()" style="width:35px; height=35px"></center></td>
+		<!--151-->		<td><center><img src="images/repitition/rpe38.png" id="rpe38" value="none_c2" onClick="repition_40()" style="width:35px; height=35px"></center></td>
+		<!--152-->		<td><center><img src="images/repitition/rpe39.png" id="rpe39" value="none_c3" onClick="repition_43()" style="width:35px; height=35px"></center></td>
+					</tr>
+					
+					<tr>
+						<td><font size="5">&nbsp;&nbsp;&nbsp;1-5</font></td>
+		<!--153-->		<td><center><img src="images/repitition/rpe40.png" id="rpe40" value="1-5_c1" onClick="repition_38()" style="width:35px; height=35px"></center></td>
+		<!--154-->		<td><center><img src="images/repitition/rpe41.png" id="rpe41" value="1-5_c2" onClick="repition_41()" style="width:35px; height=35px"></center></td>
+		<!--155-->		<td><center><img src="images/repitition/rpe42.png" id="rpe42" value="1-5_c3" onClick="repition_44()" style="width:35px; height=35px"></center></td>
+					</tr>
+					
+					<tr>
+						<td><font size="5">&nbsp;&nbsp;&nbsp;More than 6</font></td>
+		<!--156-->		<td><center><img src="images/repitition/rpe43.png" id="rpe43" value="more than 6_c1" onClick="repition_39()" style="width:35px; height=35px"></center></td>
+		<!--157-->		<td><center><img src="images/repitition/rpe44.png" id="rpe44" value="more than 6_c2" onClick="repition_42()" style="width:35px; height=35px"></center></td>
+		<!--158-->		<td><center><img src="images/repitition/rpe45.png" id="rpe45" value="more than 6_c3" onClick="repition_45()" style="width:35px; height=35px"></center></td>
+					</tr>
+					
+			</table></center>	
+							
+				<p align="right" id="next_page41_1">
+						<a href="#page41_2" class="next" data-transition="slide"><img src="images/next.png"></a>
+				</p>				
+		</div>
+		<div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>         
+		</div>
+  
+</div>
+
+
+<div data-role="page" id="page41_2" data-theme="a">
+		<div data-role="header">
+			<a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	   
+			<h1>Exercise 5 - Seated Row</h1>	
+		</div>	   
+		<div data-role="content">			    
+			<div>
+			    <!--Q3-->
+				<center><p><font face="Georgia">Did you change the exercise from how it was described on the video?</font></p></center>			
+			</div> 
+					 
+			<div data-role="fieldcontain" data-inset="true">			
+				<fieldset data-role="controlgroup">
+				<legend></legend>
+				<br></br>                 
+					
+						<input type="radio" name="radio-choice-24" id="radio-choice-106" value="Yes" class="radio-choice-106"/>
+						<label for="radio-choice-106">Yes</label>
+			
+						<input type="radio" name="radio-choice-24" id="radio-choice-107" value="No" class="radio-choice-107"/>
+						<label for="radio-choice-107">No</label> 
+					  
+				</fieldset>    	
+			</div>
+				<p align="right" id="next_page41_2">
+						<a href="#" class="next_page41_2" data-transition="slide"><img src="images/next.png"></a>
+				</p>			
+		</div>
+		<div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>         
+		</div>
+  
+</div>
+
+<div data-role="page" id="page41_3" data-theme="a">
+		<div data-role="header">
+			<a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	   
+			<h1>Exercise 5 - Seated Row</h1>	
+		</div>	   
+		<div data-role="content">		
+				<div>
+				    <!--Q4-->
+					<center><p><font face="Georgia">Did you have increased pain while doing this exercise?</font></p></center>			
+				</div> 		
+				
+				<div data-role="fieldcontain" data-inset="true">			
+					<fieldset data-role="controlgroup">
+					<legend></legend>
+					   <br></br>                  
+						
+							<input type="radio" name="radio-choice-25" id="radio-choice-108" value="Yes" class="radio-choice-108"/>
+							<label for="radio-choice-108">Yes</label>
+				
+							<input type="radio" name="radio-choice-25" id="radio-choice-109" value="No" class="radio-choice-109"/>
+							<label for="radio-choice-109">No</label> 
+						  
+					</fieldset>     	
+				</div>
+				<p align="right" id="next_page41_3">
+						<a href="#" class="next_page41_3" data-transition="slide"><img src="images/next.png"></a>
+				</p>
+		</div>
+		<div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>         
+		</div>
+  
+</div>
+
+
+<div data-role="page" id="page41_4" data-theme="a">
+		<div data-role="header">
+			<a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	   
+			<h1>Exercise 5 - Seated Row</h1>	
+		</div>	   
+		<div data-role="content">		
+				<div>
+				    <!--Q5-->
+					<center><p><font face="Georgia">Drag the mark to show how much PAIN or HURT you had during the exercise?</font></p></center>			
+				</div> 
+				<br></br>
+				<br></br>
+
+
+			<div  id="mySlider24" data-role="fieldcontain" data-theme="a"> 
+				<label for="slider24"></label>	
+				<input type="range" name="slider24" id="slider24"	min="0" max="100" value="50" data-highlight="true">	
+				<label for="slider24"><span class="left1"><font size="5">Not pain</font></span><span class="right1"><font size="5">Most pain<br/>&nbsp;&nbsp; possible</font></span></label>				
+			</div> 
+			
+            <br></br>	
+			<br></br><br></br>	
+			
+			<p align="right" id="next_page41_4">
+				   <a href="#page43" class="next" data-transition="slide"><img src="images/next.png"></a>
+			</p>
+				
+		</div>
+		<div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>         
+		</div>
+  
+</div>
+
+<div data-role="page" id="page41_5" data-theme="a">
+       <div data-role="header">
+          <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	   
+		  <h1>Exercise 5 - Seated Row</h1>	
+	   </div>
+	   
+	  <div data-role="content">
+			<div>
+			<center><p><font face="Georgia">Please tell us how you changed the exercise </font></p></center>			
+			</div>
+            <br></br>	     
+            
+			<div data-role="fieldcontain">
+				<label for="textarea-g"></label>
+				<center><textarea cols="40" rows="8" name="textarea" id="textarea-g"></textarea><center>
+	        </div>
+			
+			<p align="right" id="next_page41_5">
+						<a href="#page41_3" class="next" data-transition="slide"><img src="images/next.png"></a>
+			</p>
+	
+  	</div>
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>         
+	  </div>
+  
+</div>
+
+
+<!-- Exercise 6 -->
+
+<div data-role="page" id="page43" data-theme="a">
+       <div data-role="header">	
+	       <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>
+		  <h1>Exercise 6 - Bicep Curl & Shoulder Press</h1>	
+	   </div>
+	   
+	  <br></br>
+	  <div data-role="content">
+			<div>
+			    <!--Q1-->
+				<center><p><font face="Georgia">Were you able to complete this exercise as described on the video?</font></p></center>			
+			</div>  
+				  
+			<div data-role="fieldcontain" data-inset="true">			
+				<fieldset data-role="controlgroup">
+				<legend></legend>
+				<br></br>                  					
+						<input type="radio" name="radio-choice-26" id="radio-choice-110" value="Yes" class="radio-choice-110"/>
+						<label for="radio-choice-110">Yes</label>
+			
+						<input type="radio" name="radio-choice-26" id="radio-choice-111" value="No" class="radio-choice-111"/>
+						<label for="radio-choice-111">No</label>  
+					  
+				</fieldset>    	
+			</div>
+			<p align="right" id="next_page43">
+					<a href="#" class="next_page43" data-transition="slide"><img src="images/next.png"></a>
+			</p>			
+  	</div>
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>  
+	  </div>
+  
+</div>
+
+<div data-role="page" id="page43_1" data-theme="a">
+		<div data-role="header">
+			<a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	   
+			<h1>Exercise 6 - Bicep Curl & Shoulder Press</h1>	
+		</div>	   
+		<div data-role="content">
+		
+				<div>
+				    <!--Q2-->
+					<center><p><font face="Georgia">How many repititions were you able to finish?</font></p></center>			
+				</div> 
+
+			<center><table border="3" bordercolor="#8c6239" style="width:500px; height:450px;">
+					<tr>
+					    <th></th>
+					    <th><font size="5">Circuit 1</font></th>
+						<th><font size="5">Circuit 2</font></th>
+						<th><font size="5">Circuit 3</font></th>
+					</tr>
+					
+					<tr>
+						<td><font size="5">&nbsp;&nbsp;&nbsp;None</font></td>
+		<!--159-->		<td><center><img src="images/repitition/rpe46.png" id="rpe46" value="none_c1" onClick="repition_46()" style="width:35px; height=35px"></center></td>
+		<!--160-->		<td><center><img src="images/repitition/rpe47.png" id="rpe47" value="none_c2" onClick="repition_49()" style="width:35px; height=35px"></center></td>
+		<!--161-->		<td><center><img src="images/repitition/rpe48.png" id="rpe48" value="none_c3" onClick="repition_52()" style="width:35px; height=35px"></center></td>
+					</tr>
+					
+					<tr>
+						<td><font size="5">&nbsp;&nbsp;&nbsp;1-5</font></td>
+		<!--162-->		<td><center><img src="images/repitition/rpe49.png" id="rpe49" value="1-5_c1" onClick="repition_47()" style="width:35px; height=35px"></center></td>
+		<!--163-->		<td><center><img src="images/repitition/rpe50.png" id="rpe50" value="1-5_c2" onClick="repition_50()" style="width:35px; height=35px"></center></td>
+		<!--164-->		<td><center><img src="images/repitition/rpe51.png" id="rpe51" value="1-5_c3" onClick="repition_53()" style="width:35px; height=35px"></center></td>
+					</tr>
+					
+					<tr>
+						<td><font size="5">&nbsp;&nbsp;&nbsp;More than 6</font></td>
+		<!--165-->		<td><center><img src="images/repitition/rpe52.png" id="rpe52" value="more than 6_c1" onClick="repition_48()" style="width:35px; height=35px"></center></td>
+		<!--166-->		<td><center><img src="images/repitition/rpe53.png" id="rpe53" value="more than 6_c2" onClick="repition_51()" style="width:35px; height=35px"></center></td>
+		<!--167-->		<td><center><img src="images/repitition/rpe54.png" id="rpe54" value="more than 6_c3" onClick="repition_54()" style="width:35px; height=35px"></center></td>
+					</tr>
+					
+			</table></center>
+				
+		  
+				<p align="right" id="next_page43_1">
+						<a href="#page43_2" class="next" data-transition="slide"><img src="images/next.png"></a>
+				</p>				
+		</div>
+		<div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>         
+		</div>
+  
+</div>
+
+
+<div data-role="page" id="page43_2" data-theme="a">
+		<div data-role="header">
+			<a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	   
+			<h1>Exercise 6 - Bicep Curl & Shoulder Press</h1>	
+		</div>	   
+		<div data-role="content">			    
+			<div>
+			    <!--Q3-->
+				<center><p><font face="Georgia">Did you change the exercise from how it was described on the video?</font></p></center>			
+			</div> 
+					 
+			<div data-role="fieldcontain" data-inset="true">			
+				<fieldset data-role="controlgroup">
+				<legend></legend>
+				<br></br>                 
+					
+						<input type="radio" name="radio-choice-28" id="radio-choice-115" value="Yes" class="radio-choice-115"/>
+						<label for="radio-choice-115">Yes</label>
+			
+						<input type="radio" name="radio-choice-28" id="radio-choice-116" value="No" class="radio-choice-116"/>
+						<label for="radio-choice-116">No</label> 
+					  
+				</fieldset>    	
+			</div>
+				<p align="right" id="next_page43_2">
+						<a href="#" class="next_page43_2" data-transition="slide"><img src="images/next.png"></a>
+				</p>			
+		</div>
+		<div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>         
+		</div>
+  
+</div>
+
+<div data-role="page" id="page43_3" data-theme="a">
+		<div data-role="header">
+			<a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	   
+			<h1>Exercise 6 - Bicep Curl & Shoulder Press</h1>	
+		</div>	   
+		<div data-role="content">		
+				<div>
+				    <!--Q4-->
+					<center><p><font face="Georgia">Did you have increased pain while doing this exercise?</font></p></center>			
+				</div> 		
+				
+				<div data-role="fieldcontain" data-inset="true">			
+					<fieldset data-role="controlgroup">
+					<legend></legend>
+					   <br></br>                  
+						
+							<input type="radio" name="radio-choice-29" id="radio-choice-117" value="Yes" class="radio-choice-117"/>
+							<label for="radio-choice-117">Yes</label>
+				
+							<input type="radio" name="radio-choice-29" id="radio-choice-118" value="No" class="radio-choice-118"/>
+							<label for="radio-choice-118">No</label> 
+						  
+					</fieldset>     	
+				</div>
+				<p align="right" id="next_page43_3">
+						<a href="#" class="next_page43_3" data-transition="slide"><img src="images/next.png"></a>
+				</p>
+		</div>
+		<div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>         
+		</div>
+  
+</div>
+
+
+<div data-role="page" id="page43_4" data-theme="a">
+		<div data-role="header">
+			<a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	   
+			<h1>Exercise 6 - Bicep Curl & Shoulder Press</h1>	
+		</div>	   
+		<div data-role="content">		
+				<div>
+				    <!--Q5-->
+					<center><p><font face="Georgia">Drag the mark to show how much PAIN or HURT you had during the exercise?</font></p></center>			
+				</div> 
+				<br></br>
+				<br></br>
+
+
+			<div  id="mySlider25" data-role="fieldcontain" data-theme="a"> 
+				<label for="slider25"></label>	
+				<input type="range" name="slider25" id="slider25"	min="0" max="100" value="50" data-highlight="true">	
+				<label for="slider25"><span class="left1"><font size="5">Not pain</font></span><span class="right1"><font size="5">Most pain<br/>&nbsp;&nbsp; possible</font></span></label>				
+			</div> 
+			
+            <br></br>	
+			<br></br><br></br>	
+			
+			<p align="right" id="next_page43_4">
+				   <a href="#page44" class="next" data-transition="slide"><img src="images/next.png"></a>
+			</p>
+				
+		</div>
+		<div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>         
+		</div>
+  
+</div>
+
+<div data-role="page" id="page43_5" data-theme="a">
+       <div data-role="header">
+          <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	   
+		  <h1>Exercise 6 - Bicep Curl & Shoulder Press</h1>	
+	   </div>
+	   
+	  <div data-role="content">
+			<div>
+			<center><p><font face="Georgia">Please tell us how you changed the exercise </font></p></center>			
+			</div>
+            <br></br>	     
+            
+			<div data-role="fieldcontain">
+				<label for="textarea-i"></label>
+				<center><textarea cols="40" rows="8" name="textarea" id="textarea-i"></textarea><center>
+	        </div>
+			
+			<p align="right" id="next_page43_5">
+						<a href="#page43_3" class="next" data-transition="slide"><img src="images/next.png"></a>
+			</p>
+	
+  	</div>
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>         
+	  </div>
+  
+</div>
+
+
+<!-- Exercise 7 -->
+
+<div data-role="page" id="page44" data-theme="a">
+       <div data-role="header">	
+	       <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>
+		  <h1>Exercise 7 - Push up</h1>	
+	   </div>
+	   
+	  <br></br>
+	  <div data-role="content">
+			<div>
+			    <!--Q1-->
+				<center><p><font face="Georgia">Were you able to complete this exercise as described on the video?</font></p></center>			
+			</div>  
+				  
+			<div data-role="fieldcontain" data-inset="true">			
+				<fieldset data-role="controlgroup">
+				<legend></legend>
+				<br></br>                  					
+						<input type="radio" name="radio-choice-30" id="radio-choice-119" value="Yes" class="radio-choice-119"/>
+						<label for="radio-choice-119">Yes</label>
+			
+						<input type="radio" name="radio-choice-30" id="radio-choice-120" value="No" class="radio-choice-120"/>
+						<label for="radio-choice-120">No</label>  
+					  
+				</fieldset>    	
+			</div>
+			<p align="right" id="next_page44">
+					<a href="#" class="next_page44" data-transition="slide"><img src="images/next.png"></a>
+			</p>			
+  	</div>
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>  
+	  </div>
+  
+</div>
+
+<div data-role="page" id="page44_1" data-theme="a">
+		<div data-role="header">
+			<a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	   
+			<h1>Exercise 7 - Push up</h1>	
+		</div>	   
+		<div data-role="content">
+		
+				<div>
+				    <!--Q2-->
+					<center><p><font face="Georgia">How many repititions were you able to finish?</font></p></center>			
+				</div> 
+
+				<center><table border="3" bordercolor="#8c6239" style="width:500px; height:450px;">
+					<tr>
+					    <th></th>
+					    <th><font size="5">Circuit 1</font></th>
+						<th><font size="5">Circuit 2</font></th>
+						<th><font size="5">Circuit 3</font></th>
+					</tr>
+					
+					<tr>
+						<td><font size="5">&nbsp;&nbsp;&nbsp;None</font></td>
+		<!--168-->		<td><center><img src="images/repitition/rpe55.png" id="rpe55" value="none_c1" onClick="repition_55()" style="width:35px; height=35px"></center></td>
+		<!--169-->		<td><center><img src="images/repitition/rpe56.png" id="rpe56" value="none_c2" onClick="repition_58()" style="width:35px; height=35px"></center></td>
+		<!--170-->		<td><center><img src="images/repitition/rpe57.png" id="rpe57" value="none_c3" onClick="repition_61()" style="width:35px; height=35px"></center></td>
+					</tr>
+					
+					<tr>
+						<td><font size="5">&nbsp;&nbsp;&nbsp;1-5</font></td>
+		<!--171-->		<td><center><img src="images/repitition/rpe58.png" id="rpe58" value="1-5_c1" onClick="repition_56()" style="width:35px; height=35px"></center></td>
+		<!--172-->		<td><center><img src="images/repitition/rpe59.png" id="rpe59" value="1-5_c2" onClick="repition_59()" style="width:35px; height=35px"></center></td>
+		<!--173-->		<td><center><img src="images/repitition/rpe60.png" id="rpe60" value="1-5_c3" onClick="repition_62()" style="width:35px; height=35px"></center></td>
+					</tr>
+					
+					<tr>
+						<td><font size="5">&nbsp;&nbsp;&nbsp;More than 6</font></td>
+		<!--174-->		<td><center><img src="images/repitition/rpe61.png" id="rpe61" value="more than 6_c1" onClick="repition_57()" style="width:35px; height=35px"></center></td>
+		<!--175-->		<td><center><img src="images/repitition/rpe62.png" id="rpe62" value="more than 6_c2" onClick="repition_60()" style="width:35px; height=35px"></center></td>
+		<!--176-->		<td><center><img src="images/repitition/rpe63.png" id="rpe63" value="more than 6_c3" onClick="repition_63()" style="width:35px; height=35px"></center></td>
+					</tr>
+					
+			</table></center>
+				
+				
+				<p align="right" id="next_page44_1">
+						<a href="#page44_2" class="next" data-transition="slide"><img src="images/next.png"></a>
+				</p>				
+		</div>
+		<div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>         
+		</div>
+  
+</div>
+
+
+<div data-role="page" id="page44_2" data-theme="a">
+		<div data-role="header">
+			<a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	   
+			<h1>Exercise 7 - Push up</h1>	
+		</div>	   
+		<div data-role="content">			    
+			<div>
+			    <!--Q3-->
+				<center><p><font face="Georgia">Did you change the exercise from how it was described on the video?</font></p></center>			
+			</div> 
+					 
+			<div data-role="fieldcontain" data-inset="true">			
+				<fieldset data-role="controlgroup">
+				<legend></legend>
+				<br></br>                 
+					
+						<input type="radio" name="radio-choice-31" id="radio-choice-124" value="Yes" class="radio-choice-124"/>
+						<label for="radio-choice-124">Yes</label>
+			
+						<input type="radio" name="radio-choice-31" id="radio-choice-125" value="No" class="radio-choice-125"/>
+						<label for="radio-choice-125">No</label> 
+					  
+				</fieldset>    	
+			</div>
+				<p align="right" id="next_page44_2">
+						<a href="#" class="next_page44_2" data-transition="slide"><img src="images/next.png"></a>
+				</p>			
+		</div>
+		<div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>         
+		</div>
+  
+</div>
+
+<div data-role="page" id="page44_3" data-theme="a">
+		<div data-role="header">
+			<a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	   
+			<h1>Exercise 7 - Push up</h1>	
+		</div>	   
+		<div data-role="content">		
+				<div>
+				    <!--Q4-->
+					<center><p><font face="Georgia">Did you have increased pain while doing this exercise?</font></p></center>			
+				</div> 		
+				
+				<div data-role="fieldcontain" data-inset="true">			
+					<fieldset data-role="controlgroup">
+					<legend></legend>
+					   <br></br>                  
+						
+							<input type="radio" name="radio-choice-32" id="radio-choice-126" value="Yes" class="radio-choice-126"/>
+							<label for="radio-choice-126">Yes</label>
+				
+							<input type="radio" name="radio-choice-32" id="radio-choice-127" value="No" class="radio-choice-127"/>
+							<label for="radio-choice-127">No</label> 
+						  
+					</fieldset>     	
+				</div>
+				<p align="right" id="next_page44_3">
+						<a href="#" class="next_page44_3" data-transition="slide"><img src="images/next.png"></a>
+				</p>
+		</div>
+		<div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>         
+		</div>
+  
+</div>
+
+
+<div data-role="page" id="page44_4" data-theme="a">
+		<div data-role="header">
+			<a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	   
+			<h1>Exercise 7 - Push up</h1>	
+		</div>	   
+		<div data-role="content">		
+				<div>
+				    <!--Q5-->
+					<center><p><font face="Georgia">Drag the mark to show how much PAIN or HURT you had during the exercise?</font></p></center>			
+				</div> 
+				<br></br>
+				<br></br>
+
+
+			<div  id="mySlider26" data-role="fieldcontain" data-theme="a"> 
+				<label for="slider26"></label>	
+				<input type="range" name="slider26" id="slider26"	min="0" max="100" value="50" data-highlight="true">	
+				<label for="slider26"><span class="left1"><font size="5">Not pain</font></span><span class="right1"><font size="5">Most pain<br/>&nbsp;&nbsp; possible</font></span></label>				
+			</div> 
+			
+            <br></br>	
+			<br></br><br></br>	
+			
+			<p align="right" id="next_page44_4">
+				   <a href="#page42" class="next" data-transition="slide"><img src="images/next.png"></a>
+			</p>
+				
+		</div>
+		<div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>         
+		</div>
+  
+</div>
+
+<div data-role="page" id="page44_5" data-theme="a">
+       <div data-role="header">
+          <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	   
+		  <h1>Exercise 7 - Push up</h1>	
+	   </div>
+	   
+	  <div data-role="content">
+			<div>
+			<center><p><font face="Georgia">Please tell us how you changed the exercise </font></p></center>			
+			</div>
+            <br></br>	     
+            
+			<div data-role="fieldcontain">
+				<label for="textarea-j"></label>
+				<center><textarea cols="40" rows="8" name="textarea" id="textarea-j"></textarea><center>
+	        </div>
+			
+			<p align="right" id="next_page44_5">
+						<a href="#page44_3" class="next" data-transition="slide"><img src="images/next.png"></a>
+			</p>
+	
+  	</div>
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>         
+	  </div>
+  
+</div>
+
+
+
+<div data-role="page" id="page42" data-theme="a">
+       <div data-role="header">
+          <a href="#page1" data-icon="gear" class="ui-btn-left" data-transition="slide">Menu</a>	   
+		  <h1>Comments</h1>	
+	   </div>
+	   
+	  <div data-role="content">
+		<div>
+			<center><p><font face="Georgia">Please enter any notes for this survey entry. </font></p></center>			
+        </div>
+            <br></br>	
+
+			<div data-role="fieldcontain">
+				<label for="textarea-h"></label>
+				<center><textarea cols="40" rows="8" name="textarea" id="textarea-h"></textarea><center>
+			</div>
+			
+			 <center><a href="#After_endpage" data-transition="slide" data-inline="true" data-role="button" data-theme="a" >I have no extra comments</a></center>
+					
+			<p align="right" id="next_page42">
+				   <a href="#After_endpage" class="next" data-transition="slide"><img src="images/next.png"></a>
+			</p>
+		
+  	    </div>
+		<div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>         
+		</div>
+  
+</div>
+
+<!--After_last page -->
+
+<div data-role="page" id="After_endpage" data-theme="a">
+       <div data-role="header">	
+		  <h1>End</h1>	
+	   </div>
+	   
+	        <br></br>
+			 <br></br>
+			  <br></br>
+			   <br></br>
+			
+		<div data-role="content">
+         				
+				<center><a href="#After_Congrats" data-role="button" data-inline="true" data-theme="a" data-rel="dialog" data-transition="pop" style="height: 100px; width: 350px; color:#603813" onClick="addDatatoAfter()"><font size="9">Submit</font></a></center>
+			
+			<br></br>	
+			<!-- <a href="#"  data-inline="true" data-role="button" data-theme="a" onClick="readDatafromAfter()">Read DB</a>	-->		
+		
+        </div>					
+  		
+	  <div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>          
+	  </div>
+  
+</div>
+
+<div data-role="dialog" id="After_Congrats" >
+		<div data-role="header">		    
+				<h3>Congratulations!</h3>	
+	    </div>			
+		<div data-role="content" data-theme="a">
+			   <br></br>		
+				<center><a href="#page1" data-role="button" data-transition="slide" style="height: 100px; width: 350px; color:#603813"><font size="7">Menu</font></a></center>
+				<br></br>
+        </div>				
+  
+</div>
+
+
+
+
+<!--Database Result Page-->
+
+<div data-role="page" id="DBResult" data-theme="a">
+		
+		<div data-role="header">
+		    <a href="#page1" data-icon="gear" class="ui-btn-left" data-inline="true" data-role="button" data-transition="slide">Menu</a>
+			<h1>Results From DB</h1>
+		</div>
+			<!--	<p><a href="#page1" data-inline="true" data-direction="reverse" data-role="button" data-icon="back" data-theme="a">Back to previous page</a></p> -->	
+		
+		<div data-role="content" id="result">				
+		</div>
+	  	  
+		<div data-role="footer" data-theme="a" data-position="fixed">        
+            <h1><i>PInGo Pain Diary &copy; 2012</i></h1>         
+		</div>
+  
+</div>
+
+	
+</body>
+</html>
